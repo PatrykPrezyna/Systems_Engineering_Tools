@@ -1,0 +1,482 @@
+[
+    {
+        "Selected Options": [
+            "On Bed",
+            "CT Scan",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 4,
+        "Total Performance": 16
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "CT Scan",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 6,
+        "Total Performance": 16
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "CT Scan",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 6,
+        "Total Performance": 14
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "CT Scan",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 8,
+        "Total Performance": 14
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "Imageless",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 6,
+        "Total Performance": 14
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "Imageless",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 8,
+        "Total Performance": 14
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "Imageless",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 8,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "Imageless",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "X-ray",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 8,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "X-ray",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "X-ray",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "X-ray",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "MRI",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 8,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "MRI",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "MRI",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "On Bed",
+            "MRI",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "CT Scan",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 6,
+        "Total Performance": 14
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "CT Scan",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 8,
+        "Total Performance": 14
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "CT Scan",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 8,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "CT Scan",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "Imageless",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 8,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "Imageless",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "Imageless",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "Imageless",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "X-ray",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "X-ray",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "X-ray",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "X-ray",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 14,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "MRI",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "MRI",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "MRI",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Free Standing",
+            "MRI",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 14,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "CT Scan",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 8,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "CT Scan",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 12
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "CT Scan",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "CT Scan",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "Imageless",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 10,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "Imageless",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 10
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "Imageless",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "Imageless",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 14,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "X-ray",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "X-ray",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 14,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "X-ray",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 14,
+        "Total Performance": 6
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "X-ray",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 16,
+        "Total Performance": 6
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "MRI",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 12,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "MRI",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 14,
+        "Total Performance": 8
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "MRI",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 14,
+        "Total Performance": 6
+    },
+    {
+        "Selected Options": [
+            "Hand Held",
+            "MRI",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 16,
+        "Total Performance": 6
+    }
+]
