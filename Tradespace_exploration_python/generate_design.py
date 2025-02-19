@@ -17,8 +17,8 @@ data = [
         "Options": [
             {"name": "CT Scan", "cost_factor": 0.9, "setting_up_time_factor": 1.5},
             {"name": "Imageless", "cost_factor": 1.0, "setting_up_time_factor": 1.0},
-            {"name": "X-ray", "cost_factor": 0.9, "setting_up_time_factor": 1.5},
-            {"name": "MRI", "cost_factor": 0.9, "setting_up_time_factor": 1.5},
+            {"name": "X-ray", "cost_factor": 0.95, "setting_up_time_factor": 1.4},
+            {"name": "MRI", "cost_factor": 0.85, "setting_up_time_factor": 1.3},
         ],
     },
     {
@@ -31,7 +31,7 @@ data = [
         {
         "Decisison": "Onboard vs Offboard Computing",
         "Options": [
-            {"name": "Onboard", "cost_factor": 1.1, "setting_up_time_factor": 1.0},
+            {"name": "Onboard", "cost_factor": 1.2, "setting_up_time_factor": 1.0},
             {"name": "Offboard", "cost_factor": 1.0, "setting_up_time_factor": 1.0}
         ],
     },
@@ -55,8 +55,20 @@ for combination in combinations:
     total_setting_up_time = reference_setting_up_time+reference_setting_up_time*sum(option["setting_up_time_factor"]-1.0 for option in combination)
 
     total_performance = total_setting_up_time
+    name = ""
+    selected_options = [option["name"] for option in combination]
+    print(selected_options)
+    if selected_options == ["Free Standing","CT Scan","Onboard","Onboard"]:
+        name = "ROSA"
+    if selected_options == ["Free Standing","X-ray","Onboard","Onboard"]:
+        name = "MAKO"
+    if selected_options == ["On Bed","Imageless","Offboard","Offboard"]:
+        name = "J&J"
+
+
     design = {
-        "Selected Options": [option["name"] for option in combination],
+        "Name":name,
+        "Selected Options": selected_options,
         "Total Cost": total_cost,
         "Total Performance": total_performance,
     }
