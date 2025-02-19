@@ -359,8 +359,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 420000.00000000006,
-        "Total Performance": 45.0
+        "Total Cost": 700000.0000000001,
+        "Total Performance": 30.0
     },
     {
         "Name": "",
@@ -370,8 +370,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 280000.0000000001,
-        "Total Performance": 45.0
+        "Total Cost": 560000.0000000001,
+        "Total Performance": 30.0
     },
     {
         "Name": "",
@@ -381,8 +381,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 350000.0,
-        "Total Performance": 45.0
+        "Total Cost": 630000.0,
+        "Total Performance": 30.0
     },
     {
         "Name": "",
@@ -391,17 +391,6 @@
             "CT Scan",
             "Offboard",
             "Offboard"
-        ],
-        "Total Cost": 210000.00000000006,
-        "Total Performance": 45.0
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "Hand Held",
-            "Imageless",
-            "Onboard",
-            "Onboard"
         ],
         "Total Cost": 490000.00000000006,
         "Total Performance": 30.0
@@ -412,10 +401,21 @@
             "Hand Held",
             "Imageless",
             "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 770000.0,
+        "Total Performance": 15.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Hand Held",
+            "Imageless",
+            "Onboard",
             "Offboard"
         ],
-        "Total Cost": 350000.00000000006,
-        "Total Performance": 30.0
+        "Total Cost": 630000.0000000001,
+        "Total Performance": 15.0
     },
     {
         "Name": "",
@@ -425,8 +425,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 420000.0,
-        "Total Performance": 30.0
+        "Total Cost": 700000.0,
+        "Total Performance": 15.0
     },
     {
         "Name": "",
@@ -436,8 +436,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 280000.0,
-        "Total Performance": 30.0
+        "Total Cost": 560000.0,
+        "Total Performance": 15.0
     },
     {
         "Name": "",
@@ -446,85 +446,85 @@
             "X-ray",
             "Onboard",
             "Onboard"
+        ],
+        "Total Cost": 735000.0,
+        "Total Performance": 26.999999999999996
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Hand Held",
+            "X-ray",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 595000.0,
+        "Total Performance": 26.999999999999996
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Hand Held",
+            "X-ray",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 665000.0,
+        "Total Performance": 26.999999999999996
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Hand Held",
+            "X-ray",
+            "Offboard",
+            "Offboard"
+        ],
+        "Total Cost": 525000.0,
+        "Total Performance": 26.999999999999996
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Hand Held",
+            "MRI",
+            "Onboard",
+            "Onboard"
+        ],
+        "Total Cost": 665000.0,
+        "Total Performance": 24.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Hand Held",
+            "MRI",
+            "Onboard",
+            "Offboard"
+        ],
+        "Total Cost": 525000.0000000001,
+        "Total Performance": 24.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Hand Held",
+            "MRI",
+            "Offboard",
+            "Onboard"
+        ],
+        "Total Cost": 595000.0,
+        "Total Performance": 24.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Hand Held",
+            "MRI",
+            "Offboard",
+            "Offboard"
         ],
         "Total Cost": 455000.0,
-        "Total Performance": 42.0
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "Hand Held",
-            "X-ray",
-            "Onboard",
-            "Offboard"
-        ],
-        "Total Cost": 315000.00000000006,
-        "Total Performance": 42.0
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "Hand Held",
-            "X-ray",
-            "Offboard",
-            "Onboard"
-        ],
-        "Total Cost": 384999.99999999994,
-        "Total Performance": 42.0
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "Hand Held",
-            "X-ray",
-            "Offboard",
-            "Offboard"
-        ],
-        "Total Cost": 245000.0,
-        "Total Performance": 42.0
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "Hand Held",
-            "MRI",
-            "Onboard",
-            "Onboard"
-        ],
-        "Total Cost": 385000.00000000006,
-        "Total Performance": 39.0
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "Hand Held",
-            "MRI",
-            "Onboard",
-            "Offboard"
-        ],
-        "Total Cost": 245000.00000000006,
-        "Total Performance": 39.0
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "Hand Held",
-            "MRI",
-            "Offboard",
-            "Onboard"
-        ],
-        "Total Cost": 314999.99999999994,
-        "Total Performance": 39.0
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "Hand Held",
-            "MRI",
-            "Offboard",
-            "Offboard"
-        ],
-        "Total Cost": 175000.0,
-        "Total Performance": 39.0
+        "Total Performance": 24.0
     }
 ]

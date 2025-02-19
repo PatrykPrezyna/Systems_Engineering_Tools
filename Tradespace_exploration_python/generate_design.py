@@ -9,7 +9,7 @@ data = [
         "Options": [
             {"name": "On Bed", "cost_factor": 1.0, "setting_up_time_factor": 1.0},
             {"name": "Free Standing", "cost_factor": 1.2, "setting_up_time_factor": 0.5},
-            {"name": "Hand Held", "cost_factor": 0.4, "setting_up_time_factor": 1.0},
+            {"name": "Hand Held", "cost_factor": 0.8, "setting_up_time_factor": 0.5},
         ],
     },
     {
