@@ -1,37 +1,38 @@
 import json
 import itertools
+import math
 
 # JSON data
 data = [
     {
         "Decisison": "Robot Mount Type",
         "Options": [
-            {"name": "On Bed", "cost_factor": 1, "performence_factor": 5},
-            {"name": "Free Standing", "cost_factor": 3, "performence_factor": 3},
-            {"name": "Hand Held", "cost_factor": 5, "performence_factor": 1},
+            {"name": "On Bed", "cost_factor": 1.0, "setting_up_time_factor": 1.0},
+            {"name": "Free Standing", "cost_factor": 1.2, "setting_up_time_factor": 0.5},
+            {"name": "Hand Held", "cost_factor": 0.4, "setting_up_time_factor": 1.0},
         ],
     },
     {
         "Decisison": "Procedure Imaging Type",
         "Options": [
-            {"name": "CT Scan", "cost_factor": 1, "performence_factor": 5},
-            {"name": "Imageless", "cost_factor": 3, "performence_factor": 3},
-            {"name": "X-ray", "cost_factor": 5, "performence_factor": 1},
-            {"name": "MRI", "cost_factor": 5, "performence_factor": 1},
+            {"name": "CT Scan", "cost_factor": 0.9, "setting_up_time_factor": 1.5},
+            {"name": "Imageless", "cost_factor": 1.0, "setting_up_time_factor": 1.0},
+            {"name": "X-ray", "cost_factor": 0.9, "setting_up_time_factor": 1.5},
+            {"name": "MRI", "cost_factor": 0.9, "setting_up_time_factor": 1.5},
         ],
     },
     {
         "Decisison": "Onboard vs Offboard Power",
         "Options": [
-            {"name": "Onboard", "cost_factor": 1, "performence_factor": 5},
-            {"name": "Offboard", "cost_factor": 3, "performence_factor": 3},
+            {"name": "Onboard", "cost_factor": 1.1, "setting_up_time_factor": 1.0},
+            {"name": "Offboard", "cost_factor": 1.0, "setting_up_time_factor": 1.0},
         ],
     },
         {
         "Decisison": "Onboard vs Offboard Computing",
         "Options": [
-            {"name": "Onboard", "cost_factor": 1, "performence_factor": 1},
-            {"name": "Offboard", "cost_factor": 3, "performence_factor": 1}
+            {"name": "Onboard", "cost_factor": 1.1, "setting_up_time_factor": 1.0},
+            {"name": "Offboard", "cost_factor": 1.0, "setting_up_time_factor": 1.0}
         ],
     },
 ]
@@ -45,8 +46,15 @@ combinations = list(itertools.product(*decisions))
 # Calculate cost and performance for each combination
 designs = []
 for combination in combinations:
-    total_cost = sum(option["cost_factor"] for option in combination)
-    total_performance = sum(option["performence_factor"] for option in combination)
+    reference_cost=700000 #[$] Cost of the Rosa robot, how much does the 
+    total_cost = reference_cost+reference_cost*sum(option["cost_factor"]-1.0 for option in combination)
+    # for option in combination:
+    #     print(option["cost_factor"])
+    # print(combination)
+    reference_setting_up_time=30 #[min] assumption setting up time  of the J&J robot
+    total_setting_up_time = reference_setting_up_time+reference_setting_up_time*sum(option["setting_up_time_factor"]-1.0 for option in combination)
+
+    total_performance = total_setting_up_time
     design = {
         "Selected Options": [option["name"] for option in combination],
         "Total Cost": total_cost,
