@@ -7,32 +7,41 @@ data = [
     {
         "Decisison": "Robot Mount Type",
         "Options": [
-            {"name": "On Bed", "cost_factor": 1.0, "setting_up_time_factor": 1.0},
-            {"name": "Free Standing", "cost_factor": 1.2, "setting_up_time_factor": 0.5},
-            {"name": "Hand Held", "cost_factor": 0.8, "setting_up_time_factor": 0.5},
+            {"name": "On Bed", "cost_factor": 1.0, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0},#reference
+            {"name": "Free Standing", "cost_factor": 3, "setting_up_time_factor": 0.5, "accuracy_factor": 0.5},
+            {"name": "Hand Held", "cost_factor": 0.5, "setting_up_time_factor": 0.5, "accuracy_factor": 2.0},
         ],
     },
     {
-        "Decisison": "Procedure Imaging Type",
+        "Decisison": "Pre-op Imaging Type",
         "Options": [
-            {"name": "CT Scan", "cost_factor": 0.9, "setting_up_time_factor": 1.5},
-            {"name": "Imageless", "cost_factor": 1.0, "setting_up_time_factor": 1.0},
-            {"name": "X-ray", "cost_factor": 0.95, "setting_up_time_factor": 1.4},
-            {"name": "MRI", "cost_factor": 0.85, "setting_up_time_factor": 1.3},
+            {"name": "CT Scan", "cost_factor": 0.9, "setting_up_time_factor": 1.5, "accuracy_factor": 0.8},
+            {"name": "Imageless", "cost_factor": 1.0, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0},#reference
+            {"name": "X-ray", "cost_factor": 0.95, "setting_up_time_factor": 1.4, "accuracy_factor": 0.8},
+            {"name": "MRI", "cost_factor": 0.85, "setting_up_time_factor": 1.3, "accuracy_factor": 0.8},
         ],
     },
+    # {
+    #     "Decisison": "Procedure Imaging Type",
+    #     "Options": [
+    #         {"name": "3D Volumetric imaging", "cost_factor": 0.9, "setting_up_time_factor": 1.5, "accuracy_factor": 0.8},
+    #         {"name": "Electro Magnetic", "cost_factor": 1.0, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0},#reference
+    #         {"name": "IR Markers", "cost_factor": 0.95, "setting_up_time_factor": 1.4, "accuracy_factor": 0.8},
+    #         {"name": "accelometers, giroscope on the bone", "cost_factor": 0.85, "setting_up_time_factor": 1.3, "accuracy_factor": 0.8},
+    #     ],
+    # },
     {
         "Decisison": "Onboard vs Offboard Power",
         "Options": [
-            {"name": "Onboard", "cost_factor": 1.1, "setting_up_time_factor": 1.0},
-            {"name": "Offboard", "cost_factor": 1.0, "setting_up_time_factor": 1.0},
+            {"name": "Onboard", "cost_factor": 1.1, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0},
+            {"name": "Offboard", "cost_factor": 1.0, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0},#reference
         ],
     },
-        {
+    {
         "Decisison": "Onboard vs Offboard Computing",
         "Options": [
-            {"name": "Onboard", "cost_factor": 1.2, "setting_up_time_factor": 1.0},
-            {"name": "Offboard", "cost_factor": 1.0, "setting_up_time_factor": 1.0}
+            {"name": "Onboard", "cost_factor": 1.2, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0},
+            {"name": "Offboard", "cost_factor": 1.0, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0},#reference
         ],
     },
 ]
@@ -46,15 +55,16 @@ combinations = list(itertools.product(*decisions))
 # Calculate cost and performance for each combination
 designs = []
 for combination in combinations:
-    reference_cost=700000 #[$] Cost of the Rosa robot, how much does the 
+    reference_cost=250000 #[$] Cost of the Valys J&J robot, how much does the 
     total_cost = reference_cost+reference_cost*sum(option["cost_factor"]-1.0 for option in combination)
     # for option in combination:
     #     print(option["cost_factor"])
     # print(combination)
     reference_setting_up_time=30 #[min] assumption setting up time  of the J&J robot
     total_setting_up_time = reference_setting_up_time+reference_setting_up_time*sum(option["setting_up_time_factor"]-1.0 for option in combination)
-
-    total_performance = total_setting_up_time
+    reference_accuracy_factor = 0.1#[mm] cutting accuracy
+    total_accuracy_factor = reference_accuracy_factor+reference_accuracy_factor*sum(option["accuracy_factor"]-1.0 for option in combination)
+    total_performance = total_setting_up_time/reference_setting_up_time+total_accuracy_factor/reference_accuracy_factor
     name = ""
     selected_options = [option["name"] for option in combination]
     print(selected_options)

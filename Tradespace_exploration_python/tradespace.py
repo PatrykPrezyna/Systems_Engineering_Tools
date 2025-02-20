@@ -1,6 +1,7 @@
 import json
 import numpy as np
 import matplotlib.pyplot as plt
+from PIL import Image
 
 # Load designs.json
 with open('designs.json', 'r') as file:
@@ -53,10 +54,10 @@ for j in range(4):
         if name[i] == "":
             label_name = ' '+str(i)
         else:
-            label_name = ' '+str(i)+' '+name[i]
+            label_name = ' '+str(i)+'  '+name[i]
 
         ax.text(costs[i], performances[i], label_name)
-    pdf_name = "Tradespace" + str(j) + ".pdf"
+    pdf_name = "Tradespace" + str(j) + ".png"
     plt.savefig(pdf_name)
 
 # Show the plot
