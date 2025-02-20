@@ -2,529 +2,5617 @@
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
             "CT Scan",
+            "3D Volumetric imaging",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 300000.0,
-        "Estimated Performance": 1.9166666666666665
+        "Estimated Cost": 550000,
+        "Estimated Performance": 0.875
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
             "CT Scan",
-            "Onboard",
-            "Offboard"
-        ],
-        "Estimated Cost": 250000.00000000003,
-        "Estimated Performance": 1.9166666666666665
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "On Bed",
-            "CT Scan",
-            "Offboard",
-            "Onboard"
-        ],
-        "Estimated Cost": 275000.0,
-        "Estimated Performance": 1.9166666666666665
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "On Bed",
-            "CT Scan",
-            "Offboard",
-            "Offboard"
-        ],
-        "Estimated Cost": 225000.0,
-        "Estimated Performance": 1.9166666666666665
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "On Bed",
-            "Imageless",
-            "Onboard",
-            "Onboard"
-        ],
-        "Estimated Cost": 325000.0,
-        "Estimated Performance": 2.0
-    },
-    {
-        "Name": "",
-        "Selected Options": [
-            "On Bed",
-            "Imageless",
+            "3D Volumetric imaging",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 275000.0,
-        "Estimated Performance": 2.0
+        "Estimated Cost": 520000,
+        "Estimated Performance": 0.875
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
-            "Imageless",
+            "CT Scan",
+            "3D Volumetric imaging",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 300000.0,
-        "Estimated Performance": 2.0
+        "Estimated Cost": 530000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 350000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 320000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 330000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 270000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 280000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 1.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 270000,
+        "Estimated Performance": 1.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 280000,
+        "Estimated Performance": 1.0
     },
     {
         "Name": "J&J",
         "Selected Options": [
+            "Orientation",
             "On Bed",
             "Imageless",
+            "IR Markers",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 250000.0,
-        "Estimated Performance": 2.0
+        "Estimated Cost": 250000,
+        "Estimated Performance": 1.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
-            "X-ray",
+            "Imageless",
+            "accelometers, giroscope",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 312500.0,
-        "Estimated Performance": 1.9642857142857144
+        "Estimated Cost": 250000,
+        "Estimated Performance": 1.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
-            "X-ray",
+            "Imageless",
+            "accelometers, giroscope",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 262500.0,
-        "Estimated Performance": 1.9642857142857144
+        "Estimated Cost": 220000,
+        "Estimated Performance": 1.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
-            "X-ray",
+            "Imageless",
+            "accelometers, giroscope",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 287500.0,
-        "Estimated Performance": 1.9642857142857144
+        "Estimated Cost": 230000,
+        "Estimated Performance": 1.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
-            "X-ray",
+            "Imageless",
+            "accelometers, giroscope",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 237500.0,
-        "Estimated Performance": 1.9642857142857144
+        "Estimated Cost": 200000,
+        "Estimated Performance": 1.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
-            "MRI",
+            "X-ray",
+            "3D Volumetric imaging",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 287500.0,
-        "Estimated Performance": 2.019230769230769
+        "Estimated Cost": 550000,
+        "Estimated Performance": 0.875
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
-            "MRI",
+            "X-ray",
+            "3D Volumetric imaging",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 237500.00000000003,
-        "Estimated Performance": 2.019230769230769
+        "Estimated Cost": 520000,
+        "Estimated Performance": 0.875
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
-            "MRI",
+            "X-ray",
+            "3D Volumetric imaging",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 262500.0,
-        "Estimated Performance": 2.019230769230769
+        "Estimated Cost": 530000,
+        "Estimated Performance": 0.875
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation",
             "On Bed",
-            "MRI",
+            "X-ray",
+            "3D Volumetric imaging",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 212500.0,
-        "Estimated Performance": 2.019230769230769
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 350000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 320000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 330000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 270000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 280000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 520000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 530000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 350000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 320000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 330000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 270000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 280000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 850000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 820000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 830000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 800000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 650000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 620000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 630000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 600000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 600000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 570000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 580000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 800000,
+        "Estimated Performance": 1.0833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 770000,
+        "Estimated Performance": 1.0833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 780000,
+        "Estimated Performance": 1.0833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 1.0833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 600000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 570000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 580000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 1.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 520000,
+        "Estimated Performance": 1.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 530000,
+        "Estimated Performance": 1.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 850000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 820000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 830000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 800000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 650000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 620000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 630000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 600000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 600000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 570000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 580000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 850000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 820000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 830000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 800000,
+        "Estimated Performance": 1.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 650000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 620000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 630000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 600000,
+        "Estimated Performance": 1.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 600000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 570000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 580000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 270000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 280000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 220000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 230000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 0.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 420000,
+        "Estimated Performance": 0.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 430000,
+        "Estimated Performance": 0.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 0.3333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 220000,
+        "Estimated Performance": 0.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 230000,
+        "Estimated Performance": 0.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.5833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 170000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 180000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 270000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 280000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "Tmini",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 220000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 230000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 0.3958333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 270000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 280000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.6458333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 220000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 230000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 720000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 730000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 520000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 530000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 1.4166666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 670000,
+        "Estimated Performance": 1.4166666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 680000,
+        "Estimated Performance": 1.4166666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 650000,
+        "Estimated Performance": 1.4166666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.6666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 1.6666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 1.6666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.6666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.8333333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 420000,
+        "Estimated Performance": 1.8333333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 430000,
+        "Estimated Performance": 1.8333333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 1.8333333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 720000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 730000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 520000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 530000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 720000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 730000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 1.6666666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 520000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 530000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.9166666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 1050000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 1020000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 1030000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 1000000,
+        "Estimated Performance": 2.75
     },
     {
         "Name": "ROSA",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
             "CT Scan",
+            "IR Markers",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 800000.0,
-        "Estimated Performance": 4.333333333333333
+        "Estimated Cost": 850000,
+        "Estimated Performance": 3.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
             "CT Scan",
+            "IR Markers",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 750000.0,
-        "Estimated Performance": 4.333333333333333
+        "Estimated Cost": 820000,
+        "Estimated Performance": 3.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
             "CT Scan",
+            "IR Markers",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 774999.9999999999,
-        "Estimated Performance": 4.333333333333333
+        "Estimated Cost": 830000,
+        "Estimated Performance": 3.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
             "CT Scan",
+            "IR Markers",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 725000.0,
-        "Estimated Performance": 4.333333333333333
+        "Estimated Cost": 800000,
+        "Estimated Performance": 3.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
-            "Imageless",
+            "CT Scan",
+            "accelometers, giroscope",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 825000.0,
-        "Estimated Performance": 4.0
+        "Estimated Cost": 800000,
+        "Estimated Performance": 3.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
-            "Imageless",
+            "CT Scan",
+            "accelometers, giroscope",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 775000.0,
-        "Estimated Performance": 4.0
+        "Estimated Cost": 770000,
+        "Estimated Performance": 3.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
-            "Imageless",
+            "CT Scan",
+            "accelometers, giroscope",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 800000.0,
-        "Estimated Performance": 4.0
+        "Estimated Cost": 780000,
+        "Estimated Performance": 3.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
-            "Imageless",
+            "CT Scan",
+            "accelometers, giroscope",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 750000.0,
-        "Estimated Performance": 4.0
+        "Estimated Cost": 750000,
+        "Estimated Performance": 3.1666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 1000000,
+        "Estimated Performance": 2.25
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 970000,
+        "Estimated Performance": 2.25
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 980000,
+        "Estimated Performance": 2.25
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 950000,
+        "Estimated Performance": 2.25
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 800000,
+        "Estimated Performance": 2.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 770000,
+        "Estimated Performance": 2.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 780000,
+        "Estimated Performance": 2.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 2.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 2.6666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 720000,
+        "Estimated Performance": 2.6666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 730000,
+        "Estimated Performance": 2.6666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 2.6666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 1050000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 1020000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 1030000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 1000000,
+        "Estimated Performance": 2.75
     },
     {
         "Name": "MAKO",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
             "X-ray",
+            "IR Markers",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 812500.0,
-        "Estimated Performance": 4.444444444444445
+        "Estimated Cost": 1700000,
+        "Estimated Performance": 3.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
             "X-ray",
+            "IR Markers",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 762500.0,
-        "Estimated Performance": 4.444444444444445
+        "Estimated Cost": 820000,
+        "Estimated Performance": 3.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
             "X-ray",
+            "IR Markers",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 787500.0,
-        "Estimated Performance": 4.444444444444445
+        "Estimated Cost": 830000,
+        "Estimated Performance": 3.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
             "X-ray",
+            "IR Markers",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 737500.0,
-        "Estimated Performance": 4.444444444444445
+        "Estimated Cost": 800000,
+        "Estimated Performance": 3.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
-            "MRI",
+            "X-ray",
+            "accelometers, giroscope",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 787500.0000000001,
-        "Estimated Performance": 4.583333333333333
+        "Estimated Cost": 800000,
+        "Estimated Performance": 3.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
-            "MRI",
+            "X-ray",
+            "accelometers, giroscope",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 737500.0,
-        "Estimated Performance": 4.583333333333333
+        "Estimated Cost": 770000,
+        "Estimated Performance": 3.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
-            "MRI",
+            "X-ray",
+            "accelometers, giroscope",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 762500.0,
-        "Estimated Performance": 4.583333333333333
+        "Estimated Cost": 780000,
+        "Estimated Performance": 3.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Free Standing",
-            "MRI",
+            "X-ray",
+            "accelometers, giroscope",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 712500.0,
-        "Estimated Performance": 4.583333333333333
+        "Estimated Cost": 750000,
+        "Estimated Performance": 3.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 1050000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 1020000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 1030000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 1000000,
+        "Estimated Performance": 2.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 850000,
+        "Estimated Performance": 3.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 820000,
+        "Estimated Performance": 3.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 830000,
+        "Estimated Performance": 3.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 800000,
+        "Estimated Performance": 3.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 800000,
+        "Estimated Performance": 3.1666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 770000,
+        "Estimated Performance": 3.1666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 780000,
+        "Estimated Performance": 3.1666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 3.1666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
             "CT Scan",
+            "3D Volumetric imaging",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 175000.0,
-        "Estimated Performance": 1.5555555555555556
+        "Estimated Cost": 700000,
+        "Estimated Performance": 0.875
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
             "CT Scan",
+            "3D Volumetric imaging",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 125000.00000000003,
-        "Estimated Performance": 1.5555555555555556
+        "Estimated Cost": 670000,
+        "Estimated Performance": 0.875
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
             "CT Scan",
+            "3D Volumetric imaging",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 150000.0,
-        "Estimated Performance": 1.5555555555555556
+        "Estimated Cost": 680000,
+        "Estimated Performance": 0.875
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
             "CT Scan",
+            "3D Volumetric imaging",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 100000.0,
-        "Estimated Performance": 1.5555555555555556
+        "Estimated Cost": 650000,
+        "Estimated Performance": 0.875
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 420000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 430000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
             "Imageless",
+            "3D Volumetric imaging",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 200000.0,
-        "Estimated Performance": 2.5
+        "Estimated Cost": 650000,
+        "Estimated Performance": 0.75
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
             "Imageless",
+            "3D Volumetric imaging",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 150000.00000000003,
-        "Estimated Performance": 2.5
+        "Estimated Cost": 620000,
+        "Estimated Performance": 0.75
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
             "Imageless",
+            "3D Volumetric imaging",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 175000.0,
-        "Estimated Performance": 2.5
+        "Estimated Cost": 630000,
+        "Estimated Performance": 0.75
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
             "Imageless",
+            "3D Volumetric imaging",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 125000.0,
-        "Estimated Performance": 2.5
+        "Estimated Cost": 600000,
+        "Estimated Performance": 0.75
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
-            "X-ray",
+            "Imageless",
+            "IR Markers",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 187500.0,
-        "Estimated Performance": 1.6666666666666667
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
-            "X-ray",
+            "Imageless",
+            "IR Markers",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 137500.0,
-        "Estimated Performance": 1.6666666666666667
+        "Estimated Cost": 420000,
+        "Estimated Performance": 1.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
-            "X-ray",
+            "Imageless",
+            "IR Markers",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 162499.99999999997,
-        "Estimated Performance": 1.6666666666666667
+        "Estimated Cost": 430000,
+        "Estimated Performance": 1.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
-            "X-ray",
+            "Imageless",
+            "IR Markers",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 112500.0,
-        "Estimated Performance": 1.6666666666666667
+        "Estimated Cost": 400000,
+        "Estimated Performance": 1.0
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
-            "MRI",
+            "Imageless",
+            "accelometers, giroscope",
             "Onboard",
             "Onboard"
         ],
-        "Estimated Cost": 162500.0,
-        "Estimated Performance": 1.8055555555555556
+        "Estimated Cost": 400000,
+        "Estimated Performance": 1.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
-            "MRI",
+            "Imageless",
+            "accelometers, giroscope",
             "Onboard",
             "Offboard"
         ],
-        "Estimated Cost": 112500.00000000003,
-        "Estimated Performance": 1.8055555555555556
+        "Estimated Cost": 370000,
+        "Estimated Performance": 1.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
-            "MRI",
+            "Imageless",
+            "accelometers, giroscope",
             "Offboard",
             "Onboard"
         ],
-        "Estimated Cost": 137500.0,
-        "Estimated Performance": 1.8055555555555556
+        "Estimated Cost": 380000,
+        "Estimated Performance": 1.1666666666666665
     },
     {
         "Name": "",
         "Selected Options": [
+            "Orientation + depth",
             "Hand Held",
-            "MRI",
+            "Imageless",
+            "accelometers, giroscope",
             "Offboard",
             "Offboard"
         ],
-        "Estimated Cost": 87500.0,
-        "Estimated Performance": 1.8055555555555556
+        "Estimated Cost": 350000,
+        "Estimated Performance": 1.1666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 670000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 680000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 650000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 420000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 430000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 670000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 680000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 650000,
+        "Estimated Performance": 0.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 420000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 430000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 1.2916666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 420000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 430000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 220000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 230000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 170000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 180000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 0.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 370000,
+        "Estimated Performance": 0.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 380000,
+        "Estimated Performance": 0.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 350000,
+        "Estimated Performance": 0.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 170000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 180000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.9166666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 120000,
+        "Estimated Performance": 0.9166666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 130000,
+        "Estimated Performance": 0.9166666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Performance": 0.9166666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 420000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 430000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 220000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 230000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 170000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 180000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 420000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 430000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 0.5625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 220000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 230000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.8125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 170000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 180000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.9791666666666666
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 720000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 730000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 520000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 530000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 0.5833333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 670000,
+        "Estimated Performance": 0.5833333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 680000,
+        "Estimated Performance": 0.5833333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 650000,
+        "Estimated Performance": 0.5833333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.8333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 0.8333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 0.8333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 0.8333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 420000,
+        "Estimated Performance": 1.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 430000,
+        "Estimated Performance": 1.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 1.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 720000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 730000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 520000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 530000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 750000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 720000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 730000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 700000,
+        "Estimated Performance": 0.7083333333333334
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 520000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 530000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 0.9583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 500000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 470000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 480000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 450000,
+        "Estimated Performance": 1.125
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 370000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 380000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 350000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 170000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 180000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 120000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 130000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 350000,
+        "Estimated Performance": 0.20833333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 320000,
+        "Estimated Performance": 0.20833333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 330000,
+        "Estimated Performance": 0.20833333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Performance": 0.20833333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.4583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 120000,
+        "Estimated Performance": 0.4583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 130000,
+        "Estimated Performance": 0.4583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Performance": 0.4583333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Performance": 0.625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 70000,
+        "Estimated Performance": 0.625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 80000,
+        "Estimated Performance": 0.625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 50000,
+        "Estimated Performance": 0.625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 370000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 380000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 350000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 170000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 180000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 120000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 130000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "X-ray",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 370000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 380000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "3D Volumetric imaging",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 350000,
+        "Estimated Performance": 0.23958333333333331
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 170000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 180000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "IR Markers",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.4895833333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 120000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 130000,
+        "Estimated Performance": 0.65625
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "MRI",
+            "accelometers, giroscope",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Performance": 0.65625
     }
 ]

@@ -1,7 +1,6 @@
 import json
 import numpy as np
 import matplotlib.pyplot as plt
-from PIL import Image
 
 # Load designs.json
 with open('designs.json', 'r') as file:
@@ -43,7 +42,7 @@ for j in range(4):
 
     # Add labels and title
     plt.xlabel('Estimated Cost')
-    plt.ylabel('Estimated Preparation time')
+    plt.ylabel('Estimated Performence')
     combined_array = list(zip(unique_options, reference_color))
     title = 'Tradespace: ' + str(combined_array)
     plt.title(title)
@@ -53,9 +52,10 @@ for j in range(4):
     # add label for each design point
     for i, txt in enumerate(options):
         if name[i] == "":
-            label_name = ' '+str(i)
+            label_name = ' '#+str(i)#label for not design point without name
         else:
-            label_name = ' '+str(i)+'  '+name[i]
+            #label_name = ' '+str(i)+'  '+name[i]
+            label_name = name[i]
 
         ax.text(costs[i], performances[i], label_name)
     pdf_name = "Tradespace" + str(j) + ".png"
