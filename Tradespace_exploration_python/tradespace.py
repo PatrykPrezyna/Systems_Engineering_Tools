@@ -5,11 +5,12 @@ from PIL import Image
 
 # Load designs.json
 with open('designs.json', 'r') as file:
+# with open('designs_manual.json', 'r') as file:
     designs = json.load(file)
 
 # Extract cost and performance values
-costs = [design['Total Cost'] for design in designs]
-performances = [design['Total Performance'] for design in designs]
+costs = [design['Estimated Cost'] for design in designs]
+performances = [design['Estimated Performance'] for design in designs]
 options = [design['Selected Options'] for design in designs]
 name = [design['Name'] for design in designs]
 print(name)
@@ -17,7 +18,7 @@ points = np.array(list(zip(costs, performances)))
 
 reference_color = ['blue','yellow','red', "black", "yellow", "violet", "grey"]
 # Define the utopia point (ideal but unattainable point)
-utopia_point = [min(costs), min(performances)]
+utopia_point = [min(costs), max(performances)]
 
 
 # Plot tradespace and Pareto frontier with utopia point
@@ -34,15 +35,15 @@ for j in range(4):
                 color.append(reference_color[i])
     fig = plt.figure(figsize=(10, 6))
     ax = fig.add_subplot(111)
-    plt.scatter(costs, performances, c=color, label='Tradespace (All Designs)')
+    plt.scatter(costs, performances, c=color, label='Tradespace')
     #plt.plot(pareto_points[:, 0], pareto_points[:, 1], 'r--', label='Pareto Frontier')
     #plt.scatter(pareto_points[:, 0], pareto_points[:, 1], c='red', label='Pareto Points')
     # Add the utopia point to the plot
     plt.scatter(*utopia_point, c='green', s=100, label='Utopia Point')
 
     # Add labels and title
-    plt.xlabel('Total Cost')
-    plt.ylabel('Total Preparation time')
+    plt.xlabel('Estimated Cost')
+    plt.ylabel('Estimated Preparation time')
     combined_array = list(zip(unique_options, reference_color))
     title = 'Tradespace: ' + str(combined_array)
     plt.title(title)

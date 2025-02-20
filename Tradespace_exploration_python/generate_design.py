@@ -62,9 +62,9 @@ for combination in combinations:
     # print(combination)
     reference_setting_up_time=30 #[min] assumption setting up time  of the J&J robot
     total_setting_up_time = reference_setting_up_time+reference_setting_up_time*sum(option["setting_up_time_factor"]-1.0 for option in combination)
-    reference_accuracy_factor = 0.1#[mm] cutting accuracy
+    reference_accuracy_factor = 0.5#[mm] cutting accuracy
     total_accuracy_factor = reference_accuracy_factor+reference_accuracy_factor*sum(option["accuracy_factor"]-1.0 for option in combination)
-    total_performance = total_setting_up_time/reference_setting_up_time+total_accuracy_factor/reference_accuracy_factor
+    total_performance = 1/(total_setting_up_time/reference_setting_up_time)+1/(total_accuracy_factor/reference_accuracy_factor)
     name = ""
     selected_options = [option["name"] for option in combination]
     print(selected_options)
@@ -79,8 +79,8 @@ for combination in combinations:
     design = {
         "Name":name,
         "Selected Options": selected_options,
-        "Total Cost": total_cost,
-        "Total Performance": total_performance,
+        "Estimated Cost": total_cost,
+        "Estimated Performance": total_performance,
     }
     designs.append(design)
 
@@ -88,8 +88,8 @@ for combination in combinations:
 for i, design in enumerate(designs, start=1):
     print(f"Design {i}:")
     print(f"  Selected Options: {design['Selected Options']}")
-    print(f"  Total Cost: {design['Total Cost']}")
-    print(f"  Total Performance: {design['Total Performance']}")
+    print(f"  Estimated Cost: {design['Estimated Cost']}")
+    print(f"  Estimated Performance: {design['Estimated Performance']}")
     print()
 
 # Save results to a JSON file

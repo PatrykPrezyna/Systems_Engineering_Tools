@@ -7,8 +7,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 300000.0,
-        "Total Performance": 2.3000000000000003
+        "Estimated Cost": 300000.0,
+        "Estimated Performance": 1.9166666666666665
     },
     {
         "Name": "",
@@ -18,8 +18,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 250000.00000000003,
-        "Total Performance": 2.3000000000000003
+        "Estimated Cost": 250000.00000000003,
+        "Estimated Performance": 1.9166666666666665
     },
     {
         "Name": "",
@@ -29,8 +29,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 275000.0,
-        "Total Performance": 2.3000000000000003
+        "Estimated Cost": 275000.0,
+        "Estimated Performance": 1.9166666666666665
     },
     {
         "Name": "",
@@ -40,8 +40,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 225000.0,
-        "Total Performance": 2.3000000000000003
+        "Estimated Cost": 225000.0,
+        "Estimated Performance": 1.9166666666666665
     },
     {
         "Name": "",
@@ -51,8 +51,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 325000.0,
-        "Total Performance": 2.0
+        "Estimated Cost": 325000.0,
+        "Estimated Performance": 2.0
     },
     {
         "Name": "",
@@ -62,8 +62,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 275000.0,
-        "Total Performance": 2.0
+        "Estimated Cost": 275000.0,
+        "Estimated Performance": 2.0
     },
     {
         "Name": "",
@@ -73,8 +73,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 300000.0,
-        "Total Performance": 2.0
+        "Estimated Cost": 300000.0,
+        "Estimated Performance": 2.0
     },
     {
         "Name": "J&J",
@@ -84,8 +84,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 250000.0,
-        "Total Performance": 2.0
+        "Estimated Cost": 250000.0,
+        "Estimated Performance": 2.0
     },
     {
         "Name": "",
@@ -95,8 +95,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 312500.0,
-        "Total Performance": 2.2
+        "Estimated Cost": 312500.0,
+        "Estimated Performance": 1.9642857142857144
     },
     {
         "Name": "",
@@ -106,8 +106,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 262500.0,
-        "Total Performance": 2.2
+        "Estimated Cost": 262500.0,
+        "Estimated Performance": 1.9642857142857144
     },
     {
         "Name": "",
@@ -117,8 +117,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 287500.0,
-        "Total Performance": 2.2
+        "Estimated Cost": 287500.0,
+        "Estimated Performance": 1.9642857142857144
     },
     {
         "Name": "",
@@ -128,8 +128,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 237500.0,
-        "Total Performance": 2.2
+        "Estimated Cost": 237500.0,
+        "Estimated Performance": 1.9642857142857144
     },
     {
         "Name": "",
@@ -139,8 +139,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 287500.0,
-        "Total Performance": 2.1
+        "Estimated Cost": 287500.0,
+        "Estimated Performance": 2.019230769230769
     },
     {
         "Name": "",
@@ -150,8 +150,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 237500.00000000003,
-        "Total Performance": 2.1
+        "Estimated Cost": 237500.00000000003,
+        "Estimated Performance": 2.019230769230769
     },
     {
         "Name": "",
@@ -161,8 +161,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 262500.0,
-        "Total Performance": 2.1
+        "Estimated Cost": 262500.0,
+        "Estimated Performance": 2.019230769230769
     },
     {
         "Name": "",
@@ -172,8 +172,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 212500.0,
-        "Total Performance": 2.1
+        "Estimated Cost": 212500.0,
+        "Estimated Performance": 2.019230769230769
     },
     {
         "Name": "ROSA",
@@ -183,8 +183,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 800000.0,
-        "Total Performance": 1.3
+        "Estimated Cost": 800000.0,
+        "Estimated Performance": 4.333333333333333
     },
     {
         "Name": "",
@@ -194,8 +194,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 750000.0,
-        "Total Performance": 1.3
+        "Estimated Cost": 750000.0,
+        "Estimated Performance": 4.333333333333333
     },
     {
         "Name": "",
@@ -205,8 +205,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 775000.0,
-        "Total Performance": 1.3
+        "Estimated Cost": 774999.9999999999,
+        "Estimated Performance": 4.333333333333333
     },
     {
         "Name": "",
@@ -216,8 +216,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 725000.0,
-        "Total Performance": 1.3
+        "Estimated Cost": 725000.0,
+        "Estimated Performance": 4.333333333333333
     },
     {
         "Name": "",
@@ -227,8 +227,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 825000.0,
-        "Total Performance": 1.0
+        "Estimated Cost": 825000.0,
+        "Estimated Performance": 4.0
     },
     {
         "Name": "",
@@ -238,8 +238,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 775000.0,
-        "Total Performance": 1.0
+        "Estimated Cost": 775000.0,
+        "Estimated Performance": 4.0
     },
     {
         "Name": "",
@@ -249,8 +249,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 800000.0,
-        "Total Performance": 1.0
+        "Estimated Cost": 800000.0,
+        "Estimated Performance": 4.0
     },
     {
         "Name": "",
@@ -260,8 +260,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 750000.0,
-        "Total Performance": 1.0
+        "Estimated Cost": 750000.0,
+        "Estimated Performance": 4.0
     },
     {
         "Name": "MAKO",
@@ -271,8 +271,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 812500.0,
-        "Total Performance": 1.2
+        "Estimated Cost": 812500.0,
+        "Estimated Performance": 4.444444444444445
     },
     {
         "Name": "",
@@ -282,8 +282,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 762500.0,
-        "Total Performance": 1.2
+        "Estimated Cost": 762500.0,
+        "Estimated Performance": 4.444444444444445
     },
     {
         "Name": "",
@@ -293,8 +293,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 787500.0,
-        "Total Performance": 1.2
+        "Estimated Cost": 787500.0,
+        "Estimated Performance": 4.444444444444445
     },
     {
         "Name": "",
@@ -304,8 +304,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 737500.0,
-        "Total Performance": 1.2
+        "Estimated Cost": 737500.0,
+        "Estimated Performance": 4.444444444444445
     },
     {
         "Name": "",
@@ -315,8 +315,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 787500.0,
-        "Total Performance": 1.1
+        "Estimated Cost": 787500.0000000001,
+        "Estimated Performance": 4.583333333333333
     },
     {
         "Name": "",
@@ -326,8 +326,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 737500.0,
-        "Total Performance": 1.1
+        "Estimated Cost": 737500.0,
+        "Estimated Performance": 4.583333333333333
     },
     {
         "Name": "",
@@ -337,8 +337,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 762500.0,
-        "Total Performance": 1.1
+        "Estimated Cost": 762500.0,
+        "Estimated Performance": 4.583333333333333
     },
     {
         "Name": "",
@@ -348,8 +348,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 712500.0,
-        "Total Performance": 1.1
+        "Estimated Cost": 712500.0,
+        "Estimated Performance": 4.583333333333333
     },
     {
         "Name": "",
@@ -359,8 +359,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 175000.0,
-        "Total Performance": 2.8
+        "Estimated Cost": 175000.0,
+        "Estimated Performance": 1.5555555555555556
     },
     {
         "Name": "",
@@ -370,8 +370,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 125000.00000000003,
-        "Total Performance": 2.8
+        "Estimated Cost": 125000.00000000003,
+        "Estimated Performance": 1.5555555555555556
     },
     {
         "Name": "",
@@ -381,8 +381,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 150000.0,
-        "Total Performance": 2.8
+        "Estimated Cost": 150000.0,
+        "Estimated Performance": 1.5555555555555556
     },
     {
         "Name": "",
@@ -392,8 +392,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 100000.0,
-        "Total Performance": 2.8
+        "Estimated Cost": 100000.0,
+        "Estimated Performance": 1.5555555555555556
     },
     {
         "Name": "",
@@ -403,8 +403,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 200000.0,
-        "Total Performance": 2.5
+        "Estimated Cost": 200000.0,
+        "Estimated Performance": 2.5
     },
     {
         "Name": "",
@@ -414,8 +414,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 150000.00000000003,
-        "Total Performance": 2.5
+        "Estimated Cost": 150000.00000000003,
+        "Estimated Performance": 2.5
     },
     {
         "Name": "",
@@ -425,8 +425,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 175000.0,
-        "Total Performance": 2.5
+        "Estimated Cost": 175000.0,
+        "Estimated Performance": 2.5
     },
     {
         "Name": "",
@@ -436,8 +436,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 125000.0,
-        "Total Performance": 2.5
+        "Estimated Cost": 125000.0,
+        "Estimated Performance": 2.5
     },
     {
         "Name": "",
@@ -447,8 +447,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 187500.0,
-        "Total Performance": 2.7
+        "Estimated Cost": 187500.0,
+        "Estimated Performance": 1.6666666666666667
     },
     {
         "Name": "",
@@ -458,8 +458,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 137500.0,
-        "Total Performance": 2.7
+        "Estimated Cost": 137500.0,
+        "Estimated Performance": 1.6666666666666667
     },
     {
         "Name": "",
@@ -469,8 +469,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 162499.99999999997,
-        "Total Performance": 2.7
+        "Estimated Cost": 162499.99999999997,
+        "Estimated Performance": 1.6666666666666667
     },
     {
         "Name": "",
@@ -480,8 +480,8 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 112500.0,
-        "Total Performance": 2.7
+        "Estimated Cost": 112500.0,
+        "Estimated Performance": 1.6666666666666667
     },
     {
         "Name": "",
@@ -491,8 +491,8 @@
             "Onboard",
             "Onboard"
         ],
-        "Total Cost": 162500.0,
-        "Total Performance": 2.6
+        "Estimated Cost": 162500.0,
+        "Estimated Performance": 1.8055555555555556
     },
     {
         "Name": "",
@@ -502,8 +502,8 @@
             "Onboard",
             "Offboard"
         ],
-        "Total Cost": 112500.00000000003,
-        "Total Performance": 2.6
+        "Estimated Cost": 112500.00000000003,
+        "Estimated Performance": 1.8055555555555556
     },
     {
         "Name": "",
@@ -513,8 +513,8 @@
             "Offboard",
             "Onboard"
         ],
-        "Total Cost": 137500.0,
-        "Total Performance": 2.6
+        "Estimated Cost": 137500.0,
+        "Estimated Performance": 1.8055555555555556
     },
     {
         "Name": "",
@@ -524,7 +524,7 @@
             "Offboard",
             "Offboard"
         ],
-        "Total Cost": 87500.0,
-        "Total Performance": 2.6
+        "Estimated Cost": 87500.0,
+        "Estimated Performance": 1.8055555555555556
     }
 ]

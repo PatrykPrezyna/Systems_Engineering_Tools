@@ -1,0 +1,90 @@
+[
+    {
+        "Name": "Velys J&J",
+        "Selected Options": [
+            "On Bed",
+            "Imageless",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000.0,
+        "Estimated Performance": 1.0
+    },
+    {
+        "Name": "ROSA",
+        "Selected Options": [
+            "Free Standing",
+            "CT Scan",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 700000.0,
+        "Estimated Performance": 1.3
+    },
+    {
+        "Name": "MAKO",
+        "Selected Options": [
+            "Free Standing",
+            "X-ray",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 1500000.0,
+        "Estimated Performance": 1.5
+    },
+    {
+        "Name": "TSolution One",
+        "Selected Options": [
+            "Free Standing",
+            "X-ray",
+            "Onboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 1000000,
+        "Estimated Performance": 1.4
+    },
+    {
+        "Name": "Tmini",
+        "Selected Options": [
+            "Free Standing",
+            "X-ray",
+            "Offboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.6
+    },
+    {
+        "Name": "Improved Velys J&J",
+        "Selected Options": [
+            "Free Standing",
+            "X-ray",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Performance": 1.2
+    },
+    {
+        "Name": "Sterile Velys J&J",
+        "Selected Options": [
+            "Free Standing",
+            "X-ray",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 400000,
+        "Estimated Performance": 1.5
+    },
+    {
+        "Name": "Improved Tmini",
+        "Selected Options": [
+            "Free Standing",
+            "MRI",
+            "Onboard",
+            "Onboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Performance": 0.8
+    }
+]
