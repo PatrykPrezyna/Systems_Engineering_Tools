@@ -3,6 +3,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 import combine_plots
 
+def is_efficient_efficient(points, min_dim=0, max_dim=1):
+    """
+    Find the pareto-efficient points
+    :param costs: An (n_points, n_costs) array
+    :return: A (n_points, ) boolean array, indicating whether each point is Pareto efficient
+    """
+    is_efficient = np.ones(points.shape[0], dtype = bool)
+    for i, point in enumerate(points):
+        if is_efficient[i]:
+            # Check if any other point dominates this point
+            dominates = (points[:, min_dim] <= point[min_dim]) & (points[:, max_dim] >= point[max_dim])
+            dominates[i] = False  # A point doesn't dominate itself
+            is_efficient[i] = ~np.any(dominates & (
+                (points[:, min_dim] < point[min_dim]) | (points[:, max_dim] > point[max_dim])
+            ))
+
+    return points[is_efficient]
+
 # Load designs.json
 with open('designs.json', 'r') as file:
 #with open('designs_manual.json', 'r') as file:
@@ -15,7 +33,7 @@ points = np.array(list(zip(costs, performances)))
 utopia_point = [min(costs), max(performances)]
 
 
-reference_color = ['blue','yellow','red', "black", "yellow", "violet", "grey"]# for each option
+reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
 decisions = ["Cutting Plane Control Method", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 if len(decisions) != len(designs[1]['Selected Options']):#test if the number of decisison is correct
     print("ERORR !!!!!!!!!!!!")
@@ -39,8 +57,11 @@ for j in range(len(designs[1]['Selected Options'])):
                 label_name = names[i]
                 ax.text(costs[i], performances[i], label_name)
     plt.scatter(*utopia_point, c='green', s=100, label='Utopia Point')
-    # #plt.plot(pareto_points[:, 0], pareto_points[:, 1], 'r--', label='Pareto Frontier')
-    # #plt.scatter(pareto_points[:, 0], pareto_points[:, 1], c='red', label='Pareto Points')
+    pareto_points = is_efficient_efficient(points)
+    print(pareto_points)
+    xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
+    plt.plot(xs, ys, 'r--', label='Pareto Frontier')
+    plt.scatter(pareto_points[:, 0], pareto_points[:, 1], facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
     
 
     # Add labels and title
