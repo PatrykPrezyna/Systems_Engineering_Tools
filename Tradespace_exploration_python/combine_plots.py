@@ -8,6 +8,8 @@ def get_concat_v():
     image4 = Image.open(r'Tradespace3.png')
     image5 = Image.open(r'Tradespace4.png')
     image6 = Image.open(r'Tradespace5.png')
+    image7 = Image.open(r'Tradespace6.png')
+    image8 = Image.open(r'Tradespace7.png')
 
     im1 = image1.convert('RGB')
     im2 = image2.convert('RGB')
@@ -15,14 +17,18 @@ def get_concat_v():
     im4 = image4.convert('RGB')
     im5 = image5.convert('RGB')
     im6 = image6.convert('RGB')
+    im7 = image7.convert('RGB')
+    im8 = image8.convert('RGB')
 
-    dst = Image.new('RGB', (im1.width+im2.width, im1.height + im3.height + im5.height))
+    dst = Image.new('RGB', (im1.width+im2.width, im1.height + im3.height + im5.height+ im7.height))
     dst.paste(im1, (0, 0))
     dst.paste(im2, (im1.width, 0))
     dst.paste(im3, (0, im1.height))
     dst.paste(im4, (im2.width, im1.height))
     dst.paste(im5, (0, im1.height+im1.height))
     dst.paste(im6, (im2.width, im1.height+im1.height))
+    dst.paste(im7, (0, im1.height+im1.height+im1.height))
+    dst.paste(im8, (im2.width, im1.height+im1.height+im1.height))
     dst.save('Tradespaces.png')
     return True
 

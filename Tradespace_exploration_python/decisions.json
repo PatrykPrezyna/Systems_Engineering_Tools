@@ -1,0 +1,66 @@
+
+    {
+        "Decision": "surgeon control level",
+        "Options": [
+            {"name": "Orientation", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            {"name": "Orientation + depth", "cost_factor": 200000, "setting_up_time_factor": 10, "accuracy_factor": 0.5, "experience_factor": -2.0},
+            {"name": "only support ", "cost_factor": -100000, "setting_up_time_factor": 0, "accuracy_factor": 2, "experience_factor": 4.0},
+            {"name": "Only Information", "cost_factor": -100000, "setting_up_time_factor": 0, "accuracy_factor": 2, "experience_factor": 2.0}
+        ]
+    },
+    {
+        "Decision": "Robot Mount Type",
+        "Options": [
+            {"name": "On Bed", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            {"name": "Free Standing", "cost_factor": 300000, "setting_up_time_factor": -10, "accuracy_factor": 0.5, "experience_factor": 3.0},
+            {"name": "Hand Held", "cost_factor": -50000, "setting_up_time_factor": -10, "accuracy_factor": 2.0, "experience_factor": 5.0}
+        ]
+    },
+    {
+        "Decision": "Pre-op Imaging Type",
+        "Options": [
+            {"name": "CT Scan", "cost_factor": 50000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},
+            {"name": "Imageless", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            {"name": "X-ray", "cost_factor": 70000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},
+            {"name": "MRI", "cost_factor": 60000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0}
+
+        ]
+    },
+    {
+        "Decision": "Procedure Imaging Type",
+        "Options": [
+            {"name": "3D Volumetric imaging", "cost_factor": 200000, "setting_up_time_factor": -15, "accuracy_factor": 1.0, "experience_factor": 2.0},
+
+            {"name": "IR Markers", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            {"name": "accelometers, giroscope", "cost_factor": -50000, "setting_up_time_factor": 10, "accuracy_factor": 1.0, "experience_factor": 0.0}
+        ]
+    },
+    {
+        "Decision": "Sterilisability",
+        "Options": [
+            {"name": "entire device", "cost_factor": 100000, "setting_up_time_factor": -25, "accuracy_factor": 1.0, "experience_factor": 2.0},
+            {"name": "tool only", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            {"name": "nothing", "cost_factor": 0, "setting_up_time_factor": 15, "accuracy_factor": 1.0, "experience_factor": -3.0}
+        ]
+    },
+    {
+        "Decision": "User Input type",
+        "Options": [
+            {"name": "surgeron only", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 3.0},
+            {"name": "with OR stuff", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0}
+        ]
+    },
+    {
+        "Decision": "Onboard vs Offboard Power",
+        "Options": [
+            {"name": "Onboard", "cost_factor": 20000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            {"name": "Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0}
+        ]
+    },
+    {
+        "Decision": "Onboard vs Offboard Computing",
+        "Options": [
+            {"name": "Onboard", "cost_factor": 30000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            {"name": "Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0}
+        ]
+    }

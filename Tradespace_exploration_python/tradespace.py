@@ -34,7 +34,7 @@ utopia_point = [min(costs), max(performances)]
 
 
 reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
-decisions = ["Cutting Plane Control Method", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
+decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 if len(decisions) != len(designs[1]['Selected Options']):#test if the number of decisison is correct
     print("ERORR !!!!!!!!!!!!")
 for j in range(len(designs[1]['Selected Options'])):

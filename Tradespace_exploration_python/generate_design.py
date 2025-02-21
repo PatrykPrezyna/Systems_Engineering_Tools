@@ -5,53 +5,70 @@ import math
 # JSON data
 data = [
     {
-        "Decision": "Cutting Plane Control Method",
+        "Decision": "surgeon control level",
         "Options": [
-            {"name": "Orientation", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0},#reference
-            {"name": "Orientation + depth", "cost_factor": 200000, "setting_up_time_factor": 10, "accuracy_factor": 0.5},
-            {"name": "Only Information", "cost_factor": -100000, "setting_up_time_factor": 0, "accuracy_factor": 2},
+            {"name": "Orientation", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference 1-10
+            {"name": "Orientation + depth", "cost_factor": 200000, "setting_up_time_factor": 10, "accuracy_factor": 0.5, "experience_factor": -2.0},#surgeron want more control not less
+            {"name": "only support ", "cost_factor": -100000, "setting_up_time_factor": 0, "accuracy_factor": 2, "experience_factor": 4.0},
+            {"name": "Only Information", "cost_factor": -100000, "setting_up_time_factor": 0, "accuracy_factor": 2, "experience_factor": 2.0},
         ],
     },
     {
         "Decision": "Robot Mount Type",
         "Options": [
-            {"name": "On Bed", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0},#reference
-            {"name": "Free Standing", "cost_factor": 300000, "setting_up_time_factor": -10, "accuracy_factor": 0.5},
-            {"name": "Hand Held", "cost_factor": -50000, "setting_up_time_factor": -10, "accuracy_factor": 2.0},
+            {"name": "On Bed", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference
+            {"name": "Free Standing", "cost_factor": 300000, "setting_up_time_factor": -10, "accuracy_factor": 0.5, "experience_factor": 3.0},#flor space, more settings, toller or shorter person
+            {"name": "Hand Held", "cost_factor": -50000, "setting_up_time_factor": -10, "accuracy_factor": 2.0, "experience_factor": 5.0},
         ],
     },
     {
         "Decision": "Pre-op Imaging Type",
         "Options": [
-            {"name": "CT Scan", "cost_factor": 50000, "setting_up_time_factor": 0, "accuracy_factor": 0.8},#rationale: software incorporating the images costs
-            {"name": "Imageless", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0},#reference
-            {"name": "X-ray", "cost_factor": 70000, "setting_up_time_factor": 0, "accuracy_factor": 0.8},
-            {"name": "MRI", "cost_factor": 60000, "setting_up_time_factor": 0, "accuracy_factor": 0.8},
+            {"name": "CT Scan", "cost_factor": 50000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},#rationale: software incorporating the images costs
+            {"name": "Imageless", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference #assume the surgeron is making the marker measuring
+            {"name": "X-ray", "cost_factor": 70000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},
+            {"name": "MRI", "cost_factor": 60000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},
+            #idea: lets reduce the decisison to image less or "X-ray or CT scan or MRI"
         ],
     },
     {
         "Decision": "Procedure Imaging Type",
         "Options": [
-            {"name": "3D Volumetric imaging", "cost_factor": 200000, "setting_up_time_factor": -15, "accuracy_factor": 1.0},
-            # {"name": "Electro Magnetic", "cost_factor": 1.0, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0}, # reaserach needed
-            {"name": "IR Markers", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0},#reference
-            {"name": "accelometers, giroscope", "cost_factor": -50000, "setting_up_time_factor": 10, "accuracy_factor": 1.0},
+            {"name": "3D Volumetric imaging", "cost_factor": 200000, "setting_up_time_factor": -15, "accuracy_factor": 1.0, "experience_factor": 2.0},#in case it is perfect 
+            # {"name": "Electro Magnetic", "cost_factor": 1.0, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0, "experience_factor": 1.0}, # reaserach needed
+            {"name": "IR Markers", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference
+            {"name": "accelometers, giroscope", "cost_factor": -50000, "setting_up_time_factor": 10, "accuracy_factor": 1.0, "experience_factor": 0.0},
+        ],
+    },
+    {
+        "Decision": "Sterilisability",
+        "Options": [
+            {"name": "entire device", "cost_factor": 100000, "setting_up_time_factor": -25, "accuracy_factor": 1.0, "experience_factor": 2.0},
+            {"name": "tool only", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference
+            {"name": "nothing", "cost_factor": 0, "setting_up_time_factor": 15, "accuracy_factor": 1.0, "experience_factor": -3.0},
+        ],
+    },
+    {
+        "Decision": "User Input type",
+        "Options": [
+            {"name": "surgeron only", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 3.0},
+            {"name": "with OR stuff", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference
         ],
     },
     {
         "Decision": "Onboard vs Offboard Power",
         "Options": [
-            {"name": "Onboard", "cost_factor": 20000, "setting_up_time_factor": 0, "accuracy_factor": 1.0},
-            {"name": "Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0},#reference
+            {"name": "Onboard", "cost_factor": 20000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            {"name": "Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference
         ],
     },
     {
         "Decision": "Onboard vs Offboard Computing",
         "Options": [
-            {"name": "Onboard", "cost_factor": 30000, "setting_up_time_factor": 0, "accuracy_factor": 1.0},
-            {"name": "Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0},#reference
+            {"name": "Onboard", "cost_factor": 30000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            {"name": "Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference
         ],
-    },
+    }
 ]
 
 # Extract all decisions and their options
@@ -63,32 +80,35 @@ combinations = list(itertools.product(*decisions))
 # Calculate cost and performance for each combination
 designs = []
 for combination in combinations:
-
+    # COST
     reference_cost=250000 #[$] Cost of the Valys J&J robot, how much does the 
     total_cost = reference_cost+sum(option["cost_factor"] for option in combination)
-
+    # EXPIRIENCE               )
+    reference_experience_factor=5 
+    total_experience_factor = reference_experience_factor+sum(option["experience_factor"] for option in combination)
+    # SETTING UP TIME
     reference_setting_up_time=30 #[min] assumption setting up time  of the J&J robot
     total_setting_up_time = reference_setting_up_time+sum(option["setting_up_time_factor"] for option in combination)
+    #ACCURACY
     reference_accuracy_factor = 0.5#[mm] cutting accuracy
     total_accuracy_factor = reference_accuracy_factor
     for option in combination:
         total_accuracy_factor = total_accuracy_factor*option["accuracy_factor"]
-
-    selected_options = [option["name"] for option in combination]
-    total_performance = (total_setting_up_time/reference_setting_up_time+reference_accuracy_factor/total_accuracy_factor)/2
+    # PERFORMENCE
+    total_performance = (total_setting_up_time/reference_setting_up_time+reference_accuracy_factor/total_accuracy_factor+total_experience_factor/reference_experience_factor)/3
+    
     name = ""
-    
-    
-    if selected_options == ["Orientation + depth","Free Standing","CT Scan","IR Markers","Onboard","Onboard"]:
+    selected_options = [option["name"] for option in combination]
+    if selected_options == ["Orientation + depth","Free Standing","CT Scan","IR Markers","tool only","with OR stuff","Onboard","Onboard"]:
         name = "ROSA"
         print(name + " -total_cost: " + str(total_cost) + " -total_performance: " + str(total_performance) + " -total_setting_up_time: " + str(total_setting_up_time) + " -total_accuracy_factor: " + str(total_accuracy_factor))
-    if selected_options == ["Orientation + depth","Free Standing","X-ray","IR Markers","Onboard","Onboard"]:
+    if selected_options == ["Orientation + depth","Free Standing","X-ray","IR Markers","tool only","with OR stuff","Onboard","Onboard"]:
         name = "MAKO"
         print(name + " -total_cost: " + str(total_cost) + " -total_performance: " + str(total_performance) + " -total_setting_up_time: " + str(total_setting_up_time) + " -total_accuracy_factor: " + str(total_accuracy_factor))
-    if selected_options == ["Orientation","On Bed","Imageless","IR Markers","Offboard","Offboard"]:
+    if selected_options == ["Orientation","On Bed","Imageless","IR Markers","tool only","with OR stuff","Offboard","Offboard"]:
         name = "J&J"
         print(name + " -total_cost: " + str(total_cost) + " -total_performance: " + str(total_performance) + " -total_setting_up_time: " + str(total_setting_up_time) + " -total_accuracy_factor: " + str(total_accuracy_factor))
-    if selected_options == ["Orientation","Hand Held","X-ray","IR Markers","Offboard","Offboard"]:
+    if selected_options == ["Orientation","Hand Held","X-ray","IR Markers","tool only","with OR stuff","Offboard","Offboard"]:
         name = "Tmini"
         print(name + " -total_cost: " + str(total_cost) + " -total_performance: " + str(total_performance) + " -total_setting_up_time: " + str(total_setting_up_time) + " -total_accuracy_factor: " + str(total_accuracy_factor))
 
