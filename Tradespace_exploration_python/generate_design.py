@@ -26,8 +26,8 @@ data = [
         "Options": [
             {"name": "CT Scan", "cost_factor": 50000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},#rationale: software incorporating the images costs
             {"name": "Imageless", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference #assume the surgeron is making the marker measuring
-            {"name": "X-ray", "cost_factor": 70000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},
-            {"name": "MRI", "cost_factor": 60000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},
+            # {"name": "X-ray", "cost_factor": 70000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},
+            # {"name": "MRI", "cost_factor": 60000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},
             #idea: lets reduce the decisison to image less or "X-ray or CT scan or MRI"
         ],
     },
@@ -45,7 +45,7 @@ data = [
         "Options": [
             {"name": "entire device", "cost_factor": 100000, "setting_up_time_factor": -25, "accuracy_factor": 1.0, "experience_factor": 2.0},
             {"name": "tool only", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference
-            {"name": "nothing", "cost_factor": 0, "setting_up_time_factor": 15, "accuracy_factor": 1.0, "experience_factor": -3.0},
+            # {"name": "nothing", "cost_factor": 0, "setting_up_time_factor": 15, "accuracy_factor": 1.0, "experience_factor": -3.0},
         ],
     },
     {
@@ -58,14 +58,14 @@ data = [
     {
         "Decision": "Onboard vs Offboard Power",
         "Options": [
-            {"name": "Onboard", "cost_factor": 20000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            # {"name": "Onboard", "cost_factor": 20000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
             {"name": "Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference
         ],
     },
     {
         "Decision": "Onboard vs Offboard Computing",
         "Options": [
-            {"name": "Onboard", "cost_factor": 30000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
+            # {"name": "Onboard", "cost_factor": 30000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
             {"name": "Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},#reference
         ],
     }
@@ -116,7 +116,7 @@ for combination in combinations:
         name = "MAKO"
         print(name + " -total_cost: " + str(total_cost) + " -total_performance: " + str(total_performance) + " -total_setting_up_time: " + str(total_setting_up_time) + " -total_accuracy_factor: " + str(total_accuracy_factor))
     if selected_options == ["Orientation","On Bed","Imageless","IR Markers","tool only","with OR stuff","Offboard","Offboard"]:
-        name = "J&J"
+        name = "Valys_J&J"
         print(name + " -total_cost: " + str(total_cost) + " -total_performance: " + str(total_performance) + " -total_setting_up_time: " + str(total_setting_up_time) + " -total_accuracy_factor: " + str(total_accuracy_factor))
     if selected_options == ["Orientation","Hand Held","X-ray","IR Markers","tool only","with OR stuff","Offboard","Offboard"]:
         name = "Tmini"

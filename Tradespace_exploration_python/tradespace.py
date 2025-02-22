@@ -23,8 +23,11 @@ def is_efficient_efficient(points, min_dim=0, max_dim=1):
 
 # Load designs.json
 with open('designs.json', 'r') as file:
-#with open('reference_designs.json', 'r') as file:
     designs = json.load(file)
+
+with open('reference_designs.json', 'r') as file:
+    reference_designs = json.load(file)
+
 
 # Define the utopia point (ideal but unattainable point)
 costs = [design['Estimated Cost'] for design in designs]
@@ -65,6 +68,16 @@ for j in range(len(designs[1]['Selected Options'])):
                 label_name = names[i]
                 ax.text(costs[i], y_values[i], label_name)
     plt.scatter(*utopia_point, c='green', s=100, label='Utopia Point')
+    #for ref design
+    costs = [design['Estimated Cost'] for design in reference_designs]
+    y_values = [design[y_axis_values[factor]] for design in reference_designs]
+    names = [design['Name'] for design in reference_designs]
+    plt.scatter(costs, y_values, c='violet',s=150, label="reference designs")
+    # add label for each design point
+    for i, cost in enumerate(costs):
+        if names[i] != "":
+            label_name = names[i]
+            ax.text(costs[i], y_values[i], label_name)  
 
     pareto = is_efficient_efficient(points)
     pareto_points = pareto[0]
