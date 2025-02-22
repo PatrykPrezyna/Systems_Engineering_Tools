@@ -86,16 +86,26 @@ for combination in combinations:
     # SETTING UP TIME
     reference_setting_up_time=30 #[min] assumption setting up time  of the J&J robot
     total_setting_up_time = reference_setting_up_time+sum(option["setting_up_time_factor"] for option in combination)
+    if total_setting_up_time > 120:
+        total_setting_up_time = 120
+    if total_setting_up_time < 10:
+        total_setting_up_time = 10
     #ACCURACY
     reference_accuracy_factor = 0.5#[mm] cutting accuracy
     total_accuracy_factor = reference_accuracy_factor
     for option in combination:
         total_accuracy_factor = total_accuracy_factor*option["accuracy_factor"]
+    if total_accuracy_factor < 0.05:
+        total_accuracy_factor = 0.5        
     # EXPIRIENCE               )
-    reference_experience_factor=5 
+    reference_experience_factor=5 #assumption expirience of the J&J robot
     total_experience_factor = reference_experience_factor+sum(option["experience_factor"] for option in combination)
+    if total_experience_factor > 10:
+        total_experience_factor = 10
+    if total_experience_factor < 0:
+        total_experience_factor = 0
     # PERFORMENCE
-    total_performance = (total_setting_up_time/reference_setting_up_time+reference_accuracy_factor/total_accuracy_factor+total_experience_factor/reference_experience_factor)/3
+    total_performance = (reference_setting_up_time/total_setting_up_time+reference_accuracy_factor/total_accuracy_factor+total_experience_factor/reference_experience_factor)/3
     
     name = ""
     selected_options = [option["name"] for option in combination]
