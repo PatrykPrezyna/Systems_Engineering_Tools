@@ -1,0 +1,686 @@
+[
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 350000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.5,
+        "Estimated Experience": 10.0,
+        "Estimated Performance": 2.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 650000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.2,
+        "Estimated Experience": 10,
+        "Estimated Performance": 2.5
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 600000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.25,
+        "Estimated Experience": 10,
+        "Estimated Performance": 2.3333333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 600000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.25,
+        "Estimated Experience": 10.0,
+        "Estimated Performance": 2.3333333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.8,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.8,
+        "Estimated Experience": 10.0,
+        "Estimated Performance": 1.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 1.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.8333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 1.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.8333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "CT Scan",
+            "3D Volumetric imaging",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 1100000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.1,
+        "Estimated Experience": 10,
+        "Estimated Performance": 3.3333333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "CT Scan",
+            "IR Markers",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 900000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.1,
+        "Estimated Experience": 9.0,
+        "Estimated Performance": 3.266666666666667
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "IR Markers",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 850000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.125,
+        "Estimated Experience": 10,
+        "Estimated Performance": 3.0
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Free Standing",
+            "Imageless",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 800000,
+        "Estimated Setting up Time": 15,
+        "Estimated Accuracy": 0.125,
+        "Estimated Experience": 10,
+        "Estimated Performance": 2.6666666666666665
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Orientation + depth",
+            "Hand Held",
+            "CT Scan",
+            "IR Markers",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.4,
+        "Estimated Experience": 10,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.8,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 1.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.8333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 1.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.8333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.4,
+        "Estimated Experience": 10,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.4,
+        "Estimated Experience": 10,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 1.6,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.7708333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 1.6,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.7708333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "tool only",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Setting up Time": 20,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.25
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "tool only",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Setting up Time": 20,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.25
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "tool only",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 50000,
+        "Estimated Setting up Time": 30,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.0833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "only support ",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "tool only",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 50000,
+        "Estimated Setting up Time": 30,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.0833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "CT Scan",
+            "IR Markers",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 300000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.8,
+        "Estimated Experience": 10.0,
+        "Estimated Performance": 1.875
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "On Bed",
+            "Imageless",
+            "IR Markers",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 250000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 1.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.8333333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.4,
+        "Estimated Experience": 10,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Free Standing",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 550000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 0.4,
+        "Estimated Experience": 10.0,
+        "Estimated Performance": 2.0833333333333335
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 1.6,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.7708333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "CT Scan",
+            "accelometers, giroscope",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 200000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 1.6,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.7708333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "tool only",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Setting up Time": 20,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.25
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "IR Markers",
+            "tool only",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 100000,
+        "Estimated Setting up Time": 20,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.25
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "entire device",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "entire device",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 150000,
+        "Estimated Setting up Time": 10,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.75
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "tool only",
+            "surgeron only",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 50000,
+        "Estimated Setting up Time": 30,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.0833333333333333
+    },
+    {
+        "Name": "",
+        "Selected Options": [
+            "Only Information",
+            "Hand Held",
+            "Imageless",
+            "accelometers, giroscope",
+            "tool only",
+            "with OR stuff",
+            "Offboard",
+            "Offboard"
+        ],
+        "Estimated Cost": 50000,
+        "Estimated Setting up Time": 30,
+        "Estimated Accuracy": 2.0,
+        "Estimated Experience": 10,
+        "Estimated Performance": 1.0833333333333333
+    }
+]

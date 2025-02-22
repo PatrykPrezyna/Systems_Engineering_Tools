@@ -19,7 +19,7 @@ def is_efficient_efficient(points, min_dim=0, max_dim=1):
                 (points[:, min_dim] < point[min_dim]) | (points[:, max_dim] > point[max_dim])
             ))
 
-    return points[is_efficient]
+    return [points[is_efficient], is_efficient]
 
 # Load designs.json
 with open('designs.json', 'r') as file:
@@ -65,8 +65,9 @@ for j in range(len(designs[1]['Selected Options'])):
                 label_name = names[i]
                 ax.text(costs[i], y_values[i], label_name)
     plt.scatter(*utopia_point, c='green', s=100, label='Utopia Point')
-    pareto_points = is_efficient_efficient(points)
-    print(pareto_points)
+
+    pareto = is_efficient_efficient(points)
+    pareto_points = pareto[0]
     xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
     plt.plot(xs, ys, 'r--', label='Pareto Frontier')
     plt.scatter(pareto_points[:, 0], pareto_points[:, 1], facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
@@ -83,6 +84,30 @@ for j in range(len(designs[1]['Selected Options'])):
 
     file_name = "Tradespace" + str(j) + ".png"
     plt.savefig(file_name)
+
+pareto_designs = []
+unique_pareto_designs = []
+unique_performence = []
+for i, is_pareto in enumerate(pareto[1]):
+    if is_pareto:
+        pareto_designs.append(designs[i])
+        print(designs[i]["Estimated Performance"])
+        if designs[i]["Estimated Performance"] not in  unique_performence:
+            unique_pareto_designs.append(designs[i])
+            unique_performence.append(designs[i]["Estimated Performance"])
+
+        # print(is_pareto)
+        # print(designs[i])
+
+
+print(len(pareto_designs))
+print(len(unique_pareto_designs))
+
+with open("pareto_designs.json", "w") as json_file:
+    json.dump(pareto_designs, json_file, indent=4)
+
+with open("unique_pareto_designs.json", "w") as json_file:
+    json.dump(unique_pareto_designs, json_file, indent=4)
 
 combine_plots.get_concat_v(y_axis_values[factor])
 plt.close('all')
