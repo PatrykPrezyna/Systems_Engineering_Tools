@@ -83,9 +83,6 @@ for combination in combinations:
     # COST
     reference_cost=250000 #[$] Cost of the Valys J&J robot, how much does the 
     total_cost = reference_cost+sum(option["cost_factor"] for option in combination)
-    # EXPIRIENCE               )
-    reference_experience_factor=5 
-    total_experience_factor = reference_experience_factor+sum(option["experience_factor"] for option in combination)
     # SETTING UP TIME
     reference_setting_up_time=30 #[min] assumption setting up time  of the J&J robot
     total_setting_up_time = reference_setting_up_time+sum(option["setting_up_time_factor"] for option in combination)
@@ -94,6 +91,9 @@ for combination in combinations:
     total_accuracy_factor = reference_accuracy_factor
     for option in combination:
         total_accuracy_factor = total_accuracy_factor*option["accuracy_factor"]
+    # EXPIRIENCE               )
+    reference_experience_factor=5 
+    total_experience_factor = reference_experience_factor+sum(option["experience_factor"] for option in combination)
     # PERFORMENCE
     total_performance = (total_setting_up_time/reference_setting_up_time+reference_accuracy_factor/total_accuracy_factor+total_experience_factor/reference_experience_factor)/3
     
@@ -117,6 +117,9 @@ for combination in combinations:
         "Name":name,
         "Selected Options": selected_options,
         "Estimated Cost": total_cost,
+        "Estimated Setting up Time": total_setting_up_time,
+        "Estimated Accuracy": total_accuracy_factor,
+        "Estimated Experience": total_experience_factor,
         "Estimated Performance": total_performance,
     }
     designs.append(design)

@@ -1,6 +1,6 @@
 from PIL import Image
 
-def get_concat_v():
+def get_concat_v(name):
     print("test")
     image1 = Image.open(r'Tradespace0.png')
     image2 = Image.open(r'Tradespace1.png')
@@ -29,7 +29,7 @@ def get_concat_v():
     dst.paste(im6, (im2.width, im1.height+im1.height))
     dst.paste(im7, (0, im1.height+im1.height+im1.height))
     dst.paste(im8, (im2.width, im1.height+im1.height+im1.height))
-    dst.save('Tradespaces.png')
+    dst.save('Tradespaces_' + name + '.png')
     return True
 
 
