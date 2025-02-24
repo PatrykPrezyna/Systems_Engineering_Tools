@@ -2,6 +2,7 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt
 import combine_plots
+import combine_plots_vertical
 
 def is_efficient_efficient(points, min_dim=0, max_dim=1):
     """
@@ -27,7 +28,7 @@ with open('designs.json', 'r') as file:
 
 with open('reference_designs.json', 'r') as file:
     reference_designs = json.load(file)
-
+designs = reference_designs
 
 # Define the utopia point (ideal but unattainable point)
 costs = [design['Estimated Cost'] for design in designs]
@@ -61,23 +62,25 @@ for j in range(len(designs[1]['Selected Options'])):
         y_values = [design[y_axis_values[factor]] for design in designs if design['Selected Options'][j]==option]
         names = [design['Name'] for design in designs if design['Selected Options'][j]==option]
         plot_label = str(option)
-        plt.scatter(costs, y_values, c=reference_color[i], label=plot_label)
+        plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=6)
         # add label for each design point
-        for i, cost in enumerate(costs):
-            if names[i] != "":
-                label_name = names[i]
-                ax.text(costs[i], y_values[i], label_name)
-    plt.scatter(*utopia_point, c='green', s=100, label='Utopia Point')
+        # for i, cost in enumerate(costs):
+        #     if names[i] != "":
+        #         label_name = names[i]
+        #         print(label_name)
+        #         ax.text(costs[i], y_values[i], label_name)
+    plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
     #for ref design
     costs = [design['Estimated Cost'] for design in reference_designs]
     y_values = [design[y_axis_values[factor]] for design in reference_designs]
-    names = [design['Name'] for design in reference_designs]
-    plt.scatter(costs, y_values, c='violet',s=150, label="reference designs")
+    names = [design['Name'].partition("|")[0] for design in reference_designs]
+    plt.scatter(costs, y_values, c='orange',s=100, marker="X", label="reference designs")
     # add label for each design point
     for i, cost in enumerate(costs):
         if names[i] != "":
-            label_name = names[i]
-            ax.text(costs[i], y_values[i], label_name)  
+            label_name = "" + str(names[i])
+            print(label_name)
+            ax.text(costs[i], y_values[i], label_name, size=13)  
 
     pareto = is_efficient_efficient(points)
     pareto_points = pareto[0]
@@ -109,12 +112,9 @@ for i, is_pareto in enumerate(pareto[1]):
             unique_pareto_designs.append(designs[i])
             unique_performence.append(designs[i]["Estimated Performance"])
 
-        # print(is_pareto)
-        # print(designs[i])
-
 
 print(len(pareto_designs))
-print(len(unique_pareto_designs))
+print("unique pareto designs: " + str(len(unique_pareto_designs)))
 
 with open("pareto_designs.json", "w") as json_file:
     json.dump(pareto_designs, json_file, indent=4)
@@ -122,7 +122,7 @@ with open("pareto_designs.json", "w") as json_file:
 with open("unique_pareto_designs.json", "w") as json_file:
     json.dump(unique_pareto_designs, json_file, indent=4)
 
-combine_plots.get_concat_v(y_axis_values[factor])
+combine_plots_vertical.get_concat_v(y_axis_values[factor])
 plt.close('all')
 # Show the plot
 # plt.show()
