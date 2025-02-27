@@ -109,7 +109,8 @@ for combination in combinations:
     total_performance = ((120-reference_setting_up_time)/110+(2.0-total_accuracy_factor)/1.95+total_experience_factor/10)/3
     
     name = ""
-    selected_options = [option["name"].partition("|")[0] for option in combination]
+    selected_options = [option["name"] for option in combination]
+    #selected_options = [option["name"].partition("|")[0] for option in combination]
     if selected_options == ["Orientation + depth","Free Standing","Pre-Op imaging needed","IR Markers","tool only","with OR stuff","Onboard","Onboard"]:
         name = "ROSA"
         print(name + " -total_cost: " + str(total_cost) + " -total_performance: " + str(total_performance) + " -total_setting_up_time: " + str(total_setting_up_time) + " -total_accuracy_factor: " + str(total_accuracy_factor))

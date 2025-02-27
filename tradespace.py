@@ -34,8 +34,8 @@ with open('reference_designs.json', 'r') as file:
 
 
 #config:
-show_selected_designs = True
-show_generated_designs = False
+show_selected_designs = False
+show_generated_designs = True
 show_reference_designs = True
 #designs = reference_designs
 
@@ -83,7 +83,8 @@ for j in range(len(designs[1]['Selected Options'])):
     if show_selected_designs:
         costs = [design['Estimated Cost'] for design in selected_designs]
         y_values = [design[y_axis_values[factor]] for design in selected_designs]
-        names = [design['Name'].partition("|")[0] for design in selected_designs]
+        names = [design['Name'] for design in selected_designs]
+        #names = [design['Name'].partition("|")[0] for design in selected_designs]
         plt.scatter(costs, y_values, c='red',s=100, marker="X", label="selected designs")
         # add label for each design point
         for i, cost in enumerate(costs):
@@ -95,7 +96,8 @@ for j in range(len(designs[1]['Selected Options'])):
         #for ref design
         costs = [design['Estimated Cost'] for design in reference_designs]
         y_values = [design[y_axis_values[factor]] for design in reference_designs]
-        names = [design['Name'].partition("|")[0] for design in reference_designs]
+        names = [design['Name'] for design in reference_designs]
+        #names = [design['Name'].partition("|")[0] for design in reference_designs]
         plt.scatter(costs, y_values, c='orange',s=100, marker="X", label="reference designs")
         # add label for each design point
         for i, cost in enumerate(costs):
@@ -136,6 +138,8 @@ for i, is_pareto in enumerate(pareto[1]):
             unique_pareto_designs.append(designs[i])
             unique_performence.append(designs[i]["Estimated Performance"])
 
+
+pareto_designs.sort(key=lambda x: x['Estimated Performance'], reverse=True)
 
 print(len(pareto_designs))
 print("unique pareto designs: " + str(len(unique_pareto_designs)))
