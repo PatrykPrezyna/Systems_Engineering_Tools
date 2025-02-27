@@ -1,6 +1,7 @@
 import json
 import itertools
 import math
+import pandas as pd
 
 # JSON data
 data = [
@@ -147,3 +148,26 @@ with open("designs.json", "w") as json_file:
     json.dump(designs, json_file, indent=4)
 
 print("Designs saved to 'designs.json'")
+
+# Flatten the JSON data
+rows = []
+for decision in data:
+    decision_name = decision["Decision"]
+    for option in decision["Options"]:
+        row = {
+            "Decision": decision_name,
+            "Option Name": option["name"],
+            "Cost Factor": option["cost_factor"],
+            "Setting Up Time Factor": option["setting_up_time_factor"],
+            "Accuracy Factor": option["accuracy_factor"],
+            "Experience Factor": option["experience_factor"]
+        }
+        rows.append(row)
+
+# Create DataFrame
+df = pd.DataFrame(rows)
+
+# Save to Excel
+df.to_excel("decision_options.xlsx", index=False)
+
+print("Excel file 'decision_options.xlsx' created successfully.")
