@@ -32,12 +32,11 @@ with open('designs.json', 'r') as file:
 with open('reference_designs.json', 'r') as file:
     reference_designs = json.load(file)
 
-
-#config:
+#config
 show_selected_designs = False
 show_generated_designs = True
 show_reference_designs = True
-#designs = reference_designs
+#config
 
 # Define the utopia point (ideal but unattainable point)
 costs = [design['Estimated Cost'] for design in designs]
@@ -140,6 +139,7 @@ for i, is_pareto in enumerate(pareto[1]):
 
 
 pareto_designs.sort(key=lambda x: x['Estimated Performance'], reverse=True)
+unique_pareto_designs.sort(key=lambda x: x['Estimated Performance'], reverse=True)
 
 print(len(pareto_designs))
 print("unique pareto designs: " + str(len(unique_pareto_designs)))
