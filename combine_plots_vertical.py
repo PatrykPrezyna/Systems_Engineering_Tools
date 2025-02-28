@@ -2,14 +2,14 @@ from PIL import Image
 
 def get_concat_v(name):
     print("test")
-    image1 = Image.open(r'Tradespace0.png')
-    image2 = Image.open(r'Tradespace1.png')
-    image3 = Image.open(r'Tradespace2.png')
-    image4 = Image.open(r'Tradespace3.png')
-    image5 = Image.open(r'Tradespace4.png')
-    image6 = Image.open(r'Tradespace5.png')
-    image7 = Image.open(r'Tradespace6.png')
-    image8 = Image.open(r'Tradespace7.png')
+    image1 = Image.open(r'output_data/Tradespace0.png')
+    image2 = Image.open(r'output_data/Tradespace1.png')
+    image3 = Image.open(r'output_data/Tradespace2.png')
+    image4 = Image.open(r'output_data/Tradespace3.png')
+    image5 = Image.open(r'output_data/Tradespace4.png')
+    image6 = Image.open(r'output_data/Tradespace5.png')
+    image7 = Image.open(r'output_data/Tradespace6.png')
+    image8 = Image.open(r'output_data/Tradespace7.png')
 
     im1 = image1.convert('RGB')
     im2 = image2.convert('RGB')
@@ -29,7 +29,7 @@ def get_concat_v(name):
     dst.paste(im6, (im1.width, im1.height))
     dst.paste(im7, (im1.width+im2.width, im1.height))
     dst.paste(im8, (im1.width+im2.width+im3.width, im1.height))
-    dst.save('Tradespaces_' + name + '.png')
+    dst.save('output_data/Tradespaces_' + name + '.png')
     return True
 
 

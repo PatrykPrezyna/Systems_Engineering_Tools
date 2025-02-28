@@ -23,19 +23,21 @@ def is_efficient_efficient(points, min_dim=0, max_dim=1):
     return [points[is_efficient], is_efficient]
 
 # Load designs
-with open('selected_designs.json', 'r') as file:
+with open('input_data/selected_designs.json', 'r') as file:
     selected_designs = json.load(file)
 
-with open('designs.json', 'r') as file:
+with open('output_data/designs.json', 'r') as file:
     designs = json.load(file)
 
-with open('reference_designs.json', 'r') as file:
+with open('input_data/reference_designs.json', 'r') as file:
     reference_designs = json.load(file)
 
 #config
 show_selected_designs = False
 show_generated_designs = True
 show_reference_designs = True
+# Select metrics to plot: 0=Setting up Time, 1=Accuracy, 2=Experience, 3=Performance
+factor = 3
 #config
 
 # Define the utopia point (ideal but unattainable point)
@@ -45,14 +47,11 @@ accuracies = [design['Estimated Accuracy'] for design in designs]
 experiences = [design['Estimated Experience'] for design in designs]
 performances = [design['Estimated Performance'] for design in designs]
 
-
 y_axis_values = ['Estimated Setting up Time', 'Estimated Accuracy', 'Estimated Experience', 'Estimated Performance']
 y_axis_values_pareto = [setting_up_times, accuracies, experiences, performances]
 reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
 decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 
-
-factor = 3
 utopia_point = [min(costs), max(y_axis_values_pareto[factor])]
 points = np.array(list(zip(costs, y_axis_values_pareto[factor])))
 if len(decisions) != len(designs[1]['Selected Options']):#test if the number of decisison is correct
@@ -123,7 +122,7 @@ for j in range(len(designs[1]['Selected Options'])):
     plt.grid(True)
 
 
-    file_name = "Tradespace" + str(j) + ".png"
+    file_name = "output_data/Tradespace" + str(j) + ".png"
     plt.savefig(file_name)
 
 pareto_designs = []
@@ -144,10 +143,10 @@ unique_pareto_designs.sort(key=lambda x: x['Estimated Performance'], reverse=Tru
 print(len(pareto_designs))
 print("unique pareto designs: " + str(len(unique_pareto_designs)))
 
-with open("pareto_designs.json", "w") as json_file:
+with open("output_data/pareto_designs.json", "w") as json_file:
     json.dump(pareto_designs, json_file, indent=4)
 
-with open("unique_pareto_designs.json", "w") as json_file:
+with open("output_data/unique_pareto_designs.json", "w") as json_file:
     json.dump(unique_pareto_designs, json_file, indent=4)
 
 combine_plots_vertical.get_concat_v(y_axis_values[factor])

@@ -4,7 +4,7 @@ import math
 import pandas as pd
 
 # Load decisions, options and metrics estimations
-with open('decisions.json', 'r') as file:
+with open('input_data/decisions.json', 'r') as file:
     data = json.load(file)
 
 # Extract all decisions and their options
@@ -61,7 +61,7 @@ for combination in combinations:
     designs.append(design)
 
 # Save results to a JSON file
-with open("designs.json", "w") as json_file:
+with open("output_data/designs.json", "w") as json_file:
     json.dump(designs, json_file, indent=4)
 print("Designs saved to 'designs.json'")
 
@@ -82,5 +82,5 @@ for decision in data:
 # Create DataFrame
 df = pd.DataFrame(rows)
 # Save to Excel
-df.to_excel("decision_options.xlsx", index=False)
+df.to_excel("output_data/decision_options.xlsx", index=False)
 print("Excel file 'decision_options.xlsx' created successfully.")
