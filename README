@@ -34,7 +34,7 @@ These instructions will help you set up and run the project on your local machin
 
 ## Architectural decisions, options and metrics 
 
-Open the `decision.json` file and adjust it accordingly. 
+Open the `input_data/decision.json` file and adjust it accordingly. 
 
 
 ## Generate design points for each decisison/option combination
@@ -43,8 +43,8 @@ Run `generate_design.py` to generate all theoretically possible design points an
 
 ## Add reference designs: products with well knows cost and performence metric which help with validation of the models
 
-Open `reference_designs.json` file and adjust it accordingly. 
-Copying parts of `designs.json` may help initialy
+Open `input_data/reference_designs.json` file and adjust it accordingly. 
+Copying parts of `output_data/designs.json` may help initialy
 
 ## Create tradespace 
 
