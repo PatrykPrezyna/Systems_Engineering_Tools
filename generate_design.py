@@ -16,7 +16,6 @@ combinations = list(itertools.product(*decisions))
 # Calculate cost and performance for each combination
 designs = []
 for combination in combinations:
-
     # COST
     reference_cost=250000 #[$] Cost of the Valys J&J robot, how much does the 
     total_cost = reference_cost+sum(option["cost_factor"] for option in combination)

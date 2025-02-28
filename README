@@ -72,4 +72,5 @@ Copying parts of `output_data/designs.json` may help initialy
  2. Optionally run the `calculate_utility_for_reference_designs.py` to use the utility model for the reference desigs 
  encapsulate the cost and performance model
  3. Make `tradespace.py` parametrisable and ret rid of the config section
- 4. 
+ 100. Add linter and formater
+ 101. Add some tests

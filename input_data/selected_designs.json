@@ -12,125 +12,12 @@
             "OP 10.2"
         ],
         "Estimated Cost": 350000,
-        "Estimated Setting up Time": 5,
+        "Estimated Setting up Time": {
+            
+        },
         "Estimated Accuracy": 0.5,
         "Estimated Experience": 7.0,
         "Estimated Performance": 0.8672284382284381
-    },
-    {
-        "Name": " DP 5 | On Bed, accelometers",
-        "Selected Options": [
-            "OP 1.5",
-            "OP 2.1",
-            "OP 3.1",
-            "OP 4.2",
-            "OP 7.2",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
-        ],
-        "Estimated Cost": 150000,
-        "Estimated Setting up Time": 40,
-        "Estimated Accuracy": 0.8,
-        "Estimated Experience": 10.0,
-        "Estimated Performance": 0.8111888111888113
-    },
-    {
-        "Name": " DP 6 | On Bed, accelometers, imageless",
-        "Selected Options": [
-            "OP 1.5",
-            "OP 2.1",
-            "OP 3.2",
-            "OP 4.2",
-            "OP 7.2",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
-        ],
-        "Estimated Cost": 100000,
-        "Estimated Setting up Time": 40,
-        "Estimated Accuracy": 1.0,
-        "Estimated Experience": 10,
-        "Estimated Performance": 0.7770007770007771
-    },
-    {
-        "Name": " DP 7 | New Handheld",
-        "Selected Options": [
-            "OP 1.5",
-            "OP 2.3",
-            "OP 3.2",
-            "OP 4.2",
-            "OP 7.2",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
-        ],
-        "Estimated Cost": 50000,
-        "Estimated Setting up Time": 30,
-        "Estimated Accuracy": 2.0,
-        "Estimated Experience": 10,
-        "Estimated Performance": 0.6060606060606061
-    },
-    {
-        "Name": " DP 8 | Free Standing (high end)",
-        "Selected Options": [
-            "OP 1.1",
-            "OP 2.2",
-            "OP 3.1",
-            "OP 4.3",
-            "OP 7.1",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
-        ],
-        "Estimated Cost": 900001.0,
-        "Estimated Setting up Time": 10,
-        "Estimated Accuracy": 0.1,
-        "Estimated Experience": 10.0,
-        "Estimated Performance": 0.9308469308469309
-    },
-
-
-    {
-        "Name": " DP 9 | Free Standing (without depth)",
-        "Selected Options": [
-            "OP 1.2",
-            "OP 2.2",
-            "OP 3.1",
-            "OP 4.3",
-            "OP 7.2",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
-        ],
-        "Estimated Cost": 600001.0,
-        "Estimated Setting up Time": 21.0,
-        "Estimated Accuracy": 0.2,
-        "Estimated Experience": 10.0,
-        "Estimated Performance": 0.9137529137529138
-    },
-
-    
-    {
-        "Name": " DP 10 | Free Standing  (support only)",
-        "Selected Options": [
-            "OP 1.5",
-            "OP 2.2",
-            "OP 3.1",
-            "OP 4.2",
-            "OP 7.2",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
-        ],
-        "Estimated Cost": 450000,
-        "Estimated Setting up Time": 30,
-        "Estimated Accuracy": 0.4,
-        "Estimated Experience": 10,
-        "Estimated Performance": 0.8795648795648795
     }
-
-
-
         
 ]
