@@ -65,7 +65,6 @@ Copying parts of `designs.json` may help initialy
 
 
 
-
 # Usage: Add uncetainty
 
 # Possible ToDos:
@@ -74,59 +73,3 @@ Copying parts of `designs.json` may help initialy
  encapsulate the cost and performance model
  3. Make `tradespace.py` parametrisable and ret rid of the config section
  4. 
-
-
-
-
-Calculates utility values for reference designs based on various factors.
-
-### `combine_plots.py`
-
-Combines multiple plots horizontally using the `PIL` library.
-
-### `combine_plots_vertical.py`
-
-Combines multiple plots vertically using the `PIL` library.
-
-### `generate_design.py`
-
-Generates design data for tradespace exploration.
-
-### `tradespace.py`
-
-Main script for tradespace exploration. It generates scatter plots, calculates Pareto designs, and saves the results to JSON files.
-
-## Data Files
-
-### `decisions.json`
-
-Contains architectural decisions data.
-
-### `designs.json`
-
-Contains design data for tradespace exploration.
-
-### `pareto_designs.json`
-
-Contains Pareto designs data.
-
-### `reference_designs.json`
-
-Contains reference designs data.
-
-## Usage
-
-1. Run `generate_design.py` to generate design data.
-2. Run `tradespace.py` to perform tradespace exploration and generate plots.
-3. Use `combine_plots.py` and `combine_plots_vertical.py` to combine generated plots as needed.
-
-## Dependencies
-
-- Python 3.x
-- PIL (Python Imaging Library)
-- matplotlib
-
-Install dependencies using pip:
-
-```sh
-pip install pillow matplotlib
