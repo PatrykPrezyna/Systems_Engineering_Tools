@@ -7,15 +7,14 @@
                 "cost_factor": 200000,
                 "setting_up_time_factor": {
                     "Probability Density Function": "normal",
-                    "mean": "10",
+                    "mean": 10,
                     "sigma": 2
                 },
                 "accuracy_factor": {
-                    "Probability Density Function": "normal",
-                    "mean": "10",
-                    "sigma": 2
-                },
-                "experience_factor": -2.0
+                    "Probability Density Function": "uniform",
+                    "low": 8,
+                    "high": 12
+                }
             },
             {
                 "name": "OP 1.2 | Robotic Support Of Orientation",

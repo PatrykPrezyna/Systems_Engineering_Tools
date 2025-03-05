@@ -33,8 +33,8 @@ with open('input_data/reference_designs.json', 'r') as file:
     reference_designs = json.load(file)
 
 #config
-show_selected_designs = False
-show_generated_designs = True
+show_selected_designs = True
+show_generated_designs = False
 show_reference_designs = True
 # Select metrics to plot: 0=Setting up Time, 1=Accuracy, 2=Experience, 3=Performance
 factor = 3
