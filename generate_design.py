@@ -18,32 +18,25 @@ designs = []
 for combination in combinations:
     # COST
     reference_cost=250000 #[$] Cost of the Valys J&J robot, how much does the 
-    total_cost = reference_cost+sum(option["cost_factor"] for option in combination)
+    total_cost = reference_cost+sum(option["cost"] for option in combination)
     # SETTING UP TIME
-    reference_setting_up_time=30 #[min] assumption setting up time  of the J&J robot
-    total_setting_up_time = reference_setting_up_time+sum(option["setting_up_time_factor"] for option in combination)
-    if total_setting_up_time > 120:
-        total_setting_up_time = 120
-    if total_setting_up_time < 10:
-        total_setting_up_time = 10
-    #ACCURACY
-    reference_accuracy_factor = 0.5#[mm] cutting accuracy
-    total_accuracy_factor = reference_accuracy_factor
+    reference_interoperative_overhead=30 #[min] assumption setting up time  of the J&J robot
+    total_interoperative_overhead = reference_interoperative_overhead+sum(option["interoperative_overhead"] for option in combination)
+    if total_interoperative_overhead > 120:
+        total_interoperative_overhead = 120
+    if total_interoperative_overhead < 10:
+        total_interoperative_overhead = 10
+    #ergonomics
+    reference_ergonomics = 0.5#[mm] cutting ergonomics
+    total_ergonomics = reference_ergonomics
     for option in combination:
-        total_accuracy_factor = total_accuracy_factor*option["accuracy_factor"]
-    if total_accuracy_factor < 0.05:
-        total_accuracy_factor = 0.5  
-    if total_accuracy_factor >= 2.0:
-        total_accuracy_factor = 2.0    
-    # EXPIRIENCE               )
-    reference_experience_factor=5 #assumption expirience of the J&J robot
-    total_experience_factor = reference_experience_factor+sum(option["experience_factor"] for option in combination)
-    if total_experience_factor > 10:
-        total_experience_factor = 10
-    if total_experience_factor < 0:
-        total_experience_factor = 0
+        total_ergonomics = total_ergonomics*option["ergonomics"]
+    if total_ergonomics < 0.05:
+        total_ergonomics = 0.5  
+    if total_ergonomics >= 2.0:
+        total_ergonomics = 2.0    
     # PERFORMENCE
-    total_performance = ((120-reference_setting_up_time)/110+(2.0-total_accuracy_factor)/1.95+total_experience_factor/10)/3
+    total_performance = ((120-reference_interoperative_overhead)/110+(2.0-total_ergonomics)/1.95)/2
     
     name = ""
     selected_options = [option["name"] for option in combination]
@@ -52,9 +45,8 @@ for combination in combinations:
         "Name":name,
         "Selected Options": selected_options,
         "Estimated Cost": total_cost,
-        "Estimated Setting up Time": total_setting_up_time,
-        "Estimated Accuracy": total_accuracy_factor,
-        "Estimated Experience": total_experience_factor,
+        "Estimated Interoperative Overhead": total_interoperative_overhead,
+        "Estimated Ergonomics": total_ergonomics,
         "Estimated Performance": total_performance,
     }
     designs.append(design)
@@ -72,10 +64,9 @@ for decision in data:
         row = {
             "Decision": decision_name,
             "Option Name": option["name"],
-            "Cost Factor": option["cost_factor"],
-            "Setting Up Time Factor": option["setting_up_time_factor"],
-            "Accuracy Factor": option["accuracy_factor"],
-            "Experience Factor": option["experience_factor"]
+            "Estimated Cost": option["cost"],
+            "Interoperative Overhead": option["interoperative_overhead"],
+            "Ergonomics": option["ergonomics"]
         }
         rows.append(row)
 # Create DataFrame

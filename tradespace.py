@@ -36,19 +36,18 @@ with open('input_data/reference_designs.json', 'r') as file:
 show_selected_designs = True
 show_generated_designs = False
 show_reference_designs = True
-# Select metrics to plot: 0=Setting up Time, 1=Accuracy, 2=Experience, 3=Performance
-factor = 3
+# Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Performance
+factor = 2
 #config
 
 # Define the utopia point (ideal but unattainable point)
 costs = [design['Estimated Cost'] for design in designs]
-setting_up_times = [design['Estimated Setting up Time'] for design in designs]
-accuracies = [design['Estimated Accuracy'] for design in designs]
-experiences = [design['Estimated Experience'] for design in designs]
+interoperative_overhead = [design['Estimated Interoperative Overhead'] for design in designs]
+ergonomics = [design['Estimated Ergonomics'] for design in designs]
 performances = [design['Estimated Performance'] for design in designs]
 
-y_axis_values = ['Estimated Setting up Time', 'Estimated Accuracy', 'Estimated Experience', 'Estimated Performance']
-y_axis_values_pareto = [setting_up_times, accuracies, experiences, performances]
+y_axis_values = ['Estimated Interoperative Overhead', 'Estimated Ergonomics', 'Estimated Performance']
+y_axis_values_pareto = [interoperative_overhead, ergonomics, performances]
 reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
 decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 

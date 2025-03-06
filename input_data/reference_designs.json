@@ -1,6 +1,6 @@
 [
     {
-        "Name": "DP 1 | Velys_J&J",
+        "Name": "DP 1| Velys_J&J",
         "Selected Options": [
             "OP 1.2",
             "OP 2.1",
@@ -18,7 +18,7 @@
         "Estimated Performance": 0.6958041958041958
     },
     {
-        "Name": " DP 2 | TSolution One",
+        "Name": " DP 2| TSolution One",
         "Selected Options": [
             "OP 1.1",
             "OP 2.2",
@@ -36,7 +36,7 @@
         "Estimated Performance": 0.6955710955710955
     },
     {
-        "Name": " DP 3 | Tmini",
+        "Name": " DP 3| Tmini",
         "Selected Options": [
             "OP 1.1",
             "OP 2.3",

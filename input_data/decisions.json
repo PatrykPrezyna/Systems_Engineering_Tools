@@ -2,64 +2,64 @@
     {
         "Decision": "(D1) Surgeon Level Of Control",
         "Options": [
-            {"name": "OP 1.1 | Robotic Support Of Orientation And  Depth", "cost_factor": 200000, "setting_up_time_factor": 10, "accuracy_factor": 0.5, "experience_factor": -2.0},
-            {"name": "OP 1.2 | Robotic Support Of Orientation", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
-            {"name": "OP 1.3 | Robotic Stabilization", "cost_factor": -100000, "setting_up_time_factor": 0, "accuracy_factor": 2, "experience_factor": 4.0},      
-            {"name": "OP 1.4 | Weight-Bearing Only", "cost_factor": -60000, "setting_up_time_factor": 0, "accuracy_factor": 2, "experience_factor": 1.0},
-            {"name": "OP 1.5 | Non-Robotic", "cost_factor": -100000, "setting_up_time_factor": 0, "accuracy_factor": 2, "experience_factor": 2.0}
+            {"name": "OP 1.1| Robotic Support Of Orientation And  Depth", "cost": 200000, "interoperative_overhead": 10, "ergonomics": 0.5},
+            {"name": "OP 1.2| Robotic Support Of Orientation", "cost": 0, "interoperative_overhead": 0, "ergonomics": 1.0},
+            {"name": "OP 1.3| Robotic Stabilization", "cost": -100000, "interoperative_overhead": 0, "ergonomics": 2},      
+            {"name": "OP 1.4| Weight-Bearing Only", "cost": -60000, "interoperative_overhead": 0, "ergonomics": 2},
+            {"name": "OP 1.5| Non-Robotic", "cost": -100000, "interoperative_overhead": 0, "ergonomics": 2}
         ]
     },
     {
         "Decision": "(D2) Device Mount Type",
         "Options": [
-            {"name": "OP 2.1 | On Bed", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
-            {"name": "OP 2.2 | Free Standing", "cost_factor": 300000, "setting_up_time_factor": -10, "accuracy_factor": 0.5, "experience_factor": 3.0},
-            {"name": "OP 2.3 | Handheld", "cost_factor": -50000, "setting_up_time_factor": -10, "accuracy_factor": 2.0, "experience_factor": 5.0}
+            {"name": "OP 2.1| On Bed", "cost": 0, "interoperative_overhead": 0, "ergonomics": 1.0},
+            {"name": "OP 2.2| Free Standing", "cost": 300000, "interoperative_overhead": -10, "ergonomics": 0.5},
+            {"name": "OP 2.3| Handheld", "cost": -50000, "interoperative_overhead": -10, "ergonomics": 2.0}
         ]
     },
     {
         "Decision": "(D3) Pre-operation Imaging Type",
         "Options": [
-            {"name": "OP 3.1 | Pre-Op Imaging Needed", "cost_factor": 50000, "setting_up_time_factor": 0, "accuracy_factor": 0.8, "experience_factor": -2.0},
-            {"name": "OP 3.2 | Imageless", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0}
+            {"name": "OP 3.1| Pre-Op Imaging Needed", "cost": 50000, "interoperative_overhead": 0, "ergonomics": 0.8},
+            {"name": "OP 3.2| Imageless", "cost": 0, "interoperative_overhead": 0, "ergonomics": 1.0}
         ]
     },
     {
         "Decision": "(D4) Procedure Imaging Type",
         "Options": [
-            {"name": "OP 4.1 | IR Markers", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
-            {"name": "OP 4.2 | Accelerometers", "cost_factor": -50000, "setting_up_time_factor": 10, "accuracy_factor": 1.0, "experience_factor": 0.0},
-            {"name": "OP 4.3 | 3D Scanning", "cost_factor": 200000, "setting_up_time_factor": -15, "accuracy_factor": 1.0, "experience_factor": 2.0}, 
-            {"name": "OP 4.4 | Imageless", "cost_factor": 1.0, "setting_up_time_factor": 1.0, "accuracy_factor": 1.0, "experience_factor": 1.0}
+            {"name": "OP 4.1| IR Markers", "cost": 0, "interoperative_overhead": 0, "ergonomics": 1.0},
+            {"name": "OP 4.2| Accelerometers", "cost": -50000, "interoperative_overhead": 10, "ergonomics": 1.0},
+            {"name": "OP 4.3| 3D Scanning", "cost": 200000, "interoperative_overhead": -15, "ergonomics": 1.0}, 
+            {"name": "OP 4.4| Imageless", "cost": 1.0, "interoperative_overhead": 1.0, "ergonomics": 1.0}
         ]
     },
     {
         "Decision": "(D7) Sterilizable Components ",
         "Options": [
-            {"name": "OP 7.1 | Entire Device", "cost_factor": 100000, "setting_up_time_factor": -25, "accuracy_factor": 1.0, "experience_factor": 2.0},
-            {"name": "OP 7.2 | Device is sterilizable, disposable components exists", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
-            {"name": "OP 7.3 | Everything Is Disposable Or Needs Draping", "cost_factor": 0, "setting_up_time_factor": 15, "accuracy_factor": 1.0, "experience_factor": -3.0}
+            {"name": "OP 7.1| Entire Device", "cost": 100000, "interoperative_overhead": -25, "ergonomics": 1.0},
+            {"name": "OP 7.2| Device is sterilizable, disposable components exists", "cost": 0, "interoperative_overhead": 0, "ergonomics": 1.0},
+            {"name": "OP 7.3| Everything Is Disposable Or Needs Draping", "cost": 0, "interoperative_overhead": 15, "ergonomics": 1.0}
         ]
     },
     {
         "Decision": "(D8) User Input Type",
         "Options": [
-            {"name": "OP 8.1 | Surgeon Only", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 3.0},
-            {"name": "OP 8.2 | OR Staff Support", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0}
+            {"name": "OP 8.1| Surgeon Only", "cost": 0, "interoperative_overhead": 0, "ergonomics": 1.0},
+            {"name": "OP 8.2| OR Staff Support", "cost": 0, "interoperative_overhead": 0, "ergonomics": 1.0}
         ]
     },
     {
         "Decision": "(D9) Onboard vs Offboard Power",
         "Options": [
-            {"name": "OP 9.1 | Onboard", "cost_factor": 20000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
-            {"name": "OP 9.2 | Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0}
+            {"name": "OP 9.1| Onboard", "cost": 20000, "interoperative_overhead": 0, "ergonomics": 1.0},
+            {"name": "OP 9.2| Offboard", "cost": 0, "interoperative_overhead": 0, "ergonomics": 1.0}
         ]
     },
     {
         "Decision": "(D10) Onboard vs Offboard Computing",
         "Options": [
-            {"name": "OP 10.1 | Onboard", "cost_factor": 30000, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0},
-            {"name": "OP 10.2 | Offboard", "cost_factor": 0, "setting_up_time_factor": 0, "accuracy_factor": 1.0, "experience_factor": 0.0}
+            {"name": "OP 10.1| Onboard", "cost": 30000, "interoperative_overhead": 0, "ergonomics": 1.0},
+            {"name": "OP 10.2| Offboard", "cost": 0, "interoperative_overhead": 0, "ergonomics": 1.0}
         ]
     }
 ]
