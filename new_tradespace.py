@@ -35,7 +35,7 @@ factor = 0 # which metric to plot
 y_axis_values = ['Estimated Ergonomics']
 y_axis_values_pareto = []
 x_axis_values_pareto = []
-reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey", 'blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
+reference_color = ['black','silver','red', "sienna", "yellow", "violet", 'blue','olive','lawngreen', "green", "cyan", "brown"]# for each option
 fig = plt.figure(figsize=(10, 6))
 ax = fig.add_subplot(111)
 
@@ -45,7 +45,7 @@ for i, design in enumerate(designs):
     print("costs:" +str(costs))
     print("ergonomics:" +str(ergonomics))
     plot_label = str(design['Name'])
-    plt.scatter(costs, ergonomics, c=reference_color[i], label=plot_label, s=6)
+    plt.scatter(costs, ergonomics, c=reference_color[i%len(reference_color)], label=plot_label, s=6)
     y_axis_values_pareto.append(ergonomics)
     x_axis_values_pareto.append(costs)
 
@@ -66,7 +66,7 @@ print("utopia point: " + str(utopia_point))
 plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
 
 # Add labels and title
-plt.xlabel('Estimated Cost')
+plt.xlabel('Estimated Cost [$]')
 plt.ylabel(y_axis_values[factor])
 title = 'Tradespace'
 ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
@@ -75,7 +75,7 @@ plt.title(title)
 plt.grid(True)
 
 
-file_name = "output_data/Tradespace"  + ".png"
+file_name = "output_data/Tradespace" + "ergonomics" + ".png"
 print(file_name)
 plt.savefig(file_name)
 

@@ -4,6 +4,8 @@ import math
 import pandas as pd
 import numpy as np
 
+rng = np.random.default_rng()
+
 # Load decisions, options and metrics estimations
 with open('input_data/decisions.json', 'r') as file:
     decisions = json.load(file)
@@ -14,9 +16,8 @@ with open('input_data/selected_designs.json', 'r') as file:
 #config
 NUMBER_OF_MONTE_CARLO_RUNS = 10
 #config
+
 new_design_points = []
-
-
 for i, design_point in enumerate(selected_designs):
     ergonomics = [] #TODO: exted for more metrics
     costs = []
@@ -35,10 +36,12 @@ for i, design_point in enumerate(selected_designs):
                     if option["ergonomics"]["Probability Density Function"] == "normal":
                         print("sigma: " + str(option["ergonomics"]["sigma"]))
                         sigma = option["ergonomics"]["sigma"]
-                        ergonomics.append(np.random.normal(mean, sigma, NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                        ergonomics.append(rng.normal(mean, sigma, NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     if option["ergonomics"]["Probability Density Function"] == "beta":
                         print("alfa: " + str(option["ergonomics"]["alfa"]))
+                        #alfa
                         print("beta: " + str(option["ergonomics"]["beta"]))
+                        ergonomics.append(rng.beta(option["ergonomics"]["alfa"], option["ergonomics"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                         #TODO: monte carlo here 
 
     #sumup costs per option
