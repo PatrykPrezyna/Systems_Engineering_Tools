@@ -47,7 +47,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": -25000,
-                    "sigma": 2
+                    "sigma": 3
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -130,8 +130,8 @@
                 "name": "OP 2.2| Free Standing",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": -15000,
-                    "sigma": 2
+                    "mean": -150000,
+                    "sigma": 1
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",

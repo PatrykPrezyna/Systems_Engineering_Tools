@@ -25,28 +25,33 @@ for i, design_point in enumerate(selected_designs):
         print("Distribution for: " + str(design_point["Selected Options"][j]))
         for option in decisions[j]["Options"]:
             if option["name"].split('|')[0]==design_point["Selected Options"][j].split('|')[0]: # check only the number like "OP1.1"
-                #COST #TODO IT IS A SIMPLIFICATION !!!
-                costs.append(option["cost"]["mean"])
+                #COST
+                if option["cost"]["Probability Density Function"] != "none":
+                    if option["cost"]["Probability Density Function"] == "normal":
+                        costs.append(rng.normal(option["cost"]["mean"], option["cost"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                    if option["cost"]["Probability Density Function"] == "beta":
+                        costs.append(rng.beta(option["cost"]["alfa"], option["cost"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+
                 #TODO create a graph (distribution function) for each option (for ergonomics) - only one iteration
                 #ERGOMETRICS
                 if option["ergonomics"]["Probability Density Function"] != "none":
-                    print(option["ergonomics"]["Probability Density Function"])
-                    print("mean: " + str(option["ergonomics"]["mean"]))
-                    mean = option["ergonomics"]["mean"]
                     if option["ergonomics"]["Probability Density Function"] == "normal":
-                        print("sigma: " + str(option["ergonomics"]["sigma"]))
-                        sigma = option["ergonomics"]["sigma"]
-                        ergonomics.append(rng.normal(mean, sigma, NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                        ergonomics.append(rng.normal(option["ergonomics"]["mean"], option["ergonomics"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     if option["ergonomics"]["Probability Density Function"] == "beta":
-                        print("alfa: " + str(option["ergonomics"]["alfa"]))
-                        #alfa
-                        print("beta: " + str(option["ergonomics"]["beta"]))
                         ergonomics.append(rng.beta(option["ergonomics"]["alfa"], option["ergonomics"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
-                        #TODO: monte carlo here 
 
     #sumup costs per option
-    cost_average = 135200 + sum(costs)
+
+    #cost_average = 135200 + sum(costs)
     #sumup ergonomics
+    costs_average = []
+    for i in range(len(costs[0])): # for each monte carlo run
+        costs_sum_temp = 0
+        for j in range(len(costs)): # for each option
+            costs_sum_temp  = costs_sum_temp  + costs[j][i]
+        costs_average.append(costs_sum_temp+135200)#TODO: confirm the diference in the calculation
+
+    print("costs_average: " + str(costs_average))
     ergonomics_average = []
     #ergonomics = [[1,2,3],[4,5,6]] # test
     for i in range(len(ergonomics[0])): # for each monte carlo run
@@ -66,7 +71,7 @@ for i, design_point in enumerate(selected_designs):
     new_design_point = {
         "Name":design_point["Name"],
         "Selected Options": design_point["Selected Options"],
-        "Estimated Cost": cost_average,#simulation for now
+        "Estimated Cost": costs_average,#simulation for now
         "Estimated Interoperative Overhead": i,#simulation for now
         "Ergonomics": ergonomics_average,#result
         "Estimated Performance": i,#simulation for now

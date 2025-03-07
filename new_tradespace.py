@@ -41,7 +41,7 @@ ax = fig.add_subplot(111)
 
 for i, design in enumerate(designs):
     ergonomics = design['Ergonomics']
-    costs = [design['Estimated Cost']] * len(ergonomics)
+    costs = design['Estimated Cost']
     print("costs:" +str(costs))
     print("ergonomics:" +str(ergonomics))
     plot_label = str(design['Name'])
