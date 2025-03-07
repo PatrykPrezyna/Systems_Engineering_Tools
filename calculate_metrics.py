@@ -19,11 +19,15 @@ new_design_points = []
 
 for i, design_point in enumerate(selected_designs):
     ergonomics = [] #TODO: exted for more metrics
+    costs = []
     for j, decision in enumerate(decisions):
         print("Distribution for: " + str(design_point["Selected Options"][j]))
         for option in decisions[j]["Options"]:
-            #TODO create a graph (distribution function) for each option (for ergonomics) - only one iteration
             if option["name"].split('|')[0]==design_point["Selected Options"][j].split('|')[0]: # check only the number like "OP1.1"
+                #COST #TODO IT IS A SIMPLIFICATION !!!
+                costs.append(option["cost"]["mean"])
+                #TODO create a graph (distribution function) for each option (for ergonomics) - only one iteration
+                #ERGOMETRICS
                 if option["ergonomics"]["Probability Density Function"] != "none":
                     print(option["ergonomics"]["Probability Density Function"])
                     print("mean: " + str(option["ergonomics"]["mean"]))
@@ -36,13 +40,12 @@ for i, design_point in enumerate(selected_designs):
                         print("alfa: " + str(option["ergonomics"]["alfa"]))
                         print("beta: " + str(option["ergonomics"]["beta"]))
                         #TODO: monte carlo here 
-    print("test" + str(design_point["Name"]))
-    print(ergonomics[0][0])
+
+    #sumup costs per option
+    cost_average = 135200 + sum(costs)
+    #sumup ergonomics
     ergonomics_average = []
     #ergonomics = [[1,2,3],[4,5,6]] # test
-    print("TEST")
-    print(len(ergonomics))
-    print(len(ergonomics[0]))
     for i in range(len(ergonomics[0])): # for each monte carlo run
         ergonomics_sum_temp = 0
         for j in range(len(ergonomics)): # for each option
@@ -60,7 +63,7 @@ for i, design_point in enumerate(selected_designs):
     new_design_point = {
         "Name":design_point["Name"],
         "Selected Options": design_point["Selected Options"],
-        "Estimated Cost": i,#simulation for now
+        "Estimated Cost": cost_average,#simulation for now
         "Estimated Interoperative Overhead": i,#simulation for now
         "Ergonomics": ergonomics_average,#result
         "Estimated Performance": i,#simulation for now
