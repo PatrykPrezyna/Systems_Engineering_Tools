@@ -11,12 +11,18 @@ with open('input_data/decisions.json', 'r') as file:
 with open('input_data/selected_designs.json', 'r') as file:
     selected_designs = json.load(file)
 
+#config
+NUMBER_OF_MONTE_CARLO_RUNS = 10
+#config
 new_design_points = []
-ergonomics = []
+
+
 for i, design_point in enumerate(selected_designs):
+    ergonomics = [] #TODO: exted for more metrics
     for j, decision in enumerate(decisions):
         print("Distribution for: " + str(design_point["Selected Options"][j]))
         for option in decisions[j]["Options"]:
+            #TODO create a graph (distribution function) for each option (for ergonomics) - only one iteration
             if option["name"].split('|')[0]==design_point["Selected Options"][j].split('|')[0]: # check only the number like "OP1.1"
                 if option["ergonomics"]["Probability Density Function"] != "none":
                     print(option["ergonomics"]["Probability Density Function"])
@@ -25,28 +31,42 @@ for i, design_point in enumerate(selected_designs):
                     if option["ergonomics"]["Probability Density Function"] == "normal":
                         print("sigma: " + str(option["ergonomics"]["sigma"]))
                         sigma = option["ergonomics"]["sigma"]
-                        #monte carlo here 
-                        ergonomics.append(np.random.normal(mean, sigma, 10))
-                        print(ergonomics)
+                        ergonomics.append(np.random.normal(mean, sigma, NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     if option["ergonomics"]["Probability Density Function"] == "beta":
-                        print("alfa" + str(option["ergonomics"]["alfa"]))
-                        print("beta" + str(option["ergonomics"]["beta"]))
-                        #monte carlo here 
+                        print("alfa: " + str(option["ergonomics"]["alfa"]))
+                        print("beta: " + str(option["ergonomics"]["beta"]))
+                        #TODO: monte carlo here 
+    print("test" + str(design_point["Name"]))
+    print(ergonomics[0][0])
+    ergonomics_average = []
+    #ergonomics = [[1,2,3],[4,5,6]] # test
+    print("TEST")
+    print(len(ergonomics))
+    print(len(ergonomics[0]))
+    for i in range(len(ergonomics[0])): # for each monte carlo run
+        ergonomics_sum_temp = 0
+        for j in range(len(ergonomics)): # for each option
+            ergonomics_sum_temp  = ergonomics_sum_temp  + ergonomics[j][i]
+        ergonomics_average.append(ergonomics_sum_temp/len(ergonomics))
+            #summary[i]=ergonomics[i][0]+ergonomics[i][1]+ergonomics[i][1]
+    print("ergonomics_average: " + str(ergonomics_average))
+    
 
-    ergonomics_sum = []
-    for j, ergonomic in enumerate(ergonomics):
-        ergonomics_sum.append(sum(ergonomic))
-    ergonomics_average = ergonomics_sum/j
-    print(ergonomics_sum)
+    # ergonomics_average = []
+    # for j, ergonomic in enumerate(ergonomics):
+    #     ergonomics_average.append(sum(ergonomics))
+    # # ergonomics_average = ergonomics_average/j
+    # print(ergonomics_average)
     new_design_point = {
         "Name":design_point["Name"],
         "Selected Options": design_point["Selected Options"],
         "Estimated Cost": i,#simulation for now
         "Estimated Interoperative Overhead": i,#simulation for now
-        "Ergonomics": ergonomics[0].tolist(),#result
+        "Ergonomics": ergonomics_average,#result
         "Estimated Performance": i,#simulation for now
     }
     new_design_points.append(new_design_point)
+    #break#TODO extend for all design points
 
 # Save results to a JSON file
 with open("output_data/designs.json", "w") as json_file:
