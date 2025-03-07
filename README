@@ -35,33 +35,19 @@ These instructions will help you set up and run the project on your local machin
 ## Architectural decisions, options and metrics 
 
 Open the `input_data/decision.json` file and adjust it accordingly. 
+Open the `input_data/selected_designs.json` file and adjust it accordingly. 
 
+## Calculate design points metrics
 
-## Generate design points for each decisison/option combination
+Run `calculate_metrics.py` 
 
-Run `generate_design.py` to generate all theoretically possible design points and calculate the cost and performance values. 
-
-## Add reference designs: products with well knows cost and performence metric which help with validation of the models
-
-Open `input_data/reference_designs.json` file and adjust it accordingly. 
-Copying parts of `output_data/designs.json` may help initialy
 
 ## Create tradespace 
 
-1. Edit the config part to configurate which design points to include and which metrics/utility to generate 
-2. Run `tradespace.py`
+1. Run `new_tradespace.py`
+2. Find the tradespace in `Output_data/Tradespace.png` 
 
 
-## Final selection
-
-1. Edit "" to decide uppn the final set of design points
-2. Config and run the `tradespace.py`
-
-# Usage: Add uncertinaty 
-
-## 
-
-## 
 
 
 
