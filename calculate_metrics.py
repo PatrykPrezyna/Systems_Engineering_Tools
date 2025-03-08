@@ -31,7 +31,7 @@ for i, design_point in enumerate(selected_designs):
                 if option["cost"]["Probability Density Function"] != "none":
                     if option["cost"]["Probability Density Function"] == "normal":
                         costs.append(rng.normal(option["cost"]["mean"], option["cost"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
-                    if option["cost"]["Probability Density Function"] == "beta":
+                    elif option["cost"]["Probability Density Function"] == "beta":
                         costs.append(rng.beta(option["cost"]["alfa"], option["cost"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     else:
                         print("Error: Probability Density Function not implemented")
