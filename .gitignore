@@ -6,5 +6,5 @@ __pycache__/
 *$py.class
 
 venv
-output_data
+output_data/*
 !output_data/.gitkeep
