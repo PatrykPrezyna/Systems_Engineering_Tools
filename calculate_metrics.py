@@ -3,7 +3,9 @@ import itertools
 import math
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
+#initialise random number generator
 rng = np.random.default_rng()
 
 # Load decisions, options and metrics estimations
@@ -31,7 +33,8 @@ for i, design_point in enumerate(selected_designs):
                         costs.append(rng.normal(option["cost"]["mean"], option["cost"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     if option["cost"]["Probability Density Function"] == "beta":
                         costs.append(rng.beta(option["cost"]["alfa"], option["cost"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
-
+                    else:
+                        print("Error: Probability Density Function not implemented")
                 #TODO create a graph (distribution function) for each option (for ergonomics) - only one iteration
                 #ERGOMETRICS
                 if option["ergonomics"]["Probability Density Function"] != "none":
@@ -40,10 +43,7 @@ for i, design_point in enumerate(selected_designs):
                     if option["ergonomics"]["Probability Density Function"] == "beta":
                         ergonomics.append(rng.beta(option["ergonomics"]["alfa"], option["ergonomics"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
 
-    #sumup costs per option
-
-    #cost_average = 135200 + sum(costs)
-    #sumup ergonomics
+    #sumup costs per design point
     costs_average = []
     for i in range(len(costs[0])): # for each monte carlo run
         costs_sum_temp = 0
@@ -52,6 +52,7 @@ for i, design_point in enumerate(selected_designs):
         costs_average.append(costs_sum_temp+135200)#TODO: confirm the diference in the calculation
 
     print("costs_average: " + str(costs_average))
+    #sumup ergonomics
     ergonomics_average = []
     #ergonomics = [[1,2,3],[4,5,6]] # test
     for i in range(len(ergonomics[0])): # for each monte carlo run
@@ -84,6 +85,51 @@ with open("output_data/designs.json", "w") as json_file:
     json.dump(new_design_points, json_file, indent=4)
 print("Designs saved to 'designs.json'")
 
+
+#initialise plot
+d_in_row = 4
+fig, axs = plt.subplots(nrows=2, ncols=d_in_row, figsize=(40, 20))#TODO make it dependent on the number of options
+fig.suptitle('Probability Density Function:' + "metric", fontsize=60) 
+cost_distributions = []
+cost_distributions_labels = []
+k=0
+
+print("******************************************")
+for j, decision in enumerate(decisions):
+    for option in decisions[j]["Options"]:
+        #plot probability distribution for each option separately
+        if option["cost"]["Probability Density Function"] == "normal":
+            cost_distributions.append(rng.normal(option["cost"]["mean"], option["cost"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+        if option["cost"]["Probability Density Function"] == "beta":
+            cost_distributions.append(rng.beta(option["cost"]["alfa"], option["cost"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+        else:
+            print("Error: Probability Density Function not implemented")
+        cost_distributions_labels.append(option["name"].split('|')[0])
+
+    print("Decision: " + str(decision["Decision"]) + ";\nOption: ", str(cost_distributions_labels))
+    if j>=d_in_row: k=1
+    axs[k][j%d_in_row].violinplot(cost_distributions,
+                  showmeans=True,
+                  showmedians=True)
+    axs[k][j%d_in_row].set_title("Decision: " + str(decision["Decision"]),fontsize=25)
+    axs[k][j%d_in_row].yaxis.grid(True)
+    axs[k][j%d_in_row].set_xticks([y + 1 for y in range(len(cost_distributions))],
+                 labels=cost_distributions_labels)
+    axs[k][j%d_in_row].set_xlabel('Options')
+    axs[k][j%d_in_row].set_ylabel('Cost [$]')
+    cost_distributions = []
+    cost_distributions_labels = []
+
+
+file_name = "output_data/Options_PDF.png"#TODO for each metric
+plt.savefig(file_name)
+plt.close('all')
+# #TODO: print the cumulative distribution
+# # plot violin plot
+# axs[0].violinplot(all_data,
+#                   showmeans=True,
+#                   showmedians=True)
+# axs[0].set_title('Probability Density Function')
 # # Generate all combinations of options (one from each decision)
 # combinations = list(itertools.product(*decisions))
 

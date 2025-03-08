@@ -7,7 +7,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 110000,
-                    "sigma": 2
+                    "sigma": 11000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -27,7 +27,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 200
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -47,7 +47,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": -25000,
-                    "sigma": 3
+                    "sigma": 2500
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -67,7 +67,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": -42100,
-                    "sigma": 2
+                    "sigma": 4210
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -87,7 +87,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": -77100,
-                    "sigma": 2
+                    "sigma": 7710
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -112,7 +112,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 200
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -131,7 +131,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": -150000,
-                    "sigma": 1
+                    "sigma": 15000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -150,7 +150,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": -24600,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -174,7 +174,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 60000,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -191,7 +191,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -213,7 +213,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -230,7 +230,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -247,7 +247,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 32450,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -264,7 +264,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -286,7 +286,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 50000,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -305,7 +305,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -324,7 +324,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -348,7 +348,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 400,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -368,7 +368,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -393,7 +393,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -412,7 +412,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -436,7 +436,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 35000,
-                    "sigma": 2
+                    "sigma": 3500
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
@@ -455,7 +455,7 @@
                 "cost": {
                     "Probability Density Function": "normal",
                     "mean": 0,
-                    "sigma": 2
+                    "sigma": 2000
                 },
                 "interoperative_overhead": {
                     "Probability Density Function": "beta",
