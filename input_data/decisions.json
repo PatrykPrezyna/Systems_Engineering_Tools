@@ -10,7 +10,7 @@
                     "sigma": 11000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "none",
+                    "Probability Density Function": "none"
                     
                 },
                 "ergonomics": {
@@ -28,7 +28,7 @@
                     "sigma": 200
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "none",
+                    "Probability Density Function": "none"
                 },
                 "ergonomics": {
                     "Probability Density Function": "beta",
@@ -45,7 +45,7 @@
                     "sigma": 2500
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "none",
+                    "Probability Density Function": "none"
                     
                 },
                 "ergonomics": {
@@ -63,7 +63,7 @@
                     "sigma": 4210
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "none",
+                    "Probability Density Function": "none"
                     
                 },
                 "ergonomics": {
@@ -81,7 +81,7 @@
                     "sigma": 7710
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "none",
+                    "Probability Density Function": "none"
                    
                 },
                 "ergonomics": {
@@ -334,7 +334,7 @@
                     "sigma": 2000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "none",
+                    "Probability Density Function": "none"
                     
                 },
                 "ergonomics": {
@@ -352,7 +352,7 @@
                     "sigma": 2000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "none",
+                    "Probability Density Function": "none"
                     
                 },
                 "ergonomics": {
@@ -418,7 +418,7 @@
                     "sigma": 3500
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "none",
+                    "Probability Density Function": "none"
                     
                 },
                 "ergonomics": {
@@ -435,7 +435,7 @@
                     "sigma": 2000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "none",
+                    "Probability Density Function": "none"
                     
                 },
                 "ergonomics": {

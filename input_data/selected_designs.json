@@ -1,9 +1,9 @@
 [
     {
-        "Name": "DP 4| Sterilisable Velys_J&J",
+        "Name": "C1",
         "Selected Options": [
             "OP 1.2",
-            "OP 2.2",
+            "OP 2.1",
             "OP 3.2",
             "OP 4.1",
             "OP 7.1",
@@ -13,25 +13,25 @@
         ]
     },
     {
-        "Name": "DP 5| On Bed, accelometers",
+        "Name": "C2",
         "Selected Options": [
-            "OP 1.5",
-            "OP 2.1",
-            "OP 3.1",
-            "OP 4.2",
-            "OP 7.2",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "DP 6| On Bed, accelometers, imageless",
-        "Selected Options": [
-            "OP 1.5",
+            "OP 1.1",
             "OP 2.1",
             "OP 3.2",
-            "OP 4.2",
+            "OP 4.3",
+            "OP 7.1",
+            "OP 8.1",
+            "OP 9.2",
+            "OP 10.2"
+        ]
+    },
+    {
+        "Name": "C3",
+        "Selected Options": [
+            "OP 1.3",
+            "OP 2.3",
+            "OP 3.2",
+            "OP 4.1",
             "OP 7.2",
             "OP 8.1",
             "OP 9.2",
@@ -39,7 +39,7 @@
         ]
     },
     {
-        "Name": "DP 7| New Handheld",
+        "Name": "C4",
         "Selected Options": [
             "OP 1.5",
             "OP 2.3",
@@ -52,36 +52,23 @@
         ]
     },
     {
-        "Name": "DP 8| Free Standing (high end)",
+        "Name": "C5",
         "Selected Options": [
-            "OP 1.1",
-            "OP 2.2",
-            "OP 3.1",
-            "OP 4.3",
+            "OP 1.4",
+            "OP 2.1",
+            "OP 3.2",
+            "OP 4.1",
             "OP 7.1",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
+            "OP 8.2",
+            "OP 9.1",
+            "OP 10.1"
         ]
     },
     {
-        "Name": "DP 9| Free Standing (without depth)",
+        "Name": "C6",
         "Selected Options": [
-            "OP 1.2",
-            "OP 2.2",
-            "OP 3.1",
-            "OP 4.3",
-            "OP 7.2",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "DP 10| Free Standing  (support only)",
-        "Selected Options": [
-            "OP 1.5",
-            "OP 2.2",
+            "OP 1.3",
+            "OP 2.1",
             "OP 3.1",
             "OP 4.2",
             "OP 7.2",
@@ -91,42 +78,42 @@
         ]
     },
     {
-        "Name": "DP11",
+        "Name": "C7",
         "Selected Options": [
-            "OP 1.1| Robotic Support Of Orientation And  Depth",
-            "OP 2.1| On Bed",
-            "OP 3.2| Imageless",
-            "OP 4.1| IR Markers",
-            "OP 7.1| Entire Device",
-            "OP 8.2| OR Staff Support",
-            "OP 9.2| Offboard",
-            "OP 10.1| Onboard"
+            "OP 1.4",
+            "OP 2.1",
+            "OP 3.2",
+            "OP 4.2",
+            "OP 7.2",
+            "OP 8.1",
+            "OP 9.2",
+            "OP 10.2"
         ]
     },
     {
-        "Name": "DP12",
+        "Name": "C8",
         "Selected Options": [
-            "OP 1.2| Robotic Support Of Orientation",
-            "OP 2.1| On Bed",
-            "OP 3.2| Imageless",
-            "OP 4.3| 3D Scanning",
-            "OP 7.1| Entire Device",
-            "OP 8.1| Surgeon Only",
-            "OP 9.2| Offboard",
-            "OP 10.2| Offboard"
+            "OP 1.1",
+            "OP 2.2",
+            "OP 3.1",
+            "OP 4.3",
+            "OP 7.2",
+            "OP 8.1",
+            "OP 9.1",
+            "OP 10.1"
         ]
     },
     {
-        "Name": "DP13",
+        "Name": "C9",
         "Selected Options": [
-            "OP 1.3| Robotic Stabilization",
-            "OP 2.3| Handheld",
-            "OP 3.2| Imageless",
-            "OP 4.1| IR Markers",
-            "OP 7.1| Entire Device",
-            "OP 8.1| Surgeon Only",
-            "OP 9.2| Offboard",
-            "OP 10.2| Offboard"
+            "OP 1.2",
+            "OP 2.2",
+            "OP 3.1",
+            "OP 4.3",
+            "OP 7.2",
+            "OP 8.1",
+            "OP 9.2",
+            "OP 10.2"
         ]
     },{
         "Name": "",

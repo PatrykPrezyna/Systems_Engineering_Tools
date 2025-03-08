@@ -35,7 +35,7 @@ factor = 0 # which metric to plot
 y_axis_values = ['Estimated Ergonomics']
 y_axis_values_pareto = []
 x_axis_values_pareto = []
-reference_color = ['black','silver','red', "sienna", "yellow", "violet", 'blue','olive','lawngreen', "green", "cyan", "brown"]# for each option
+reference_color = ['black','silver','red', "sienna", "cyan", "violet", 'blue','olive','lawngreen', "green", "cyan", "brown"]# for each option
 fig = plt.figure(figsize=(10, 6))
 ax = fig.add_subplot(111)
 
