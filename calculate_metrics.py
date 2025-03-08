@@ -87,43 +87,50 @@ print("Designs saved to 'designs.json'")
 
 
 #initialise plot
-d_in_row = 4
-fig, axs = plt.subplots(nrows=2, ncols=d_in_row, figsize=(40, 20))#TODO make it dependent on the number of options
-fig.suptitle('Probability Density Function:' + "metric", fontsize=60) 
-cost_distributions = []
-cost_distributions_labels = []
-k=0
+matrics = ["cost", "interoperative_overhead", "ergonomics"]
+for p, metric in enumerate(matrics):
+    d_in_row = 4
+    fig, axs = plt.subplots(nrows=2, ncols=d_in_row, figsize=(40, 20))#TODO make it dependent on the number of options
+    fig.suptitle('Probability Density Function: ' + str(metric), fontsize=60) 
+    distributions = []
+    distributions_labels = []
+    k=0
 
-print("******************************************")
-for j, decision in enumerate(decisions):
-    for option in decisions[j]["Options"]:
-        #plot probability distribution for each option separately
-        if option["cost"]["Probability Density Function"] == "normal":
-            cost_distributions.append(rng.normal(option["cost"]["mean"], option["cost"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
-        if option["cost"]["Probability Density Function"] == "beta":
-            cost_distributions.append(rng.beta(option["cost"]["alfa"], option["cost"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
-        else:
-            print("Error: Probability Density Function not implemented")
-        cost_distributions_labels.append(option["name"].split('|')[0])
+    print("******************************************")
+    for j, decision in enumerate(decisions):
+        print("Decision: " + str(decision["Decision"]) + ";\nOption: ", str(distributions_labels))
+        for option in decisions[j]["Options"]:
+            
+            #plot probability distribution for each option separately
+            if option[metric]["Probability Density Function"] == "normal":
+                print("normal" + str(option[metric]["mean"]))
+                distributions.append(rng.normal(option[metric]["mean"], option[metric]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                distributions_labels.append(option["name"].split('|')[0])
+            elif option[metric]["Probability Density Function"] == "beta":
+                print("beta" + str(option[metric]["mean"]))
+                distributions.append(rng.beta(option[metric]["alfa"], option[metric]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                distributions_labels.append(option["name"].split('|')[0])
+            else:
+                print("Error: Probability Density Function not implemented")
 
-    print("Decision: " + str(decision["Decision"]) + ";\nOption: ", str(cost_distributions_labels))
-    if j>=d_in_row: k=1
-    axs[k][j%d_in_row].violinplot(cost_distributions,
-                  showmeans=True,
-                  showmedians=True)
-    axs[k][j%d_in_row].set_title("Decision: " + str(decision["Decision"]),fontsize=25)
-    axs[k][j%d_in_row].yaxis.grid(True)
-    axs[k][j%d_in_row].set_xticks([y + 1 for y in range(len(cost_distributions))],
-                 labels=cost_distributions_labels)
-    axs[k][j%d_in_row].set_xlabel('Options')
-    axs[k][j%d_in_row].set_ylabel('Cost [$]')
-    cost_distributions = []
-    cost_distributions_labels = []
+        if distributions != []:
+            if j>=d_in_row: k=1
+            axs[k][j%d_in_row].violinplot(distributions,
+                        showmeans=True,
+                        showmedians=True)
+            axs[k][j%d_in_row].set_title("Decision: " + str(decision["Decision"]),fontsize=25)
+            axs[k][j%d_in_row].yaxis.grid(True)
+            axs[k][j%d_in_row].set_xticks([y + 1 for y in range(len(distributions))],
+                        labels=distributions_labels)
+            axs[k][j%d_in_row].set_xlabel('Options')
+            axs[k][j%d_in_row].set_ylabel('Cost [$]')
+            distributions = []
+            distributions_labels = []
 
 
-file_name = "output_data/Options_PDF.png"#TODO for each metric
-plt.savefig(file_name)
-plt.close('all')
+    file_name = "output_data/Options_PDF_" +str(metric) + ".png"
+    plt.savefig(file_name)
+    plt.close('all')
 # #TODO: print the cumulative distribution
 # # plot violin plot
 # axs[0].violinplot(all_data,
