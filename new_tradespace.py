@@ -27,7 +27,7 @@ with open('output_data/designs.json', 'r') as file:
     designs = json.load(file)
 
 #config
-factor = 0 # which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performence"]
+factor = 1 # which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performence"]
 #config
 # Define the utopia point (ideal but unattainable point)
 #costs = [design['Estimated Cost'] for design in designs]
@@ -51,8 +51,6 @@ for i, design in enumerate(designs):
     y_axis_values_pareto.append(metric_values)
     x_axis_values_pareto.append(costs)
 
-print(len(y_axis_values_pareto[1]))
-print("max: "+ str(max(y_axis_values_pareto)))
 utopia_point = [min(min(x_axis_values_pareto)), max(map(max, y_axis_values_pareto))]
 print("utopia point: " + str(utopia_point))
 

@@ -16,7 +16,7 @@ with open('input_data/selected_designs.json', 'r') as file:
     selected_designs = json.load(file)
 
 #config
-NUMBER_OF_MONTE_CARLO_RUNS = 10
+NUMBER_OF_MONTE_CARLO_RUNS = 1000
 #config
 
 new_design_points = []
