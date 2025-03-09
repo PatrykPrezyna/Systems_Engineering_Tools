@@ -1,6 +1,7 @@
 [
     {
         "Decision": "D1| Surgeon Level Of Control",
+        "Weighting_ergonomics": 0.2,
         "Options": [
             {
                 "name": "OP 1.1| Robotic Support Of Orientation And  Depth",
@@ -95,6 +96,7 @@
     },
     {
         "Decision": "D2| Device Mount Type",
+        "Weighting_ergonomics": 0.4,
         "Options": [
             {
                 "name": "OP 2.1| On Bed",
@@ -151,6 +153,7 @@
     },
     {
         "Decision": "D3| Pre-operation Imaging Type",
+        "Weighting_ergonomics": 0,
         "Options": [
             {
                 "name": "OP 3.1| Pre-Op Imaging Needed",
@@ -188,6 +191,7 @@
     },
     {
         "Decision": "D4| Procedure Imaging Type",
+        "Weighting_ergonomics": 0,
         "Options": [
             {
                 "name": "OP 4.1| IR Markers",
@@ -257,6 +261,7 @@
     },
     {
         "Decision": "D7| Sterilizable Components ",
+        "Weighting_ergonomics": 0.1,
         "Options": [
             {
                 "name": "OP 7.1| Entire Device",
@@ -316,6 +321,7 @@
     },
     {
         "Decision": "D8| User Input Type",
+        "Weighting_ergonomics": 0.1,
         "Options": [
             {
                 "name": "OP 8.1| Surgeon Only",
@@ -357,6 +363,7 @@
     },
     {
         "Decision": "D9| Onboard vs Offboard Power",
+        "Weighting_ergonomics": 0.1,
         "Options": [
             {
                 "name": "OP 9.1| Onboard",
@@ -398,6 +405,7 @@
     },
     {
         "Decision": "D10| Onboard vs Offboard Computing",
+        "Weighting_ergonomics": 0.1,
         "Options": [
             {
                 "name": "OP 10.1| Onboard",

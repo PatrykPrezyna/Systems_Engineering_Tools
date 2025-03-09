@@ -16,7 +16,7 @@ with open('input_data/selected_designs.json', 'r') as file:
     selected_designs = json.load(file)
 
 #config
-NUMBER_OF_MONTE_CARLO_RUNS = 1000
+NUMBER_OF_MONTE_CARLO_RUNS = 10
 #config
 
 new_design_points = []
@@ -45,6 +45,8 @@ for i, design_point in enumerate(selected_designs):
                         ergonomics.append(rng.beta(option["ergonomics"]["alfa"], option["ergonomics"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     else:
                         print("Error: Probability Density Function not implemented: " +  str(option["ergonomics"]["Probability Density Function"]))
+                else:
+                    ergonomics.append([0]*NUMBER_OF_MONTE_CARLO_RUNS)#nsure alle decisisons are the same length - for applying weighting
                 #"interoperative_overhead"
                 if option["interoperative_overhead"]["Probability Density Function"] != "none":
                     if option["interoperative_overhead"]["Probability Density Function"] == "normal":
@@ -73,8 +75,9 @@ for i, design_point in enumerate(selected_designs):
     for i in range(len(ergonomics[0])): # for each monte carlo run
         ergonomics_sum_temp = 0
         for j in range(len(ergonomics)): # for each option
-            ergonomics_sum_temp  = ergonomics_sum_temp  + ergonomics[j][i]
-        ergonomics_average.append(ergonomics_sum_temp/len(ergonomics))
+            # print("Decision: " + str(j) + 'weighting: ' + str(decisions[j]["Weighting_ergonomics"]))
+            ergonomics_sum_temp  = ergonomics_sum_temp  + max(min(10, ergonomics[j][i]), 0)*decisions[j]["Weighting_ergonomics"] 
+        ergonomics_average.append(ergonomics_sum_temp)
 
     #sumup interoperative_overhead
     interoperative_overhead_average = []
@@ -109,6 +112,7 @@ print("Designs saved to 'designs.json'")
 
 #initialise plot
 matrics = ["cost", "interoperative_overhead", "ergonomics"]
+metric_units = ["[$]", "[min]", "[?]"]
 for p, metric in enumerate(matrics):
     d_in_row = 4
     fig, axs = plt.subplots(nrows=2, ncols=d_in_row, figsize=(40, 20))#TODO make it dependent on the number of options
@@ -148,6 +152,17 @@ for p, metric in enumerate(matrics):
                 else:
                     print("Error: Probability Density Function not implemented: " +  str(option[metric]["Probability Density Function"]))
 
+        # for i, distribution in enumerate(distributions):
+        #     #break
+        #     print("distributions:" + str(distributions))
+        #     for j, value in enumerate(distribution):
+                
+        #         if distributions[i][j]  < 0:
+        #             distributions[i][j] = 0
+        #         if distributions[i][j]  > 10.0:
+        #             distributions[i][j] = 10.1
+        #     print("distributions:" + str(distributions))
+
         if distributions != []:
             if j>=d_in_row: k=1
             axs[k][j%d_in_row].violinplot(distributions,
@@ -158,7 +173,7 @@ for p, metric in enumerate(matrics):
             axs[k][j%d_in_row].set_xticks([y + 1 for y in range(len(distributions))],
                         labels=distributions_labels)
             axs[k][j%d_in_row].set_xlabel('Options')
-            axs[k][j%d_in_row].set_ylabel('Cost [$]')
+            axs[k][j%d_in_row].set_ylabel(str(metric)+ str(metric_units[p]))
             distributions = []
             distributions_labels = []
 
