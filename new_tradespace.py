@@ -53,10 +53,21 @@ for i, design in enumerate(designs):
 
 utopia_point = [min(min(x_axis_values_pareto)), max(map(max, y_axis_values_pareto))]
 print("utopia point: " + str(utopia_point))
-
-# points = np.array(list(zip(costs, y_axis_values_pareto[factor])))
-
 plt.scatter(utopia_point[0], utopia_point[1], c='gold', s=500, marker="*", label='Utopia Point')
+
+points = []
+for i, design in enumerate(designs):
+    for i, cost in enumerate(design['Estimated Cost']):
+        points.append((cost, design[metrics[factor]]))
+
+points = np.array(list(zip(sum(x_axis_values_pareto, []), sum(y_axis_values_pareto,[0]))))
+# print("points: " + str(points))
+pareto = is_efficient_efficient(points)
+pareto_points = pareto[0]
+print("pareto points: " + str(pareto_points))
+xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
+plt.plot(xs, ys, 'r--', label='Pareto Frontier')
+plt.scatter(pareto_points[:, 0], pareto_points[:, 1], facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
 
 # Add labels and title
 plt.xlabel('Estimated Cost [$]')
