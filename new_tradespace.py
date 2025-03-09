@@ -27,12 +27,16 @@ with open('output_data/designs.json', 'r') as file:
     designs = json.load(file)
 
 #config
-factor = 0 # which metric to plot
+factor = 1 # which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performence"]
 #config
 # Define the utopia point (ideal but unattainable point)
 #costs = [design['Estimated Cost'] for design in designs]
 
-y_axis_values = ['Estimated Ergonomics']
+
+metrics = ["Ergonomics", "Estimated Interoperative Overhead", "Performence"]
+print('Estimated '+str(metrics[factor]))
+title = 'Estimated '+str(metrics[factor])
+y_axis_values = [title]
 y_axis_values_pareto = []
 x_axis_values_pareto = []
 reference_color = ['black','silver','red', "sienna", "cyan", "violet", 'blue','olive','lawngreen', "green", "cyan", "brown"]# for each option
@@ -40,24 +44,15 @@ fig = plt.figure(figsize=(10, 6))
 ax = fig.add_subplot(111)
 
 for i, design in enumerate(designs):
-    ergonomics = design['Ergonomics']
+    metric_values = design[metrics[factor]]
     costs = design['Estimated Cost']
-    print("costs:" +str(costs))
-    print("ergonomics:" +str(ergonomics))
     plot_label = str(design['Name'])
-    plt.scatter(costs, ergonomics, c=reference_color[i%len(reference_color)], label=plot_label, s=6)
-    y_axis_values_pareto.append(ergonomics)
+    plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], label=plot_label, s=2)
+    y_axis_values_pareto.append(metric_values)
     x_axis_values_pareto.append(costs)
 
-# for i in range(len(ergonomics[0])):#
-#     for j in range(len(ergonomics)):
-#         costs.append([design['Estimated Cost'] for design in designs])
-#         print(i)
 
-
-
-
-
+print("max: "+ str(max(y_axis_values_pareto)))
 utopia_point = [min(min(x_axis_values_pareto)), max(max(y_axis_values_pareto))]
 print("utopia point: " + str(utopia_point))
 
@@ -67,7 +62,7 @@ plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
 
 # Add labels and title
 plt.xlabel('Estimated Cost [$]')
-plt.ylabel(y_axis_values[factor])
+plt.ylabel(y_axis_values)
 title = 'Tradespace'
 ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 plt.title(title)
@@ -75,7 +70,7 @@ plt.title(title)
 plt.grid(True)
 
 
-file_name = "output_data/Tradespace" + "ergonomics" + ".png"
+file_name = "output_data/Tradespace_" + str(metrics[factor]) + ".png"
 print(file_name)
 plt.savefig(file_name)
 

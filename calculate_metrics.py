@@ -16,12 +16,13 @@ with open('input_data/selected_designs.json', 'r') as file:
     selected_designs = json.load(file)
 
 #config
-NUMBER_OF_MONTE_CARLO_RUNS = 10000
+NUMBER_OF_MONTE_CARLO_RUNS = 1000
 #config
 
 new_design_points = []
 for i, design_point in enumerate(selected_designs):
     ergonomics = [] #TODO: exted for more metrics
+    interoperative_overhead = []
     costs = []
     for j, decision in enumerate(decisions):
         print("Distribution for: " + str(design_point["Selected Options"][j]))
@@ -34,15 +35,30 @@ for i, design_point in enumerate(selected_designs):
                     elif option["cost"]["Probability Density Function"] == "beta":
                         costs.append(rng.beta(option["cost"]["alfa"], option["cost"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     else:
-                        print("Error: Probability Density Function not implemented")
+                        print("Error: Probability Density Function not implemented: " +  str(option["cost"]["Probability Density Function"]))
                 #TODO create a graph (distribution function) for each option (for ergonomics) - only one iteration
                 #ERGOMETRICS
                 if option["ergonomics"]["Probability Density Function"] != "none":
                     if option["ergonomics"]["Probability Density Function"] == "normal":
                         ergonomics.append(rng.normal(option["ergonomics"]["mean"], option["ergonomics"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
-                    if option["ergonomics"]["Probability Density Function"] == "beta":
+                    elif option["ergonomics"]["Probability Density Function"] == "beta":
                         ergonomics.append(rng.beta(option["ergonomics"]["alfa"], option["ergonomics"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
-
+                    else:
+                        print("Error: Probability Density Function not implemented: " +  str(option["ergonomics"]["Probability Density Function"]))
+                #"interoperative_overhead"
+                if option["interoperative_overhead"]["Probability Density Function"] != "none":
+                    if option["interoperative_overhead"]["Probability Density Function"] == "normal":
+                        interoperative_overhead.append(rng.normal(option["interoperative_overhead"]["mean"], option["interoperative_overhead"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                    elif option["interoperative_overhead"]["Probability Density Function"] == "beta":
+                        interoperative_overhead.append(rng.beta(option["interoperative_overhead"]["alfa"], option["interoperative_overhead"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                    elif option["interoperative_overhead"]["Probability Density Function"] == "weibull":
+                        interoperative_overhead.append(rng.weibull(option["interoperative_overhead"]["mean"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                    elif option["interoperative_overhead"]["Probability Density Function"] == "gamma":
+                        interoperative_overhead.append(rng.gamma(option["interoperative_overhead"]["shape"], option["interoperative_overhead"]["scale"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here    
+                    elif option["interoperative_overhead"]["Probability Density Function"] == "lognormal":
+                        interoperative_overhead.append(rng.lognormal(option["interoperative_overhead"]["mean"], option["interoperative_overhead"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here                
+                    else:
+                        print("Error: Probability Density Function not implemented: " +  str(option["interoperative_overhead"]["Probability Density Function"]))
     #sumup costs per design point
     costs_average = []
     for i in range(len(costs[0])): # for each monte carlo run
@@ -51,7 +67,6 @@ for i, design_point in enumerate(selected_designs):
             costs_sum_temp  = costs_sum_temp  + costs[j][i]
         costs_average.append(costs_sum_temp+135200)#TODO: confirm the diference in the calculation
 
-    print("costs_average: " + str(costs_average))
     #sumup ergonomics
     ergonomics_average = []
     #ergonomics = [[1,2,3],[4,5,6]] # test
@@ -60,8 +75,14 @@ for i, design_point in enumerate(selected_designs):
         for j in range(len(ergonomics)): # for each option
             ergonomics_sum_temp  = ergonomics_sum_temp  + ergonomics[j][i]
         ergonomics_average.append(ergonomics_sum_temp/len(ergonomics))
-            #summary[i]=ergonomics[i][0]+ergonomics[i][1]+ergonomics[i][1]
-    print("ergonomics_average: " + str(ergonomics_average))
+
+    #sumup interoperative_overhead
+    interoperative_overhead_average = []
+    for i in range(len(interoperative_overhead[0])): # for each monte carlo run
+        interoperative_overhead_sum_temp = 0
+        for j in range(len(interoperative_overhead)): # for each option
+            interoperative_overhead_sum_temp  = interoperative_overhead_sum_temp  + interoperative_overhead[j][i]
+        interoperative_overhead_average.append(interoperative_overhead_sum_temp/len(interoperative_overhead))
     
 
     # ergonomics_average = []
@@ -73,7 +94,7 @@ for i, design_point in enumerate(selected_designs):
         "Name":design_point["Name"],
         "Selected Options": design_point["Selected Options"],
         "Estimated Cost": costs_average,#simulation for now
-        "Estimated Interoperative Overhead": i,#simulation for now
+        "Estimated Interoperative Overhead": interoperative_overhead_average,#simulation for now
         "Ergonomics": ergonomics_average,#result
         "Estimated Performance": i,#simulation for now
     }
@@ -102,16 +123,30 @@ for p, metric in enumerate(matrics):
         for option in decisions[j]["Options"]:
             
             #plot probability distribution for each option separately
-            if option[metric]["Probability Density Function"] == "normal":
-                print("normal" + str(option[metric]["mean"]))
-                distributions.append(rng.normal(option[metric]["mean"], option[metric]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+            if option[metric]["Probability Density Function"] != "none":
                 distributions_labels.append(option["name"].split('|')[0])
-            elif option[metric]["Probability Density Function"] == "beta":
-                print("beta" + str(option[metric]["mean"]))
-                distributions.append(rng.beta(option[metric]["alfa"], option[metric]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
-                distributions_labels.append(option["name"].split('|')[0])
-            else:
-                print("Error: Probability Density Function not implemented")
+                if option[metric]["Probability Density Function"] == "normal":
+                    print("normal: " + str(option[metric]["mean"]))
+                    distributions.append(rng.normal(option[metric]["mean"], option[metric]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                    # distributions_labels.append(option["name"].split('|')[0])
+                elif option[metric]["Probability Density Function"] == "beta":
+                    print("beta: " + str(option[metric]["mean"]))
+                    distributions.append(rng.beta(option[metric]["alfa"], option[metric]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                    # distributions_labels.append(option["name"].split('|')[0])
+                elif option[metric]["Probability Density Function"] == "weibull":
+                    print("weibull: " + str(option[metric]["mean"]))
+                    distributions.append(rng.weibull(option[metric]["mean"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+
+                elif option[metric]["Probability Density Function"] == "gamma":
+                    print("gamma: " + str(option[metric]["shape"]))
+                    distributions.append(rng.gamma(option[metric]["shape"], option[metric]["scale"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here    
+                
+                elif option[metric]["Probability Density Function"] == "lognormal":
+                    print("lognormal: " + str(option[metric]["mean"]))
+                    distributions.append(rng.lognormal(option[metric]["mean"], option[metric]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here                
+                
+                else:
+                    print("Error: Probability Density Function not implemented: " +  str(option[metric]["Probability Density Function"]))
 
         if distributions != []:
             if j>=d_in_row: k=1
@@ -132,72 +167,3 @@ for p, metric in enumerate(matrics):
     plt.savefig(file_name)
     plt.close('all')
 # #TODO: print the cumulative distribution
-# # plot violin plot
-# axs[0].violinplot(all_data,
-#                   showmeans=True,
-#                   showmedians=True)
-# axs[0].set_title('Probability Density Function')
-# # Generate all combinations of options (one from each decision)
-# combinations = list(itertools.product(*decisions))
-
-# # Calculate cost and performance for each combination
-# designs = []
-# for combination in combinations:
-#     # COST
-#     reference_cost=250000 #[$] Cost of the Valys J&J robot, how much does the 
-#     total_cost = reference_cost+sum(option["cost"] for option in combination)
-#     # SETTING UP TIME
-#     reference_interoperative_overhead=30 #[min] assumption setting up time  of the J&J robot
-#     total_interoperative_overhead = reference_interoperative_overhead+sum(option["interoperative_overhead"] for option in combination)
-#     if total_interoperative_overhead > 120:
-#         total_interoperative_overhead = 120
-#     if total_interoperative_overhead < 10:
-#         total_interoperative_overhead = 10
-#     #ergonomics
-#     reference_ergonomics = 0.5#[mm] cutting ergonomics
-#     total_ergonomics = reference_ergonomics
-#     for option in combination:
-#         total_ergonomics = total_ergonomics*option["ergonomics"]
-#     if total_ergonomics < 0.05:
-#         total_ergonomics = 0.5  
-#     if total_ergonomics >= 2.0:
-#         total_ergonomics = 2.0    
-#     # PERFORMENCE
-#     total_performance = ((120-reference_interoperative_overhead)/110+(2.0-total_ergonomics)/1.95)/2
-    
-#     name = ""
-#     selected_options = [option["name"] for option in combination]
-
-#     design = {
-#         "Name":name,
-#         "Selected Options": selected_options,
-#         "Estimated Cost": total_cost,
-#         "Estimated Interoperative Overhead": total_interoperative_overhead,
-#         "Estimated Ergonomics": total_ergonomics,
-#         "Estimated Performance": total_performance,
-#     }
-#     designs.append(design)
-
-# # Save results to a JSON file
-# with open("output_data/designs.json", "w") as json_file:
-#     json.dump(designs, json_file, indent=4)
-# print("Designs saved to 'designs.json'")
-
-# # Flatten the JSON data
-# rows = []
-# for decision in decisions:
-#     decision_name = decision["Decision"]
-#     for option in decision["Options"]:
-#         row = {
-#             "Decision": decision_name,
-#             "Option Name": option["name"],
-#             "Cost PDF": option["cost"]["Probability Density Function"],
-#             "Interoperative Overhead PDF": option["interoperative_overhead"]["Probability Density Function"],
-#             "Ergonomics PDF": option["ergonomics"]["Probability Density Function"]
-#         }
-#         rows.append(row)
-# # Create DataFrame
-# df = pd.DataFrame(rows)
-# # Save to Excel
-# df.to_excel("output_data/decision_options.xlsx", index=False)
-# print("Excel file 'decision_options.xlsx' created successfully.")

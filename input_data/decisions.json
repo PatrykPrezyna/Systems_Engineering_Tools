@@ -104,10 +104,8 @@
                     "sigma": 200
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "weibul",
-                    "mean": 20,
-                    "alfa": 2,
-                    "beta": 20
+                    "Probability Density Function": "weibull",
+                    "mean": 20
                 },
                 "ergonomics": {
                     "Probability Density Function": "normal",
@@ -123,10 +121,8 @@
                     "sigma": 15000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "weibul",
-                    "mean": 15.55,
-                    "alfa": 2,
-                    "beta": 15.55
+                    "Probability Density Function": "weibull",
+                    "mean": 15.55
                 },
                 "ergonomics": {
                     "Probability Density Function": "normal",
@@ -142,10 +138,8 @@
                     "sigma": 2000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "weibul",
-                    "mean": 10,
-                    "alfa": 2,
-                    "beta": 10
+                    "Probability Density Function": "weibull",
+                    "mean": 10
                 },
                 "ergonomics": {
                     "Probability Density Function": "normal",
@@ -272,10 +266,9 @@
                     "sigma": 2000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "gamma right",
-                    "mean": 14,
-                    "alfa": 2,
-                    "beta": 14
+                    "Probability Density Function": "gamma",
+                    "shape": 14,
+                    "scale": 1.0
                 },
                 "ergonomics": {
                     "Probability Density Function": "normal",
@@ -291,10 +284,9 @@
                     "sigma": 2000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "gamma right",
-                    "mean": 12.65,
-                    "alfa": 2,
-                    "beta": 12.65
+                    "Probability Density Function": "gamma",
+                    "shape": 12.65,
+                    "scale": 1.0
                 },
                 "ergonomics": {
                     "Probability Density Function": "normal",
@@ -310,10 +302,9 @@
                     "sigma": 2000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "gamma right",
-                    "mean": 12,
-                    "alfa": 2,
-                    "beta": 12
+                    "Probability Density Function": "gamma",
+                    "shape": 12,
+                    "scale": 1.0
                 },
                 "ergonomics": {
                     "Probability Density Function": "normal",
@@ -375,10 +366,9 @@
                     "sigma": 2000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "log normal right",
-                    "mean": 5,
-                    "mu": 25,
-                    "siigma": 5
+                    "Probability Density Function": "lognormal",
+                    "mean": 1.3,
+                    "sigma": 1.1
                 },
                 "ergonomics": {
                     "Probability Density Function": "normal",
@@ -394,9 +384,8 @@
                     "sigma": 2000
                 },
                 "interoperative_overhead": {
-                    "Probability Density Function": "log normal right",
+                    "Probability Density Function": "lognormal",
                     "mean": 1.1,
-                    "mu": 1,
                     "sigma": 1.1
                 },
                 "ergonomics": {
