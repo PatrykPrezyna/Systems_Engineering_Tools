@@ -75,7 +75,6 @@ for i, design_point in enumerate(selected_designs):
     for i in range(len(ergonomics[0])): # for each monte carlo run
         ergonomics_sum_temp = 0
         for j in range(len(ergonomics)): # for each option
-            # print("Decision: " + str(j) + 'weighting: ' + str(decisions[j]["Weighting_ergonomics"]))
             ergonomics_sum_temp  = ergonomics_sum_temp  + max(min(10, ergonomics[j][i]), 0)*decisions[j]["Weighting_ergonomics"] 
         ergonomics_average.append(ergonomics_sum_temp)
 
@@ -84,7 +83,7 @@ for i, design_point in enumerate(selected_designs):
     for i in range(len(interoperative_overhead[0])): # for each monte carlo run
         interoperative_overhead_sum_temp = 0
         for j in range(len(interoperative_overhead)): # for each option
-            interoperative_overhead_sum_temp  = interoperative_overhead_sum_temp  + interoperative_overhead[j][i]
+            interoperative_overhead_sum_temp  = interoperative_overhead_sum_temp  + max(min(360, interoperative_overhead[j][i]), 0) 
         interoperative_overhead_average.append(interoperative_overhead_sum_temp/len(interoperative_overhead))
     
 
@@ -148,7 +147,6 @@ for p, metric in enumerate(matrics):
                 elif option[metric]["Probability Density Function"] == "lognormal":
                     print("lognormal: " + str(option[metric]["mean"]))
                     distributions.append(rng.lognormal(option[metric]["mean"], option[metric]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here                
-                
                 else:
                     print("Error: Probability Density Function not implemented: " +  str(option[metric]["Probability Density Function"]))
 

@@ -27,7 +27,7 @@ with open('output_data/designs.json', 'r') as file:
     designs = json.load(file)
 
 #config
-factor = 1 # which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performence"]
+factor = 0 # which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performence"]
 #config
 # Define the utopia point (ideal but unattainable point)
 #costs = [design['Estimated Cost'] for design in designs]
@@ -47,18 +47,13 @@ for i, design in enumerate(designs):
     metric_values = design[metrics[factor]]
     costs = design['Estimated Cost']
     plot_label = str(design['Name'])
-    plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], label=plot_label, s=2)
+    plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], label=plot_label, s=4)
     y_axis_values_pareto.append(metric_values)
     x_axis_values_pareto.append(costs)
 
 utopia_point = [min(min(x_axis_values_pareto)), max(map(max, y_axis_values_pareto))]
 print("utopia point: " + str(utopia_point))
 plt.scatter(utopia_point[0], utopia_point[1], c='gold', s=500, marker="*", label='Utopia Point')
-
-points = []
-for i, design in enumerate(designs):
-    for i, cost in enumerate(design['Estimated Cost']):
-        points.append((cost, design[metrics[factor]]))
 
 points = np.array(list(zip(sum(x_axis_values_pareto, []), sum(y_axis_values_pareto,[0]))))
 # print("points: " + str(points))
