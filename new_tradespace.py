@@ -27,7 +27,7 @@ with open('output_data/designs.json', 'r') as file:
     designs = json.load(file)
 
 #config
-factor =  1# which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performance"]
+factor =  2# which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performance"]
 #config
 # Define the utopia point (ideal but unattainable point)
 #costs = [design['Estimated Cost'] for design in designs]

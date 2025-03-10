@@ -34,6 +34,8 @@ for i, design_point in enumerate(selected_designs):
                         costs.append(rng.normal(option["cost"]["mean"], option["cost"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     elif option["cost"]["Probability Density Function"] == "beta":
                         costs.append(rng.beta(option["cost"]["alfa"], option["cost"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                    elif option["cost"]["Probability Density Function"] == "weibull":
+                        costs.append(rng.weibull(option["cost"]["mean"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     else:
                         print("Error: Probability Density Function not implemented: " +  str(option["cost"]["Probability Density Function"]))
                 #TODO create a graph (distribution function) for each option (for ergonomics) - only one iteration
