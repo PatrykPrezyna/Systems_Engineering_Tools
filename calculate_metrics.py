@@ -33,9 +33,9 @@ for i, design_point in enumerate(selected_designs):
                     if option["cost"]["Probability Density Function"] == "normal":
                         costs.append(rng.normal(option["cost"]["mean"], option["cost"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     elif option["cost"]["Probability Density Function"] == "beta":
-                        costs.append(rng.beta(option["cost"]["alfa"], option["cost"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                        costs.append(rng.beta(option["cost"]["alfa"], option["cost"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS)*option["cost"]["mean"])#monte carlo here 
                     elif option["cost"]["Probability Density Function"] == "weibull":
-                        costs.append(rng.weibull(option["cost"]["mean"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                        costs.append(rng.weibull(8.0, NUMBER_OF_MONTE_CARLO_RUNS)*option["cost"]["mean"])#monte carlo here 
                     else:
                         print("Error: Probability Density Function not implemented: " +  str(option["cost"]["Probability Density Function"]))
                 #TODO create a graph (distribution function) for each option (for ergonomics) - only one iteration
@@ -44,7 +44,7 @@ for i, design_point in enumerate(selected_designs):
                     if option["ergonomics"]["Probability Density Function"] == "normal":
                         ergonomics.append(rng.normal(option["ergonomics"]["mean"], option["ergonomics"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     elif option["ergonomics"]["Probability Density Function"] == "beta":
-                        ergonomics.append(rng.beta(option["ergonomics"]["alfa"], option["ergonomics"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                        ergonomics.append(rng.beta(option["ergonomics"]["alfa"], option["ergonomics"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS)*option["ergonomics"]["mean"])#monte carlo here 
                     else:
                         print("Error: Probability Density Function not implemented: " +  str(option["ergonomics"]["Probability Density Function"]))
                 else:
@@ -54,9 +54,9 @@ for i, design_point in enumerate(selected_designs):
                     if option["interoperative_overhead"]["Probability Density Function"] == "normal":
                         interoperative_overhead.append(rng.normal(option["interoperative_overhead"]["mean"], option["interoperative_overhead"]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
                     elif option["interoperative_overhead"]["Probability Density Function"] == "beta":
-                        interoperative_overhead.append(rng.beta(option["interoperative_overhead"]["alfa"], option["interoperative_overhead"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                        interoperative_overhead.append(rng.beta(option["interoperative_overhead"]["alfa"], option["interoperative_overhead"]["beta"], NUMBER_OF_MONTE_CARLO_RUNS)*option["interoperative_overhead"]["mean"])#monte carlo here 
                     elif option["interoperative_overhead"]["Probability Density Function"] == "weibull":
-                        interoperative_overhead.append(rng.weibull(option["interoperative_overhead"]["mean"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                        interoperative_overhead.append(rng.weibull(8.0, NUMBER_OF_MONTE_CARLO_RUNS)*option["interoperative_overhead"]["mean"])#monte carlo here 
                     elif option["interoperative_overhead"]["Probability Density Function"] == "gamma":
                         interoperative_overhead.append(rng.gamma(option["interoperative_overhead"]["shape"], option["interoperative_overhead"]["scale"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here    
                     elif option["interoperative_overhead"]["Probability Density Function"] == "lognormal":
@@ -137,11 +137,11 @@ for p, metric in enumerate(matrics):
                     # distributions_labels.append(option["name"].split('|')[0])
                 elif option[metric]["Probability Density Function"] == "beta":
                     print("beta: " + str(option[metric]["mean"]))
-                    distributions.append(rng.beta(option[metric]["alfa"], option[metric]["beta"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                    distributions.append(rng.beta(option[metric]["alfa"], option[metric]["beta"], NUMBER_OF_MONTE_CARLO_RUNS)*option[metric]["mean"])#monte carlo here 
                     # distributions_labels.append(option["name"].split('|')[0])
                 elif option[metric]["Probability Density Function"] == "weibull":
                     print("weibull: " + str(option[metric]["mean"]))
-                    distributions.append(rng.weibull(option[metric]["mean"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
+                    distributions.append(rng.weibull(8.0, NUMBER_OF_MONTE_CARLO_RUNS)*option[metric]["mean"])#monte carlo here 
 
                 elif option[metric]["Probability Density Function"] == "gamma":
                     print("gamma: " + str(option[metric]["shape"]))
