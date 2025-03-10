@@ -27,13 +27,13 @@ with open('output_data/designs.json', 'r') as file:
     designs = json.load(file)
 
 #config
-factor = 0 # which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performence"]
+factor =  1# which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performance"]
 #config
 # Define the utopia point (ideal but unattainable point)
 #costs = [design['Estimated Cost'] for design in designs]
 
 
-metrics = ["Ergonomics", "Estimated Interoperative Overhead", "Performence"]
+metrics = ["Ergonomics", "Estimated Interoperative Overhead", "Performance"]
 print('Estimated '+str(metrics[factor]))
 title = 'Estimated '+str(metrics[factor])
 y_axis_values = [title]
@@ -48,21 +48,23 @@ for i, design in enumerate(designs):
     costs = design['Estimated Cost']
     plot_label = str(design['Name'])
     plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], label=plot_label, s=4)
-    y_axis_values_pareto.append(metric_values)
-    x_axis_values_pareto.append(costs)
+    x_axis_values_pareto.extend(costs)
+    y_axis_values_pareto.extend(metric_values)
+    #if i >= 0: break
 
-utopia_point = [min(min(x_axis_values_pareto)), max(map(max, y_axis_values_pareto))]
-print("utopia point: " + str(utopia_point))
-plt.scatter(utopia_point[0], utopia_point[1], c='gold', s=500, marker="*", label='Utopia Point')
-
-points = np.array(list(zip(sum(x_axis_values_pareto, []), sum(y_axis_values_pareto,[0]))))
+#points = np.array(list(zip(sum(x_axis_values_pareto, []), sum(y_axis_values_pareto,[0]))))
+points = np.array([x_axis_values_pareto, y_axis_values_pareto]).T
 # print("points: " + str(points))
 pareto = is_efficient_efficient(points)
 pareto_points = pareto[0]
 print("pareto points: " + str(pareto_points))
 xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
 plt.plot(xs, ys, 'r--', label='Pareto Frontier')
-plt.scatter(pareto_points[:, 0], pareto_points[:, 1], facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
+plt.scatter(xs, ys, facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
+
+utopia_point = [min(x_axis_values_pareto), max(y_axis_values_pareto)]
+print("utopia point: " + str(utopia_point))
+plt.scatter(utopia_point[0], utopia_point[1], c='gold', s=500, marker="*", label='Utopia Point')
 
 # Add labels and title
 plt.xlabel('Estimated Cost [$]')
