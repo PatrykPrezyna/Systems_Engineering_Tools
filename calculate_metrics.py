@@ -86,19 +86,20 @@ for i, design_point in enumerate(selected_designs):
             interoperative_overhead_sum_temp  = interoperative_overhead_sum_temp  + max(min(360, interoperative_overhead[j][i]), 0) 
         interoperative_overhead_average.append(interoperative_overhead_sum_temp/len(interoperative_overhead))
     
+    #sumup performence
+    performence = []
+    for i in range(len(ergonomics_average)): # for each monte carlo run
+        ergonomics = ergonomics_average[i]/10
+        interoperative_overhead = interoperative_overhead_average[i]/360
+        performence.append(ergonomics*0.4+(1-interoperative_overhead)*0.6)
 
-    # ergonomics_average = []
-    # for j, ergonomic in enumerate(ergonomics):
-    #     ergonomics_average.append(sum(ergonomics))
-    # # ergonomics_average = ergonomics_average/j
-    # print(ergonomics_average)
     new_design_point = {
         "Name":design_point["Name"],
         "Selected Options": design_point["Selected Options"],
         "Estimated Cost": costs_average,#simulation for now
         "Estimated Interoperative Overhead": interoperative_overhead_average,#simulation for now
         "Ergonomics": ergonomics_average,#result
-        "Estimated Performance": i,#simulation for now
+        "Performance": performence,#simulation for now
     }
     new_design_points.append(new_design_point)
     #break#TODO extend for all design points
