@@ -47,6 +47,12 @@ for i, design in enumerate(designs):
     metric_values = design[metrics[factor]]
     costs = design['Estimated Cost']
     plot_label = str(design['Name'])
+    # sortedd = np.sort( np.array(metric_values))
+    # percentile = 1
+    # print(str(percentile) + ": " + str(sortedd[round(len(sortedd)*percentile)]))
+    # for i, value in enumerate(metric_values):
+    #     if value > sortedd[round(len(sortedd)*percentile)]:
+    #         metric_values[i] = 0
     plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], label=plot_label, s=4)
     x_axis_values_pareto.extend(costs)
     y_axis_values_pareto.extend(metric_values)
