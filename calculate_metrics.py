@@ -16,11 +16,11 @@ with open('input_data/selected_designs.json', 'r') as file:
     selected_designs = json.load(file)
 
 #config
-NUMBER_OF_MONTE_CARLO_RUNS = 1000
-OVERHEAD_MAX = 120
-OVERHEAD_MIN = 5
-ERGONOMICS_MAX = 10
+NUMBER_OF_MONTE_CARLO_RUNS = 100
 ERGONOMICS_MIN = 0
+ERGONOMICS_MAX = 10
+OVERHEAD_MIN = 5
+OVERHEAD_MAX = 120
 #config
 
 new_design_points = []
@@ -52,7 +52,7 @@ for i, design_point in enumerate(selected_designs):
                     else:
                         print("Error: Probability Density Function not implemented: " +  str(option["ergonomics"]["Probability Density Function"]))
                 else:
-                    ergonomics.append([0]*NUMBER_OF_MONTE_CARLO_RUNS)#nsure alle decisisons are the same length - for applying weighting
+                    ergonomics.append([0]*NUMBER_OF_MONTE_CARLO_RUNS)# ensure alle decisisons are the same length - for applying weighting
                 #"interoperative_overhead"
                 if option["interoperative_overhead"]["Probability Density Function"] != "none":
                     if option["interoperative_overhead"]["Probability Density Function"] == "normal":
@@ -77,7 +77,6 @@ for i, design_point in enumerate(selected_designs):
 
     #sumup ergonomics
     ergonomics_average = []
-    #ergonomics = [[1,2,3],[4,5,6]] # test
     for i in range(len(ergonomics[0])): # for each monte carlo run
         ergonomics_sum_temp = 0
         for j in range(len(ergonomics)): # for each option
@@ -117,7 +116,7 @@ print("Designs saved to 'designs.json'")
 
 
 #initialise plot
-matrics = ["cost", "interoperative_overhead", "ergonomics"]
+matrics = ["cost", "ergonomics", "interoperative_overhead"]
 metric_units = ["[$]", "[min]", "[?]"]
 for p, metric in enumerate(matrics):
     d_in_row = 4
@@ -127,7 +126,6 @@ for p, metric in enumerate(matrics):
     distributions_labels = []
     k=0
 
-    print("******************************************")
     for j, decision in enumerate(decisions):
         print("Decision: " + str(decision["Decision"]) + ";\nOption: ", str(distributions_labels))
         for option in decisions[j]["Options"]:
@@ -136,27 +134,25 @@ for p, metric in enumerate(matrics):
             if option[metric]["Probability Density Function"] != "none":
                 distributions_labels.append(option["name"].split('|')[0])
                 if option[metric]["Probability Density Function"] == "normal":
-                    print("normal: " + str(option[metric]["mean"]))
-                    distributions.append(rng.normal(option[metric]["mean"], option[metric]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here 
-                    # distributions_labels.append(option["name"].split('|')[0])
+                    temp_distribution = rng.normal(option[metric]["mean"], option[metric]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS)
                 elif option[metric]["Probability Density Function"] == "beta":
-                    print("beta: " + str(option[metric]["mean"]))
-                    distributions.append(rng.beta(option[metric]["alfa"], option[metric]["beta"], NUMBER_OF_MONTE_CARLO_RUNS)*option[metric]["mean"])#monte carlo here 
-                    # distributions_labels.append(option["name"].split('|')[0])
+                    temp_distribution = rng.beta(option[metric]["alfa"], option[metric]["beta"], NUMBER_OF_MONTE_CARLO_RUNS)*option[metric]["mean"] 
                 elif option[metric]["Probability Density Function"] == "weibull":
-                    print("weibull: " + str(option[metric]["mean"]))
-                    distributions.append(rng.weibull(8.0, NUMBER_OF_MONTE_CARLO_RUNS)*option[metric]["mean"])#monte carlo here 
-
+                    temp_distribution = rng.weibull(8.0, NUMBER_OF_MONTE_CARLO_RUNS)*option[metric]["mean"]
                 elif option[metric]["Probability Density Function"] == "gamma":
-                    print("gamma: " + str(option[metric]["shape"]))
-                    distributions.append(rng.gamma(option[metric]["shape"], option[metric]["scale"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here    
-                
+                    temp_distribution = rng.gamma(option[metric]["shape"], option[metric]["scale"], NUMBER_OF_MONTE_CARLO_RUNS)  
                 elif option[metric]["Probability Density Function"] == "lognormal":
-                    print("lognormal: " + str(option[metric]["mean"]))
-                    distributions.append(rng.lognormal(option[metric]["mean"], option[metric]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS))#monte carlo here                
+                    temp_distribution = rng.lognormal(option[metric]["mean"], option[metric]["sigma"], NUMBER_OF_MONTE_CARLO_RUNS)             
                 else:
                     print("Error: Probability Density Function not implemented: " +  str(option[metric]["Probability Density Function"]))
 
+                if metric == "cost":
+                    temp_distribution = [max(x, 0) for x in temp_distribution]
+                if metric == "ergonomics":
+                    temp_distribution = [min(max(x, ERGONOMICS_MIN), ERGONOMICS_MAX) for x in temp_distribution]
+                if metric == "interoperative_overhead":
+                    temp_distribution = [min(max(x, OVERHEAD_MIN), OVERHEAD_MAX)for x in temp_distribution]
+                distributions.append(temp_distribution)
         # for i, distribution in enumerate(distributions):
         #     #break
         #     print("distributions:" + str(distributions))
