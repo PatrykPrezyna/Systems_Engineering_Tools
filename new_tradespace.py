@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import combine_plots
 import combine_plots_vertical
+import math
 
 def is_efficient_efficient(points, min_dim=0, max_dim=1):
     """
@@ -40,13 +41,21 @@ metrics = ["Ergonomics", "Estimated Interoperative Overhead", "Performance"]
 
 # reference_color_err = ['black','silver','red', "sienna", "cyan", "plum", 'blue','olive','lawngreen', "green", "brown"]# for each option
 #reference_color = ['dimgrey','gainsboro','salmon', "chocolate", "lightcyan", "violet", 'cornflowerblue','darkkhaki','palegreen', "forestgreen", "indianred"]# for each option - error bars
+# reference_color = [
+#     "#d0d6b8", "#4caf50", "#a9c3ff", "#d1a8a3", "#5f8ae6",
+#     "#2aa5a0", "#ff9b4c", "#49d267", "#9b6ef3", "#f2e7aa"
+# ]
+# reference_color_err = [
+#     "#6b7740", "#1b3c1c", "#4a5a91", "#7f5651", "#1e3b7a",
+#     "#004d4d", "#8c4c13", "#1e5e2b", "#4b2d73"
+# ]
 reference_color = [
-    "#d0d6b8", "#4caf50", "#a9c3ff", "#d1a8a3", "#5f8ae6",
-    "#2aa5a0", "#ff9b4c", "#49d267", "#9b6ef3", "#f2e7aa"
+    "#FF8785", "#7BBFFC", "#4EC8DE", "#69C9B9", "#E7B030",
+    "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
 ]
 reference_color_err = [
-    "#6b7740", "#1b3c1c", "#4a5a91", "#7f5651", "#1e3b7a",
-    "#004d4d", "#8c4c13", "#1e5e2b", "#4b2d73", "#a89a6e"
+    "#A81829", "#00588D", "#005F73", "#005F52", "#714C00",
+    "#4C5900", "#78405F", "#674E1F", "#3F5661"
 ]
 
 
@@ -71,9 +80,9 @@ for factor in range(3):
         mean_metric = np.mean(metric_values)
         if design['Name'][0] == "R": #Add reference designs
             plt.scatter(mean_cost, mean_metric, facecolors='none', edgecolors='red',s=100, marker="X")
-            plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[round(i/len(reference_color))], label=str(design['Name']).split('|')[0], s=6)
+            plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[math.floor(i/len(reference_color))], label=str(design['Name']).split('|')[0], s=6)
         else:
-            plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[round(i/len(reference_color))], label=str(design['Name']), s=6)
+            plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[math.floor(i/len(reference_color))], label=str(design['Name']), s=6)
         label_name = "" + str(design['Name']) # add label for each design point
         ax.text(mean_cost, mean_metric, label_name, size=13)
 
