@@ -115,5 +115,42 @@
             "OP 9.1",
             "OP 10.1"
         ]
-    }
+    },
+    {
+     "Name": "R1 | Velys",
+     "Selected Options": [
+         "OP 1.2",
+         "OP 2.1",
+         "OP 3.2",
+         "OP 4.1",
+         "OP 7.2",
+         "OP 8.2",
+         "OP 9.2",
+         "OP 10.2"
+     ]
+ },{
+     "Name": "R2 | TSolution One",
+     "Selected Options": [
+         "OP 1.1",
+         "OP 2.2",
+         "OP 3.1",
+         "OP 4.1",
+         "OP 7.2",
+         "OP 8.2",
+         "OP 9.1",
+         "OP 10.2"
+     ]
+ },{
+     "Name": "R3 | Tmini",
+     "Selected Options": [
+         "OP 1.1",
+         "OP 2.3",
+         "OP 3.1",
+         "OP 4.1",
+         "OP 7.2",
+         "OP 8.2",
+         "OP 9.1",
+         "OP 10.1"
+     ]
+ }
 ]

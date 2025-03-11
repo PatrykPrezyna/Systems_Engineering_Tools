@@ -14,6 +14,9 @@ with open('input_data/decisions.json', 'r') as file:
 # Load selected concepts - data points
 with open('input_data/selected_designs.json', 'r') as file:
     selected_designs = json.load(file)
+# Load reference concepts - data points
+# with open('input_data/reference_designs.json', 'r') as file:
+#     reference_designs = json.load(file)
 
 #config
 NUMBER_OF_MONTE_CARLO_RUNS = 100
@@ -23,6 +26,7 @@ OVERHEAD_MIN = 5
 OVERHEAD_MAX = 120
 #config
 
+# selected_designs.append(reference_designs)
 new_design_points = []
 for i, design_point in enumerate(selected_designs):
     ergonomics = [] #TODO: exted for more metrics
@@ -98,6 +102,9 @@ for i, design_point in enumerate(selected_designs):
         interoperative_overhead = interoperative_overhead_average[i]/OVERHEAD_MAX#(interoperative_overhead_average[i]-OVERHEAD_MIN)/(OVERHEAD_MAX-OVERHEAD_MIN)
         performence.append(ergonomics*0.6+(1-interoperative_overhead)*0.4)
 
+    if design_point["Name"] == "R3 | Tmini":
+        print("R3 | Tmini")
+
     new_design_point = {
         "Name":design_point["Name"],
         "Selected Options": design_point["Selected Options"],
@@ -172,3 +179,11 @@ for p, metric in enumerate(matrics):
     plt.savefig(file_name)
     plt.close('all')
 # #TODO: print the cumulative distribution
+
+rows = []
+for row in new_design_points:
+    rows.append([row["Name"], row["Selected Options"]])
+df = pd.DataFrame(rows)
+# Save to Excel
+df.to_excel("output_data/decision_options.xlsx", index=False)
+print("Excel file 'decision_options.xlsx' created successfully.")

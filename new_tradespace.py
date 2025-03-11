@@ -107,6 +107,22 @@ utopia_point = [min(x_axis_values_pareto), max(y_axis_values_pareto)]
 print("utopia point: " + str(utopia_point))
 plt.scatter(utopia_point[0], utopia_point[1], c='gold', s=500, marker="*", label='Utopia Point')
 
+# Load ref designs
+with open('input_data/reference_designs.json', 'r') as file:
+    designs = json.load(file)
+#Add reference designs
+for design in designs:
+    costs = np.mean(design['Estimated Cost'])
+    y_values = np.mean(design[metrics[factor]])
+    names = design['Name']
+    #names = [design['Name'].partition("|")[0] for design in reference_designs]
+    plt.scatter(costs, y_values, c='orange',s=100, marker="X", label="reference designs")
+    # add label for each design point
+    label_name = "" + str(names)
+    print(label_name)
+    ax.text(costs, y_values, label_name, size=13)
+
+
 # Add labels and title
 plt.xlabel('Estimated Cost [$]')
 plt.ylabel(y_axis_values)
