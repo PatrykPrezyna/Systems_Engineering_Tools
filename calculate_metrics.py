@@ -101,13 +101,12 @@ for i, design_point in enumerate(selected_designs):
     new_design_point = {
         "Name":design_point["Name"],
         "Selected Options": design_point["Selected Options"],
-        "Estimated Cost": costs_average,#simulation for now
-        "Estimated Interoperative Overhead": interoperative_overhead_average,#simulation for now
-        "Ergonomics": ergonomics_average,#result
-        "Performance": performence,#simulation for now
+        "Estimated Cost": costs_average,
+        "Estimated Interoperative Overhead": interoperative_overhead_average,
+        "Ergonomics": ergonomics_average,
+        "Performance": performence,
     }
     new_design_points.append(new_design_point)
-    #break#TODO extend for all design points
 
 # Save results to a JSON file
 with open("output_data/designs.json", "w") as json_file:
@@ -153,16 +152,6 @@ for p, metric in enumerate(matrics):
                 if metric == "interoperative_overhead":
                     temp_distribution = [min(max(x, OVERHEAD_MIN), OVERHEAD_MAX)for x in temp_distribution]
                 distributions.append(temp_distribution)
-        # for i, distribution in enumerate(distributions):
-        #     #break
-        #     print("distributions:" + str(distributions))
-        #     for j, value in enumerate(distribution):
-                
-        #         if distributions[i][j]  < 0:
-        #             distributions[i][j] = 0
-        #         if distributions[i][j]  > 10.0:
-        #             distributions[i][j] = 10.1
-        #     print("distributions:" + str(distributions))
 
         if distributions != []:
             if j>=d_in_row: k=1
