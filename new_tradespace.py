@@ -29,7 +29,7 @@ with open('output_data/designs.json', 'r') as file:
 #config
 factor =  2 # which metric to plot ["Ergonomics", "Estimated Interoperative Overhead", "Performance"]
 EROR_BARS = True #FALSE
-EROR_BARS_PERCENTILE = 33
+EROR_BARS_PERCENTILE = [66.6]
 PARETOS = [1] # [1, 0.8, 0.6]
 #config
 # Define the utopia point (ideal but unattainable point)
@@ -67,30 +67,29 @@ for factor in range(3):
         #     if value > sortedd[round(len(sortedd)*percentile)]:
         #         metric_values[i] = 0
 
-        plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[round(i/len(reference_color))], label=str(design['Name']), s=6)
-        #Add reference designs
         mean_cost = np.mean(costs)
         mean_metric = np.mean(metric_values)
-        if design['Name'][0] == "R":
-            plt.scatter(mean_cost, mean_metric, facecolors='none', edgecolors='red',s=100, marker="X", label=str(design['Name']).split('|')[0])
+        if design['Name'][0] == "R": #Add reference designs
+            plt.scatter(mean_cost, mean_metric, facecolors='none', edgecolors='red',s=100, marker="X")
+            plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[round(i/len(reference_color))], label=str(design['Name']).split('|')[0], s=6)
+        else:
+            plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[round(i/len(reference_color))], label=str(design['Name']), s=6)
         label_name = "" + str(design['Name']) # add label for each design point
         ax.text(mean_cost, mean_metric, label_name, size=13)
 
         x_axis_values_pareto.extend(costs)
         y_axis_values_pareto.extend(metric_values)
-        #plot error bars
-        print("percentile x: " + str(np.percentile(costs-np.mean(costs), EROR_BARS_PERCENTILE)))
-        print("mean x: " + str(np.mean(costs)))
-        print("max x: " + str(np.max(costs)))
-        print("min x: " + str(np.min(costs)))
-        print("percentile y: " + str(np.percentile(metric_values-np.mean(metric_values), EROR_BARS_PERCENTILE)))
-        print("mean y: " + str(np.mean(metric_values)))
-        print('************************')
-        plt.errorbar(np.mean(costs), np.mean(metric_values),
-                xerr=[[10000], [40000]],#np.percentile(costs-np.mean(costs), EROR_BARS_PERCENTILE),
-                yerr=[[0.05], [0.03]],#np.percentile(metric_values-np.mean(metric_values), EROR_BARS_PERCENTILE),
-                c=reference_color_err[i%len(reference_color_err)],
-                capsize = 6, capthick = 2, lw = 1)
+        #plot error bars - take point hat are above the mean, substract the mean and get 33.3 percentile
+        for error_bar_percentile in EROR_BARS_PERCENTILE:
+            yerr_pos = np.percentile([x-np.mean(metric_values) for x in metric_values if x > np.mean(metric_values)], error_bar_percentile)
+            yerr_neg = np.percentile([abs(x-np.mean(metric_values)) for x in metric_values if x < np.mean(metric_values)], error_bar_percentile)
+            xerr_pos = np.percentile([x-np.mean(costs) for x in costs if x > np.mean(costs)], error_bar_percentile)
+            xerr_neg = np.percentile([abs(x-np.mean(costs)) for x in costs if x < np.mean(costs)], error_bar_percentile)
+            plt.errorbar(np.mean(costs), np.mean(metric_values),
+                    xerr=[[xerr_neg], [xerr_pos]],
+                    yerr=[[yerr_neg], [yerr_pos]],
+                    c=reference_color_err[i%len(reference_color_err)],
+                    capsize = 6, capthick = 2, lw = 1)
         # plt.errorbar(x, y,
         #          yerr=y_error,
         #          xerr=x_error,
