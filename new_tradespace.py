@@ -37,8 +37,7 @@ PARETOS = [1] # [1, 0.8, 0.6]
 
 
 metrics = ["Ergonomics", "Estimated Interoperative Overhead", "Performance"]
-y_axis_values_pareto = []
-x_axis_values_pareto = []
+
 # reference_color_err = ['black','silver','red', "sienna", "cyan", "plum", 'blue','olive','lawngreen', "green", "brown"]# for each option
 #reference_color = ['dimgrey','gainsboro','salmon', "chocolate", "lightcyan", "violet", 'cornflowerblue','darkkhaki','palegreen', "forestgreen", "indianred"]# for each option - error bars
 reference_color = [
@@ -52,80 +51,82 @@ reference_color_err = [
 
 
 marker = ['o', '^', 's']
-fig = plt.figure(figsize=(10, 6))
-ax = fig.add_subplot(111)
 
-for i, design in enumerate(designs):
-    metric_values = design[metrics[factor]]
-    costs = design['Estimated Cost']
-    # sortedd = np.sort( np.array(metric_values))
-    # percentile = 1
-    # print(str(percentile) + ": " + str(sortedd[round(len(sortedd)*percentile)]))
-    # for i, value in enumerate(metric_values):
-    #     if value > sortedd[round(len(sortedd)*percentile)]:
-    #         metric_values[i] = 0
+for factor in range(3):
+    y_axis_values_pareto = []
+    x_axis_values_pareto = []
+    fig = plt.figure(figsize=(10, 6))
+    ax = fig.add_subplot(111)
+    for i, design in enumerate(designs):
+        metric_values = design[metrics[factor]]
+        costs = design['Estimated Cost']
+        # sortedd = np.sort( np.array(metric_values))
+        # percentile = 1
+        # print(str(percentile) + ": " + str(sortedd[round(len(sortedd)*percentile)]))
+        # for i, value in enumerate(metric_values):
+        #     if value > sortedd[round(len(sortedd)*percentile)]:
+        #         metric_values[i] = 0
 
-    plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[round(i/len(reference_color))], label=str(design['Name']), s=6)
-    #Add reference designs
-    mean_cost = np.mean(costs)
-    mean_metric = np.mean(metric_values)
-    if design['Name'][0] == "R":
-        plt.scatter(mean_cost, mean_metric, facecolors='none', edgecolors='red',s=100, marker="X", label=str(design['Name']).split('|')[0])
-    label_name = "" + str(design['Name']) # add label for each design point
-    ax.text(mean_cost, mean_metric, label_name, size=13)
+        plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[round(i/len(reference_color))], label=str(design['Name']), s=6)
+        #Add reference designs
+        mean_cost = np.mean(costs)
+        mean_metric = np.mean(metric_values)
+        if design['Name'][0] == "R":
+            plt.scatter(mean_cost, mean_metric, facecolors='none', edgecolors='red',s=100, marker="X", label=str(design['Name']).split('|')[0])
+        label_name = "" + str(design['Name']) # add label for each design point
+        ax.text(mean_cost, mean_metric, label_name, size=13)
 
-    x_axis_values_pareto.extend(costs)
-    y_axis_values_pareto.extend(metric_values)
-    #plot error bars
-    print("percentile x: " + str(np.percentile(costs-np.mean(costs), EROR_BARS_PERCENTILE)))
-    print("mean x: " + str(np.mean(costs)))
-    print("max x: " + str(np.max(costs)))
-    print("min x: " + str(np.min(costs)))
-    print("percentile y: " + str(np.percentile(metric_values-np.mean(metric_values), EROR_BARS_PERCENTILE)))
-    print("mean y: " + str(np.mean(metric_values)))
-    print('************************')
-    plt.errorbar(np.mean(costs), np.mean(metric_values),
-             xerr=[[10000], [40000]],#np.percentile(costs-np.mean(costs), EROR_BARS_PERCENTILE),
-             yerr=[[0.05], [0.03]],#np.percentile(metric_values-np.mean(metric_values), EROR_BARS_PERCENTILE),
-             c=reference_color_err[i%len(reference_color_err)],
-             capsize = 6, capthick = 2, lw = 1)
-    # plt.errorbar(x, y,
-    #          yerr=y_error,
-    #          xerr=x_error,
-    #          fmt='o')  
+        x_axis_values_pareto.extend(costs)
+        y_axis_values_pareto.extend(metric_values)
+        #plot error bars
+        print("percentile x: " + str(np.percentile(costs-np.mean(costs), EROR_BARS_PERCENTILE)))
+        print("mean x: " + str(np.mean(costs)))
+        print("max x: " + str(np.max(costs)))
+        print("min x: " + str(np.min(costs)))
+        print("percentile y: " + str(np.percentile(metric_values-np.mean(metric_values), EROR_BARS_PERCENTILE)))
+        print("mean y: " + str(np.mean(metric_values)))
+        print('************************')
+        plt.errorbar(np.mean(costs), np.mean(metric_values),
+                xerr=[[10000], [40000]],#np.percentile(costs-np.mean(costs), EROR_BARS_PERCENTILE),
+                yerr=[[0.05], [0.03]],#np.percentile(metric_values-np.mean(metric_values), EROR_BARS_PERCENTILE),
+                c=reference_color_err[i%len(reference_color_err)],
+                capsize = 6, capthick = 2, lw = 1)
+        # plt.errorbar(x, y,
+        #          yerr=y_error,
+        #          xerr=x_error,
+        #          fmt='o')  
 
-    #if i >= 0: break
+        #if i >= 0: break
 
-#points = np.array(list(zip(sum(x_axis_values_pareto, []), sum(y_axis_values_pareto,[0]))))
-points = np.array([x_axis_values_pareto, y_axis_values_pareto]).T
-# print("points: " + str(points))
-pareto = is_efficient_efficient(points)
-pareto_points = pareto[0]
-print("pareto points: " + str(pareto_points))
-xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
-plt.plot(xs, ys, 'r--', label='Pareto Frontier')
-plt.scatter(xs, ys, facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
+    #points = np.array(list(zip(sum(x_axis_values_pareto, []), sum(y_axis_values_pareto,[0]))))
+    points = np.array([x_axis_values_pareto, y_axis_values_pareto]).T
+    # print("points: " + str(points))
+    pareto = is_efficient_efficient(points)
+    pareto_points = pareto[0]
+    print("pareto points: " + str(pareto_points))
+    xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
+    plt.plot(xs, ys, 'r--', label='Pareto Frontier')
+    plt.scatter(xs, ys, facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
 
-utopia_point = [min(x_axis_values_pareto), max(y_axis_values_pareto)]
-print("utopia point: " + str(utopia_point))
-plt.scatter(utopia_point[0], utopia_point[1], c='gold', s=500, marker="*", label='Utopia Point')
+    utopia_point = [min(x_axis_values_pareto), max(y_axis_values_pareto)]
+    print("utopia point: " + str(utopia_point))
+    plt.scatter(utopia_point[0], utopia_point[1], c='gold', s=500, marker="*", label='Utopia Point')
+
+    # Add labels and title
+    plt.xlabel('Estimated Cost [$]')
+    plt.ylabel(metrics[factor])
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    plt.title('Tradespace')
+    #plt.legend()
+    plt.grid(True)
+
+    file_name = "output_data/Tradespace_" + str(metrics[factor]) + ".png"
+    print(file_name)
+    plt.savefig(file_name)
+    plt.close('all')
 
 
 
-
-
-# Add labels and title
-plt.xlabel('Estimated Cost [$]')
-plt.ylabel(metrics[factor])
-ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-plt.title('Tradespace')
-#plt.legend()
-plt.grid(True)
-
-
-file_name = "output_data/Tradespace_" + str(metrics[factor]) + ".png"
-print(file_name)
-plt.savefig(file_name)
 
 # for j in range(len(designs[1]['Selected Options'])):
 #     unique_options = set()
