@@ -48,7 +48,20 @@ Run `calculate_metrics.py`
 2. Find the tradespace in `Output_data/Tradespace.png` 
 
 
+# Step by step System Engineering:
 
+1. What are the Architectureal Decisison
+2. what ar the options
+3. what is the reference design and what are the options for it
+4. what are the most important metrics
+5. estimate the metrics value for the referenece design
+6. what is the cost and performence model
+7. estimate factors for each option for each metric and costs 
+8. compere it for the reference design and reflec
+9. generate tradespaces depending on the options
+10. reflect - do you need all thouse options, do you need diferen metrics, different preformence model
+11. add uncertianties 
+...
 
 
 # Usage: Add uncetainty

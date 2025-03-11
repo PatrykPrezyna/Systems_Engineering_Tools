@@ -37,9 +37,6 @@ PARETOS = [1] # [1, 0.8, 0.6]
 
 
 metrics = ["Ergonomics", "Estimated Interoperative Overhead", "Performance"]
-print('Estimated '+str(metrics[factor]))
-title = 'Estimated '+str(metrics[factor])
-y_axis_values = [title]
 y_axis_values_pareto = []
 x_axis_values_pareto = []
 # reference_color_err = ['black','silver','red', "sienna", "cyan", "plum", 'blue','olive','lawngreen', "green", "brown"]# for each option
@@ -61,7 +58,6 @@ ax = fig.add_subplot(111)
 for i, design in enumerate(designs):
     metric_values = design[metrics[factor]]
     costs = design['Estimated Cost']
-    plot_label = str(design['Name'])
     # sortedd = np.sort( np.array(metric_values))
     # percentile = 1
     # print(str(percentile) + ": " + str(sortedd[round(len(sortedd)*percentile)]))
@@ -69,7 +65,15 @@ for i, design in enumerate(designs):
     #     if value > sortedd[round(len(sortedd)*percentile)]:
     #         metric_values[i] = 0
 
-    plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[round(i/len(reference_color))], label=plot_label, s=6)
+    plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[round(i/len(reference_color))], label=str(design['Name']), s=6)
+    #Add reference designs
+    mean_cost = np.mean(costs)
+    mean_metric = np.mean(metric_values)
+    if design['Name'][0] == "R":
+        plt.scatter(mean_cost, mean_metric, facecolors='none', edgecolors='red',s=100, marker="X", label=str(design['Name']).split('|')[0])
+    label_name = "" + str(design['Name']) # add label for each design point
+    ax.text(mean_cost, mean_metric, label_name, size=13)
+
     x_axis_values_pareto.extend(costs)
     y_axis_values_pareto.extend(metric_values)
     #plot error bars
@@ -94,7 +98,6 @@ for i, design in enumerate(designs):
 
 #points = np.array(list(zip(sum(x_axis_values_pareto, []), sum(y_axis_values_pareto,[0]))))
 points = np.array([x_axis_values_pareto, y_axis_values_pareto]).T
-print(points.shape)
 # print("points: " + str(points))
 pareto = is_efficient_efficient(points)
 pareto_points = pareto[0]
@@ -107,28 +110,15 @@ utopia_point = [min(x_axis_values_pareto), max(y_axis_values_pareto)]
 print("utopia point: " + str(utopia_point))
 plt.scatter(utopia_point[0], utopia_point[1], c='gold', s=500, marker="*", label='Utopia Point')
 
-# Load ref designs
-with open('input_data/reference_designs.json', 'r') as file:
-    designs = json.load(file)
-#Add reference designs
-for design in designs:
-    costs = np.mean(design['Estimated Cost'])
-    y_values = np.mean(design[metrics[factor]])
-    names = design['Name']
-    #names = [design['Name'].partition("|")[0] for design in reference_designs]
-    plt.scatter(costs, y_values, c='orange',s=100, marker="X", label="reference designs")
-    # add label for each design point
-    label_name = "" + str(names)
-    print(label_name)
-    ax.text(costs, y_values, label_name, size=13)
+
+
 
 
 # Add labels and title
 plt.xlabel('Estimated Cost [$]')
-plt.ylabel(y_axis_values)
-title = 'Tradespace'
+plt.ylabel(metrics[factor])
 ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-plt.title(title)
+plt.title('Tradespace')
 #plt.legend()
 plt.grid(True)
 
