@@ -123,7 +123,7 @@ print("Designs saved to 'designs.json'")
 
 #initialise plot
 matrics = ["cost", "ergonomics", "interoperative_overhead"]
-metric_units = ["[$]", "[min]", "[?]"]
+metric_units = ["[$]", "[min]", ""]
 for p, metric in enumerate(matrics):
     d_in_row = 4
     fig, axs = plt.subplots(nrows=2, ncols=d_in_row, figsize=(40, 20))#TODO make it dependent on the number of options
@@ -166,11 +166,11 @@ for p, metric in enumerate(matrics):
                         showmeans=True,
                         showmedians=True)
             axs[k][j%d_in_row].set_title("Decision: " + str(decision["Decision"]),fontsize=25)
-            axs[k][j%d_in_row].yaxis.grid(True)
+            axs[k][j%d_in_row].yaxis.grid(True, ms=250)
             axs[k][j%d_in_row].set_xticks([y + 1 for y in range(len(distributions))],
-                        labels=distributions_labels)
-            axs[k][j%d_in_row].set_xlabel('Options')
-            axs[k][j%d_in_row].set_ylabel(str(metric)+ str(metric_units[p]))
+                        labels=distributions_labels, fontsize=25)
+            axs[k][j%d_in_row].set_xlabel('Options',fontsize=25)
+            axs[k][j%d_in_row].set_ylabel(str(metric)+ " " + str(metric_units[p]), fontsize=25)
             distributions = []
             distributions_labels = []
 
