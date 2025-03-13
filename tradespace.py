@@ -26,16 +26,16 @@ def is_efficient_efficient(points, min_dim=0, max_dim=1):
 with open('input_data/selected_designs.json', 'r') as file:
     selected_designs = json.load(file)
 
-with open('output_data/designs.json', 'r') as file:
+with open('output_data/all_designs.json', 'r') as file:
     designs = json.load(file)
 
 with open('input_data/reference_designs.json', 'r') as file:
     reference_designs = json.load(file)
 
 #config
-show_selected_designs = True
-show_generated_designs = False
-show_reference_designs = True
+show_selected_designs = False
+show_generated_designs = True
+show_reference_designs = False
 # Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Performance
 factor = 2
 #config

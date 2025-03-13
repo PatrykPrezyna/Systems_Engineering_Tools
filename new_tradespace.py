@@ -84,7 +84,10 @@ for factor in range(3):
         else:
             plt.scatter(costs, metric_values, c=reference_color[i%len(reference_color)], marker=marker[math.floor(i/len(reference_color))], label=str(design['Name']), s=6)
         label_name = "" + str(design['Name']) # add label for each design point
-        ax.text(mean_cost, mean_metric, label_name, size=13)
+        if str(design['Name']).split('|')[0] == "C2" or str(design['Name']).split('|')[0] == "C8":
+            ax.text(mean_cost, mean_metric-0.015, label_name, size=13)
+        else:
+            ax.text(mean_cost, mean_metric, label_name, size=13)
 
         x_axis_values_pareto.extend(costs)
         y_axis_values_pareto.extend(metric_values)

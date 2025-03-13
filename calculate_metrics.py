@@ -19,7 +19,7 @@ with open('input_data/selected_designs.json', 'r') as file:
 #     reference_designs = json.load(file)
 
 #config
-NUMBER_OF_MONTE_CARLO_RUNS = 100
+NUMBER_OF_MONTE_CARLO_RUNS = 10000
 ERGONOMICS_MIN = 0
 ERGONOMICS_MAX = 10
 OVERHEAD_MIN = 5
@@ -77,7 +77,7 @@ for i, design_point in enumerate(selected_designs):
         costs_sum_temp = 0
         for j in range(len(costs)): # for each option
             costs_sum_temp  = costs_sum_temp  + costs[j][i]
-        costs_average.append(costs_sum_temp)#TODO: confirm the diference in the calculation
+        costs_average.append(costs_sum_temp)
 
     #sumup ergonomics
     ergonomics_average = []
