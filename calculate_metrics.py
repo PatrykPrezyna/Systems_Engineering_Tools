@@ -19,7 +19,7 @@ with open('input_data/selected_designs.json', 'r') as file:
 #     reference_designs = json.load(file)
 
 #config
-NUMBER_OF_MONTE_CARLO_RUNS = 10000
+NUMBER_OF_MONTE_CARLO_RUNS = 100
 ERGONOMICS_MIN = 0
 ERGONOMICS_MAX = 10
 OVERHEAD_MIN = 5
@@ -108,8 +108,8 @@ for i, design_point in enumerate(selected_designs):
     new_design_point = {
         "Name":design_point["Name"],
         "Selected Options": design_point["Selected Options"],
-        "Estimated Cost": costs_average,
-        "Estimated Interoperative Overhead": interoperative_overhead_average,
+        "Cost": costs_average,
+        "Interoperative Overhead": interoperative_overhead_average,
         "Ergonomics": ergonomics_average,
         "Performance": performence,
     }

@@ -1,8 +1,7 @@
 import json
 import numpy as np
 import matplotlib.pyplot as plt
-import combine_plots
-import combine_plots_vertical
+import utility_functions.combine_plots_vertical as combine_plots_vertical
 
 def is_efficient_efficient(points, min_dim=0, max_dim=1):
     """
@@ -29,26 +28,29 @@ with open('input_data/selected_designs.json', 'r') as file:
 with open('output_data/all_designs.json', 'r') as file:
     designs = json.load(file)
 
-with open('input_data/reference_designs.json', 'r') as file:
-    reference_designs = json.load(file)
+# with open('input_data/reference_designs.json', 'r') as file:
+#     reference_designs = json.load(file)
 
 #config
 show_selected_designs = False
 show_generated_designs = True
-show_reference_designs = False
+# show_reference_designs = False
 # Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Performance
 factor = 2
 #config
 
 # Define the utopia point (ideal but unattainable point)
-costs = [design['Estimated Cost'] for design in designs]
-interoperative_overhead = [design['Estimated Interoperative Overhead'] for design in designs]
-ergonomics = [design['Estimated Ergonomics'] for design in designs]
-performances = [design['Estimated Performance'] for design in designs]
+costs = [design['Cost'] for design in designs]
+interoperative_overhead = [design['Interoperative Overhead'] for design in designs]
+ergonomics = [design['Ergonomics'] for design in designs]
+performances = [design['Performance'] for design in designs]
 
-y_axis_values = ['Estimated Interoperative Overhead', 'Estimated Ergonomics', 'Estimated Performance']
+y_axis_values = ['Interoperative Overhead', 'Ergonomics', 'Performance']
 y_axis_values_pareto = [interoperative_overhead, ergonomics, performances]
-reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
+reference_color = [
+    "#FF8785", "#7BBFFC", "#4EC8DE", "#69C9B9", "#E7B030",
+    "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
+]# for each option
 decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 
 utopia_point = [min(costs), max(y_axis_values_pareto[factor])]
@@ -64,7 +66,7 @@ for j in range(len(designs[1]['Selected Options'])):
     ax = fig.add_subplot(111)
     if show_generated_designs:
         for i, option in enumerate(unique_options):
-            costs = [design['Estimated Cost'] for design in designs if design['Selected Options'][j]==option]
+            costs = [design['Cost'] for design in designs if design['Selected Options'][j]==option]
             y_values = [design[y_axis_values[factor]] for design in designs if design['Selected Options'][j]==option]
             names = [design['Name'] for design in designs if design['Selected Options'][j]==option]
             plot_label = str(option)
@@ -78,7 +80,7 @@ for j in range(len(designs[1]['Selected Options'])):
     plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
     #for selected design
     if show_selected_designs:
-        costs = [design['Estimated Cost'] for design in selected_designs]
+        costs = [design['Cost'] for design in selected_designs]
         y_values = [design[y_axis_values[factor]] for design in selected_designs]
         names = [design['Name'] for design in selected_designs]
         #names = [design['Name'].partition("|")[0] for design in selected_designs]
@@ -89,19 +91,19 @@ for j in range(len(designs[1]['Selected Options'])):
                 label_name = "" + str(names[i])
                 print(label_name)
                 ax.text(costs[i], y_values[i], label_name, size=13) 
-    if show_reference_designs:
-        #for ref design
-        costs = [design['Estimated Cost'] for design in reference_designs]
-        y_values = [design[y_axis_values[factor]] for design in reference_designs]
-        names = [design['Name'] for design in reference_designs]
-        #names = [design['Name'].partition("|")[0] for design in reference_designs]
-        plt.scatter(costs, y_values, c='orange',s=100, marker="X", label="reference designs")
-        # add label for each design point
-        for i, cost in enumerate(costs):
-            if names[i] != "":
-                label_name = "" + str(names[i])
-                print(label_name)
-                ax.text(costs[i], y_values[i], label_name, size=13)  
+    # if show_reference_designs:
+    #     #for ref design
+    #     costs = [design['Cost'] for design in reference_designs]
+    #     y_values = [design[y_axis_values[factor]] for design in reference_designs]
+    #     names = [design['Name'] for design in reference_designs]
+    #     #names = [design['Name'].partition("|")[0] for design in reference_designs]
+    #     plt.scatter(costs, y_values, c='orange',s=100, marker="X", label="reference designs")
+    #     # add label for each design point
+    #     for i, cost in enumerate(costs):
+    #         if names[i] != "":
+    #             label_name = "" + str(names[i])
+    #             print(label_name)
+    #             ax.text(costs[i], y_values[i], label_name, size=13)  
 
     pareto = is_efficient_efficient(points)
     pareto_points = pareto[0]
@@ -111,7 +113,7 @@ for j in range(len(designs[1]['Selected Options'])):
     
 
     # Add labels and title
-    plt.xlabel('Estimated Cost')
+    plt.xlabel('Cost')
     plt.ylabel(y_axis_values[factor])
     title = 'Tradespace for architectural decision: ' + str(decisions[j])
     if show_generated_designs == False:
@@ -130,14 +132,14 @@ unique_performence = []
 for i, is_pareto in enumerate(pareto[1]):
     if is_pareto:
         pareto_designs.append(designs[i])
-        print(designs[i]["Estimated Performance"])
-        if designs[i]["Estimated Performance"] not in  unique_performence:
+        print(designs[i]["Performance"])
+        if designs[i]["Performance"] not in  unique_performence:
             unique_pareto_designs.append(designs[i])
-            unique_performence.append(designs[i]["Estimated Performance"])
+            unique_performence.append(designs[i]["Performance"])
 
 
-pareto_designs.sort(key=lambda x: x['Estimated Performance'], reverse=True)
-unique_pareto_designs.sort(key=lambda x: x['Estimated Performance'], reverse=True)
+pareto_designs.sort(key=lambda x: x['Performance'], reverse=True)
+unique_pareto_designs.sort(key=lambda x: x['Performance'], reverse=True)
 
 print(len(pareto_designs))
 print("unique pareto designs: " + str(len(unique_pareto_designs)))

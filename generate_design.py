@@ -4,11 +4,23 @@ import math
 import pandas as pd
 
 #config
-ERGONOMICS_MIN = 0
-ERGONOMICS_MAX = 10
-OVERHEAD_MIN = 5
-OVERHEAD_MAX = 120
-#config
+# Load decisions, options and metrics estimations
+with open('input_data/config.json', 'r') as file:
+    config = json.load(file)
+
+# for metric in config["metrics"]:
+#     if metric["metric"] == "interoperative_overhead":
+#         OVERHEAD_MIN = metric["min"]
+#         OVERHEAD_MAX = metric["max"]
+#     elif metric["metric"] == "ergonomics":
+#         ERGONOMICS_MIN = metric["min"]
+#         ERGONOMICS_MAX = metric["max"]
+#     elif metric["metric"] == "responsiveness":
+#         RESPONSIVENESS_MIN = metric["min"]
+#         RESPONSIVENESS_MAX = metric["max"]
+
+# print(OVERHEAD_MIN )
+# #config
 
 # Load decisions, options and metrics estimations
 with open('input_data/decisions.json', 'r') as file:
@@ -24,26 +36,33 @@ designs = []
 interoperative_overhead = 0
 num = 0
 for i, combination in enumerate(combinations):
-    total_cost = sum(option["cost"]["mean"] for i, option in enumerate(combination) if option["cost"]["Probability Density Function"] != "none")
-    total_ergonomics = sum(option["ergonomics"]["mean"]*data[i]["Weighting_ergonomics"] for i, option in enumerate(combination) if option["ergonomics"]["Probability Density Function"] != "none")
-    for option in combination:
-        if option["interoperative_overhead"]["Probability Density Function"] != "none":
-            interoperative_overhead = interoperative_overhead + option["interoperative_overhead"]["mean"]  
-            num = num + 1
-    total_interoperative_overhead = (interoperative_overhead/num)/OVERHEAD_MAX
-    num = 0
+
+
+    # total_cost = sum(option["cost"]["mean"] for i, option in enumerate(combination) if option["cost"]["Probability Density Function"] != "none")
+    # total_ergonomics = sum(option["ergonomics"]["mean"]*data[i]["Weighting_ergonomics"] for i, option in enumerate(combination) if option["ergonomics"]["Probability Density Function"] != "none")
+    # for option in combination:
+    #     if option["interoperative_overhead"]["Probability Density Function"] != "none":
+    #         interoperative_overhead = interoperative_overhead + option["interoperative_overhead"]["mean"]  
+    #         num = num + 1
+    # total_interoperative_overhead = (interoperative_overhead/num)/OVERHEAD_MAX
+    # num = 0
     
     performence = total_ergonomics*0.6+(1-total_interoperative_overhead)*0.4
 
     selected_options = [option["name"] for option in combination]
+    name = "Name"
     design = {
-        "Name":i,
+        name:str(i),
         "Selected Options": selected_options,
-        "Estimated Cost": total_cost,
-        "Estimated Interoperative Overhead": total_interoperative_overhead,
-        "Estimated Ergonomics": total_ergonomics,
-        "Estimated Performance": performence,
-    }
+        "Cost": total_cost,
+        }
+    for metric in config["metrics"]:
+        design.update({
+            "Interoperative Overhead": total_interoperative_overhead,
+            "Ergonomics": total_ergonomics,
+            "Performance": performence,
+        })
+    design.update({"Performance": performence})
     designs.append(design)
 
 # Save results to a JSON file
@@ -59,7 +78,7 @@ for decision in data:
         row = {
             "Decision": decision_name,
             "Option Name": option["name"],
-            "Estimated Cost": option["cost"],
+            "Cost": option["cost"],
             "Interoperative Overhead": option["interoperative_overhead"],
             "Ergonomics": option["ergonomics"]
         }

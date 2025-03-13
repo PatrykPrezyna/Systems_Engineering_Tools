@@ -6,7 +6,7 @@ with open('reference_designs.json', 'r') as file:
 
 for i, design in enumerate(reference_designs):
     total_performance = ((120-design["Estimated Setting up Time"])/110+(2-design["Estimated Accuracy"])/1.95+design["Estimated Experience"]/10)/3
-    reference_designs[i]["Estimated Performance"]=total_performance
+    reference_designs[i]["Performance"]=total_performance
     print(design)
     print(total_performance)
 
