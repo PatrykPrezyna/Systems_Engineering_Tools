@@ -1,6 +1,6 @@
 # Tradespace Exploration Python
 
-This project contains Python scripts and data files for tradespace exploration and analysis. 
+This project contains Python scripts and config files for tradespace exploration and analysis. 
 The scripts generate plots, calculate utilities, and process design data for architectural decisions.
 
 # Requirements
@@ -30,12 +30,30 @@ These instructions will help you set up and run the project on your local machin
 4. Install the required packages: pip install -r requirements.txt
 
 
-# Usage: Initial tradespace exploration
+# Quick start
 
+You may start with the surgical robot example and run following scripts to get a tradespace.
+
+1. Run `generate_designs.py` 
+2. Run `tradespace.py`
+
+# Ajust for your own project
+ 
 ## Architectural decisions, options and metrics 
 
-Open the `input_data/decision.json` file and adjust it accordingly. 
-Open the `input_data/selected_designs.json` file and adjust it accordingly. 
+1. You can use the `input_data/config.json` file to define your architectural decisions with options and metrics. 
+Use the properties weight and invert to defie how the overall performence will be calculated.
+2. Run `generate_decisions.py` to create a scafolding of the `input_data/decisions.json`
+
+3. Open the `input_data/decision.json` file and adjust it accordingly. 
+4. Run `generate_designs.py` 
+5. (Optional) Open the `input_data/selected_designs.json` file and adjust it accordingly. 
+6. Run `tradespace.py`
+7. Find the tradespace in `Output_data/Tradespace.png` 
+
+* there is also a option to ignore the decisison alltogether, select "Tradespace_options"."include selected" : "True",(rest False) and create tradespace only with the selected designs.
+
+# Usage: Add uncetainty
 
 ## Calculate design points metrics
 
@@ -46,6 +64,7 @@ Run `calculate_metrics.py`
 
 1. Run `new_tradespace.py`
 2. Find the tradespace in `Output_data/Tradespace.png` 
+
 
 
 # Step by step System Engineering:
@@ -64,7 +83,6 @@ Run `calculate_metrics.py`
 ...
 
 
-# Usage: Add uncetainty
 
 # Possible ToDos:
  1. Allow for flexible adjusting of the performence metrics

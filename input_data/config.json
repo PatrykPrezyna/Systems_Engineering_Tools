@@ -24,18 +24,29 @@
     "metrics" :[
         {
             "name":"Interoperative Overhead", 
+            "weight": 0.2,
+            "invert": "True",
             "min": 0,
             "max":10
         },
         {
             "name":"Ergonomics",
+            "weight": 0.2,
+            "invert": "False",
             "min": 5,
             "max":120
         },
         {
             "name":"Responsiveness",
+            "weight": 0.2,
+            "invert": "False",
             "min": 5,
             "max":120
         }
-    ]
+    ],
+    "Tradespace_options": {
+        "include generated" : "True", 
+        "include selected" : "True",
+        "include reference" : "True"
+    }
 }
