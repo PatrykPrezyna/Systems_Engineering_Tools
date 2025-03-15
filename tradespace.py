@@ -35,7 +35,7 @@ with open('output_data/designs.json', 'r') as file:
 show_selected_designs = False
 show_generated_designs = True
 # show_reference_designs = False
-# Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Performance
+# Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Responsiveness, 3=Performance
 factor = 3
 #config
 
@@ -43,14 +43,16 @@ factor = 3
 costs = [design['Cost'] for design in designs]
 interoperative_overhead = [design['Interoperative Overhead'] for design in designs]
 ergonomics = [design['Ergonomics'] for design in designs]
+responsiveness = [design['Responsiveness'] for design in designs]
 performances = [design['Performance'] for design in designs]
 
 y_axis_values = ['Interoperative Overhead', 'Ergonomics', "Responsiveness", 'Performance']
-y_axis_values_pareto = [interoperative_overhead, ergonomics, performances]
+y_axis_values_pareto = [interoperative_overhead, ergonomics, responsiveness, performances]
 reference_color = [
     "#FF8785", "#7BBFFC", "#4EC8DE", "#69C9B9", "#E7B030",
     "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
 ]# for each option
+reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
 reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]
 decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 

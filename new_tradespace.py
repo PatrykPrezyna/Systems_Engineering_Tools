@@ -31,7 +31,7 @@ with open('output_data/designs.json', 'r') as file:
 
 #config
 EROR_BARS_PERCENTILE = [66.6]
-ADD_LABEL = False # True / False 
+ADD_LABEL = True # True / False 
 #config
 
 reference_color = [
@@ -44,14 +44,20 @@ reference_color_err = [
 ]
 marker = ['o', '^', 's']
 label = ""
-for i, metric in enumerate(config["metrics"]):
+metrics = []
+for i, metric_name in enumerate(config["metrics"]): 
+    metrics.append(metric_name["name"])
+metrics.append("Performance") 
+for i, metric in enumerate(metrics):
     y_axis_values_pareto = []
     x_axis_values_pareto = []
     fig = plt.figure(figsize=(10, 6))
     ax = fig.add_subplot(111)
     for i, design in enumerate(designs):
         costs = design['Cost']
-        metric_values = design[metric["name"]]
+        print("help")
+        print(metric)
+        metric_values = design[metric]
         mean_cost = np.mean(costs)
         mean_metric = np.mean(metric_values)
         if ADD_LABEL:
@@ -92,12 +98,12 @@ for i, metric in enumerate(config["metrics"]):
 
     # Add labels and title
     plt.xlabel('Cost [$]')
-    plt.ylabel(metric["name"])
+    plt.ylabel(metric)
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     plt.title('Tradespace')
     plt.grid(True)
 
-    file_name = "output_data/Tradespace_" + str(metric["name"]) + ".png"
+    file_name = "output_data/Tradespace_" + str(metric) + ".png"
     print(file_name)
     plt.savefig(file_name)
     plt.close('all')

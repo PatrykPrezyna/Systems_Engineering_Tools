@@ -97,7 +97,7 @@
         }
     ],
     "Tradespace_options": {
-        "include generated" : "True", 
+        "include generated" : "False", 
         "include selected" : "True"
     }
 }
