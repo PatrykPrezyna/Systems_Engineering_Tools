@@ -12,16 +12,16 @@ with open('input_data/config.json', 'r') as file:
 # with open('input_data/decisions.json', 'r') as file:
 #     data = json.load(file)
 decisions = []
-for decision in config["decisions"]:
+for ide, decision in enumerate(config["decisions"]):
     options = []
-    for option in decision["options"]:
+    for io, option in enumerate(decision["options"]):
         metrics = []
         for metric in config["metrics"]:
             metrics.append({
                     "name":metric["name"],
                     "comment":"xyz",
                     "Probability Density Function": "normal",
-                    "mean": 0,
+                    "mean": (ide+1)*(io+1),
                     "sigma": 0,
                     "alfa": 0,
                     "beta": 0,
@@ -42,26 +42,20 @@ for decision in config["decisions"]:
                         "shape": 0,
                         "scale": 0},
                     "metrics": metrics})
+    #as a default every decisison has the same weight for every metric: 1/number of decisions
+    weight = 1.0 / len(config["decisions"])
+    print("weight: " + str(weight))
     decision = {
         "name":decision["name"],
         "enable":"True",
-        "Weighting Interoperative Overhead": 0.0,
-        "Weighting Ergonomics": 0.0,
-        "Weighting Responsiveness": 0.0,
-        "Options": options
-#        "enable":decision["enable"],
-        }
-    # for metric in config["metrics"]:
-    #     design.update({
-    #         "Interoperative Overhead": total_interoperative_overhead,
-    #         "Ergonomics": total_ergonomics,
-    #         "Performance": performence,
-    #     })
-    # design.update({"Performance": performence})
+        "Weighting Interoperative Overhead": weight,#TODO generate in a loop for every metric
+        "Weighting Ergonomics": weight,
+        "Weighting Responsiveness": weight,
+        "Options": options}
     decisions.append(decision)
 
 
-with open("output_data/decisions.json", "w") as json_file:
+with open("input_data/decisions.json", "w") as json_file:
     json.dump(decisions, json_file, indent=4)
 print("Decisions saved to 'decisions.json'")
 

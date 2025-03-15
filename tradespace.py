@@ -25,7 +25,7 @@ def is_efficient_efficient(points, min_dim=0, max_dim=1):
 with open('input_data/selected_designs.json', 'r') as file:
     selected_designs = json.load(file)
 
-with open('output_data/all_designs.json', 'r') as file:
+with open('output_data/designs.json', 'r') as file:
     designs = json.load(file)
 
 # with open('input_data/reference_designs.json', 'r') as file:
@@ -36,7 +36,7 @@ show_selected_designs = False
 show_generated_designs = True
 # show_reference_designs = False
 # Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Performance
-factor = 2
+factor = 3
 #config
 
 # Define the utopia point (ideal but unattainable point)
@@ -45,12 +45,13 @@ interoperative_overhead = [design['Interoperative Overhead'] for design in desig
 ergonomics = [design['Ergonomics'] for design in designs]
 performances = [design['Performance'] for design in designs]
 
-y_axis_values = ['Interoperative Overhead', 'Ergonomics', 'Performance']
+y_axis_values = ['Interoperative Overhead', 'Ergonomics', "Responsiveness", 'Performance']
 y_axis_values_pareto = [interoperative_overhead, ergonomics, performances]
 reference_color = [
     "#FF8785", "#7BBFFC", "#4EC8DE", "#69C9B9", "#E7B030",
     "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
 ]# for each option
+reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]
 decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 
 utopia_point = [min(costs), max(y_axis_values_pareto[factor])]

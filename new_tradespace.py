@@ -21,15 +21,19 @@ def is_efficient_efficient(points, min_dim=0, max_dim=1):
 
     return [points[is_efficient], is_efficient]
 
+# Load config
+with open('input_data/config.json', 'r') as file:
+    config = json.load(file)
+
 # Load designs
 with open('output_data/designs.json', 'r') as file:
     designs = json.load(file)
 
 #config
 EROR_BARS_PERCENTILE = [66.6]
-ADD_LABEL = True # True / False 
+ADD_LABEL = False # True / False 
 #config
-metrics = ["Ergonomics", "Interoperative Overhead", "Performance"]#TODO look for metrics in decision.json
+
 reference_color = [
     "#FF8785", "#7BBFFC", "#4EC8DE", "#69C9B9", "#E7B030",
     "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
@@ -40,14 +44,14 @@ reference_color_err = [
 ]
 marker = ['o', '^', 's']
 label = ""
-for metric in range(len(metrics)):
+for i, metric in enumerate(config["metrics"]):
     y_axis_values_pareto = []
     x_axis_values_pareto = []
     fig = plt.figure(figsize=(10, 6))
     ax = fig.add_subplot(111)
     for i, design in enumerate(designs):
         costs = design['Cost']
-        metric_values = design[metrics[metric]]
+        metric_values = design[metric["name"]]
         mean_cost = np.mean(costs)
         mean_metric = np.mean(metric_values)
         if ADD_LABEL:
@@ -88,12 +92,12 @@ for metric in range(len(metrics)):
 
     # Add labels and title
     plt.xlabel('Cost [$]')
-    plt.ylabel(metrics[metric])
+    plt.ylabel(metric["name"])
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     plt.title('Tradespace')
     plt.grid(True)
 
-    file_name = "output_data/Tradespace_" + str(metrics[metric]) + ".png"
+    file_name = "output_data/Tradespace_" + str(metric["name"]) + ".png"
     print(file_name)
     plt.savefig(file_name)
     plt.close('all')

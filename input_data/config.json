@@ -19,34 +19,85 @@
                 {"name":"OP 2.2| Free Standing","enable": "True"},
                 {"name":"OP 2.3| Handheld","enable": "True"}                            
             ]
+        },
+        {
+            "name":"D3| Pre-operation Imaging Type", 
+            "enable": "True",
+            "options": [
+                {"name":"OP 3.1| Pre-Op Imaging Needed","enable": "True"},
+                {"name":"OP 3.2| Imageless","enable": "True"}                          
+            ]
+        },
+        {
+            "name":"D4| Procedure Imaging Type", 
+            "enable": "True",
+            "options": [
+                {"name":"OP 4.1| IR Markers","enable": "True"},
+                {"name":"OP 4.2| Accelerometers","enable": "True"},
+                {"name":"OP 4.3| 3D Scanning","enable": "True"},
+                {"name":"OP 4.4| Imageless","enable": "True"}                             
+            ]
+        },
+        {
+            "name":"D7| Sterilizable Components", 
+            "enable": "True",
+            "options": [
+                {"name":"OP 7.1| Entire Device","enable": "True"},
+                {"name":"OP 7.2| Device is sterilizable, disposable components exists","enable": "True"},
+                {"name":"OP 7.3| Everything Is Disposable Or Needs Draping", "enable": "True"}                         
+            ]
+        },
+        {
+            "name":"D8| User Input Type", 
+            "enable": "True",
+            "options": [
+                {"name":"OP 8.1| Surgeon Only","enable": "True"},
+                {"name":"OP 8.2| OR Staff Support","enable": "True"}                        
+            ]
+        },
+        {
+            "name":"D9| Onboard vs Offboard Power", 
+            "enable": "True",
+            "options": [
+                {"name":"OP 9.1| Onboard","enable": "True"},
+                {"name":"OP 9.2| Offboard","enable": "True"}                       
+            ]
+        },
+        {
+            "name":"D10| Onboard vs Offboard Computin", 
+            "enable": "True",
+            "options": [
+                {"name":"OP 10.1| Onboard","enable": "True"},
+                {"name":"OP 10.2| Offboard","enable": "True"}                       
+            ]
         }
+
     ],
     "metrics" :[
         {
             "name":"Interoperative Overhead", 
-            "weight": 0.2,
+            "weight": 0.3,
             "invert": "True",
-            "min": 0,
-            "max":10
+            "min": 5,
+            "max":120
         },
         {
             "name":"Ergonomics",
-            "weight": 0.2,
+            "weight": 0.5,
             "invert": "False",
-            "min": 5,
-            "max":120
+            "min": 0,
+            "max":10
         },
         {
             "name":"Responsiveness",
             "weight": 0.2,
             "invert": "False",
-            "min": 5,
-            "max":120
+            "min": 0,
+            "max":10
         }
     ],
     "Tradespace_options": {
         "include generated" : "True", 
-        "include selected" : "True",
-        "include reference" : "True"
+        "include selected" : "True"
     }
 }
