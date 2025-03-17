@@ -48,6 +48,8 @@ Use the properties weight and invert to defie how the overall performence will b
 3. Open the `input_data/decision.json` file and adjust it accordingly. 
 4. Run `generate_designs.py` 
 5. (Optional) Open the `input_data/selected_designs.json` file and adjust it accordingly. 
+6. Run `calculate_metrics.py` 
+7. Run `calculate_performance.py`
 6. Run `tradespace.py`
 7. Find the tradespace in `Output_data/Tradespace.png` 
 

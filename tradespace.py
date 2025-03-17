@@ -34,6 +34,7 @@ with open('output_data/designs.json', 'r') as file:
 #config
 show_selected_designs = False
 show_generated_designs = True
+ADD_LABEL = True
 # show_reference_designs = False
 # Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Responsiveness, 3=Performance
 factor = 3
@@ -74,12 +75,13 @@ for j in range(len(designs[1]['Selected Options'])):
             names = [design['Name'] for design in designs if design['Selected Options'][j]==option]
             plot_label = str(option)
             plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=6)
-            # add label for each design point
-            # for i, cost in enumerate(costs):
-            #     if names[i] != "":
-            #         label_name = names[i]
-            #         print(label_name)
-            #         ax.text(costs[i], y_values[i], label_name)
+            #add label for each design point
+            if ADD_LABEL:
+                for i, cost in enumerate(costs):
+                    if names[i] != "":
+                        label_name = names[i]
+                        print(label_name)
+                        ax.text(costs[i], y_values[i], label_name)
     plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
     #for selected design
     if show_selected_designs:
