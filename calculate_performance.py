@@ -29,7 +29,6 @@ for i, design in enumerate(designs): # for every design point
              metric_value = 1 - metric_value
         # new_design.update({metric["name"]: metric_value}) # test
         performance = performance + metric_value*metric["weight"]
-    performance = performance/len(config["metrics"])
     new_design.update({"Performance": performance})
     new_designs.append(new_design)
 
