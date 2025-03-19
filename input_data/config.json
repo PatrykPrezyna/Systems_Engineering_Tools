@@ -16,7 +16,7 @@
             "enable": "True",
             "options": [
                 {"name":"OP 2.1| On Bed","enable": "True"},
-                {"name":"OP 2.2| Free Standing","enable": "True"},
+                {"name":"OP 2.2| Cart-mounted","enable": "True"},
                 {"name":"OP 2.3| Handheld","enable": "True"}                            
             ]
         },
