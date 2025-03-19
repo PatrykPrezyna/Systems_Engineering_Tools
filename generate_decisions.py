@@ -60,47 +60,6 @@ with open("input_data/decisions.json", "w") as json_file:
 print("Decisions saved to 'decisions.json'")
 
 
-# # Extract all decisions and their options
-# decisions = [decision["Options"] for decision in data]
-# # Generate all combinations of options (one from each decision)
-# combinations = list(itertools.product(*decisions))
-
-# # Calculate cost and performance for each combination
-# designs = []
-# interoperative_overhead = 0
-# num = 0
-# for i, combination in enumerate(combinations):
-
-
-#     # total_cost = sum(option["cost"]["mean"] for i, option in enumerate(combination) if option["cost"]["Probability Density Function"] != "none")
-#     # total_ergonomics = sum(option["ergonomics"]["mean"]*data[i]["Weighting_ergonomics"] for i, option in enumerate(combination) if option["ergonomics"]["Probability Density Function"] != "none")
-#     # for option in combination:
-#     #     if option["interoperative_overhead"]["Probability Density Function"] != "none":
-#     #         interoperative_overhead = interoperative_overhead + option["interoperative_overhead"]["mean"]  
-#     #         num = num + 1
-#     # total_interoperative_overhead = (interoperative_overhead/num)/OVERHEAD_MAX
-#     # num = 0
-    
-#     performence = total_ergonomics*0.6+(1-total_interoperative_overhead)*0.4
-
-#     selected_options = [option["name"] for option in combination]
-#     name = "Name"
-#     design = {
-#         name:str(i),
-#         "Selected Options": selected_options,
-#         "Cost": total_cost,
-#         }
-#     for metric in config["metrics"]:
-#         design.update({
-#             "Interoperative Overhead": total_interoperative_overhead,
-#             "Ergonomics": total_ergonomics,
-#             "Performance": performence,
-#         })
-#     design.update({"Performance": performence})
-#     designs.append(design)
-
-# # Save results to a JSON file
-
 
 # # Flatten the JSON data
 # rows = []

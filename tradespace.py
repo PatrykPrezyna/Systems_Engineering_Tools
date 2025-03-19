@@ -54,7 +54,7 @@ reference_color = [
     "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
 ]# for each option
 reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
-reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]
+reference_color = ['blue','yellow','red', "grey", "violet", "grey"]
 decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 
 utopia_point = [min(costs), max(y_axis_values_pareto[factor])]
@@ -74,7 +74,7 @@ for j in range(len(designs[1]['Selected Options'])):
             y_values = [design[y_axis_values[factor]] for design in designs if design['Selected Options'][j]==option]
             names = [design['Name'] for design in designs if design['Selected Options'][j]==option]
             plot_label = str(option)
-            plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=6)
+            plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=15)
             #add label for each design point
             if ADD_LABEL:
                 for i, cost in enumerate(costs):
