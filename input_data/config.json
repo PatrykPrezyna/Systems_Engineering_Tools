@@ -76,21 +76,21 @@
     "metrics" :[
         {
             "name":"Interoperative Overhead", 
-            "weight": 0.3,
+            "weight": 0.4,
             "invert": "True",
             "min": 5,
             "max":120
         },
         {
             "name":"Ergonomics",
-            "weight": 0.5,
+            "weight": 0.6,
             "invert": "False",
             "min": 0,
             "max":10
         },
         {
             "name":"Responsiveness",
-            "weight": 0.2,
+            "weight": 0,
             "invert": "False",
             "min": 0,
             "max":30

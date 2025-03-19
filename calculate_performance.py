@@ -13,8 +13,9 @@ with open('output_data/designs.json', 'r') as file:
     designs = json.load(file)
 
 new_designs = []
-performance = 0
+
 for i, design in enumerate(designs): # for every design point
+    performance = 0
     new_design = {
         "Name":design["Name"],
         "Selected Options": design["Selected Options"],
@@ -29,6 +30,7 @@ for i, design in enumerate(designs): # for every design point
              metric_value = 1 - metric_value
         # new_design.update({metric["name"]: metric_value}) # test
         performance = performance + metric_value*metric["weight"]
+    # performance = performance/3
     new_design.update({"Performance": performance})
     new_designs.append(new_design)
 
