@@ -178,58 +178,10 @@
                         "name": "Ergonomics",
                         "comment": "xyz",
                         "Probability Density Function": "beta",
-                        "mean": 7,
+                        "mean": 4,
                         "sigma": 0,
                         "alfa": 58.3,
                         "beta": 25,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 1,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
-            },
-            {
-                "name": "OP 1.5| Non-Robotic",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "none",
-                    "mean": 0,
-                    "sigma": 0,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "none",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "beta",
-                        "mean": 9,
-                        "sigma": 0,
-                        "alfa": 27,
-                        "beta": 3,
                         "shape": 0,
                         "scale": 0
                     },
@@ -252,7 +204,7 @@
         "name": "D2| Device Mount Type",
         "enable": "True",
         "Weighting Interoperative Overhead": 0.166,
-        "Weighting Ergonomics": 0.4,
+        "Weighting Ergonomics": 0.3,
         "Weighting Responsiveness": 1,
         "Options": [
             {
@@ -838,7 +790,7 @@
                         "name": "Ergonomics",
                         "comment": "xyz",
                         "Probability Density Function": "normal",
-                        "mean": 10,
+                        "mean": 4,
                         "sigma": 1.4,
                         "alfa": 0,
                         "beta": 0,
@@ -969,7 +921,7 @@
         "name": "D9| Onboard vs Offboard Power",
         "enable": "True",
         "Weighting Interoperative Overhead": 0.166,
-        "Weighting Ergonomics": 0.1,
+        "Weighting Ergonomics": 0.2,
         "Weighting Responsiveness": 1,
         "Options": [
             {
