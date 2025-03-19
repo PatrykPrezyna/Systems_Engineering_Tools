@@ -507,7 +507,7 @@
         ]
     },
     {
-        "name": "D4| Procedure Imaging Type",
+        "name": "D4| Procedure Navigation",
         "enable": "True",
         "Weighting Interoperative Overhead": 0.166,
         "Weighting Ergonomics": 0,

@@ -29,7 +29,7 @@
             ]
         },
         {
-            "name":"D4| Procedure Imaging Type", 
+            "name":"D4| Procedure Navigation", 
             "enable": "True",
             "options": [
                 {"name":"OP 4.1| IR Markers","enable": "True"},

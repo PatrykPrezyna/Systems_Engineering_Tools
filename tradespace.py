@@ -55,7 +55,7 @@ reference_color = [
 ]# for each option
 reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
 reference_color = ['blue','yellow','red', "grey", "violet", "grey"]
-decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Imaging Type","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
+decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Navigation","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 
 utopia_point = [min(costs), max(y_axis_values_pareto[factor])]
 points = np.array(list(zip(costs, y_axis_values_pareto[factor])))
