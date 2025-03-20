@@ -2,6 +2,7 @@ import json
 import itertools
 import math
 import pandas as pd
+# from styleframe import StyleFrame
 
 # Load decisions, options and metrics estimations
 with open('input_data/decisions.json', 'r') as file:
@@ -37,6 +38,10 @@ for metric in config["metrics"]:
 
 # Create DataFrame
 df = pd.DataFrame(rows)
+# sf = StyleFrame(df)
+# excel_writer = StyleFrame.ExcelWriter("output_data/generated_decision_options.xlsx")
+# sf.to_excel(excel_writer=excel_writer, row_to_add_filters=0)
+# excel_writer._save()
 # Save to Excel
 df.to_excel("output_data/generated_decision_options.xlsx", index=False)
 print("Excel file 'decision_options.xlsx' created successfully.")
