@@ -7,7 +7,7 @@
         "Weighting Responsiveness": 1,
         "Options": [
             {
-                "name": "OP 1.1| Robotic Support Of Orientation And  Depth",
+                "name": "OP 1.1| Robotic arm with full geo fencing and depth awareness",
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
@@ -55,7 +55,7 @@
                 ]
             },
             {
-                "name": "OP 1.2| Robotic Support Of Orientation",
+                "name": "OP 1.2| Robotic arm that provides planar orientation without geo fencing",
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
@@ -178,7 +178,7 @@
                         "name": "Ergonomics",
                         "comment": "xyz",
                         "Probability Density Function": "beta",
-                        "mean": 4,
+                        "mean": 3,
                         "sigma": 0,
                         "alfa": 58.3,
                         "beta": 25,
@@ -1023,7 +1023,7 @@
         ]
     },
     {
-        "name": "D10| Onboard vs Offboard Computin",
+        "name": "D10| Onboard vs Offboard Computing",
         "enable": "True",
         "Weighting Interoperative Overhead": 0.166,
         "Weighting Ergonomics": 0.1,

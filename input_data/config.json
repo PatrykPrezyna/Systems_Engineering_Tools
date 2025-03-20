@@ -4,8 +4,8 @@
             "name":"D1| Surgeon Level Of Control", 
             "enable": "True",
             "options": [
-                {"name":"OP 1.1| Robotic Support Of Orientation And  Depth","enable": "True"},
-                {"name":"OP 1.2| Robotic Support Of Orientation","enable": "True"},
+                {"name":"OP 1.1| Robotic arm with full geo fencing and depth awareness","enable": "True"},
+                {"name":"OP 1.2| Robotic arm that provides planar orientation without geo fencing","enable": "True"},
                 {"name":"OP 1.3| Robotic Stabilization","enable": "True"},
                 {"name":"OP 1.4| Weight-Bearing Only","enable": "True"}                            
             ]
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "name":"D10| Onboard vs Offboard Computin", 
+            "name":"D10| Onboard vs Offboard Computing", 
             "enable": "True",
             "options": [
                 {"name":"OP 10.1| Onboard","enable": "True"},
@@ -98,5 +98,10 @@
     "Tradespace_options": {
         "include generated" : "True", 
         "include selected" : "False"
-    }
+    },
+    "Exclusions":[
+        ["OP 1.1| Robotic arm with full geo fencing and depth awareness", 
+        "OP 3.2| Imageless"],
+        []
+    ]
 }
