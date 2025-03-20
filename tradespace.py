@@ -114,7 +114,7 @@ def tradespace_fun(metric_to_plot):
         pareto = is_efficient_efficient(points)
         pareto_points = pareto[0]
         xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
-        plt.plot(xs, ys, 'r--', label='Pareto Frontier')
+        plt.plot(xs, ys, 'r--', linewidth=0.5, label='Pareto Frontier')
         plt.scatter(pareto_points[:, 0], pareto_points[:, 1], facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
         
 

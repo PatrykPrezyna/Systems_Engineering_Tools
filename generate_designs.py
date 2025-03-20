@@ -18,6 +18,7 @@ def generate_designs_fun():
 
     # Extract all decisions and their options
     options = [decision["Options"] for decision in decisions]
+    
     # Generate all combinations of options (one from each decision) #TODO implement enable
     combinations = list(itertools.product(*options))
 
@@ -25,12 +26,19 @@ def generate_designs_fun():
     if config["Tradespace_options"]["include generated"]=="True":
         for i, combination in enumerate(combinations):
             selected_options = [option["name"] for option in combination]
-            design = {
-                "Name":str(i),
-                "Selected Options": selected_options,
-                }
-            designs.append(design)
+            #Exclusion
+            exclude = False
+            for exclusion in config["Exclusions"]["list"]:
+                if all(item in selected_options for item in exclusion):#config["Exclusions"][0] in selected_options:
+                    exclude = True
+            if not(exclude) or config["Exclusions"]["enable"]=="False":
+                design = {
+                    "Name":str(i),
+                    "Selected Options": selected_options,
+                    }
+                designs.append(design)
 
+    print(len(designs))
     if config["Tradespace_options"]["include selected"]=="True":
         for i, selected_design in enumerate(selected_designs):
             #test and rename options:
@@ -43,6 +51,8 @@ def generate_designs_fun():
                 if not(exists):
                     print("ERORO: OPTION DOES NOT EXISTS !!! Option: " + str(selected_design["Selected Options"][j] ) + " Design: " + selected_design["Name"])
             designs.append(selected_design)
+
+  
 
 
     # Save results to a JSON file

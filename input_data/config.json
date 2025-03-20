@@ -99,9 +99,13 @@
         "include generated" : "True", 
         "include selected" : "False"
     },
-    "Exclusions":[
+    "Exclusions":{
+        "enable": "True",
+        "list" :[
         ["OP 1.1| Robotic arm with full geo fencing and depth awareness", 
-        "OP 3.2| Imageless"],
-        []
-    ]
+        "OP 3.2| Imageless"], 
+        ["OP 9.2| Offboard"],
+        ["OP 10.2| Offboard"]
+        ]
+    }
 }
