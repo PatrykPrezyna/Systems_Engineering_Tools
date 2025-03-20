@@ -7,5 +7,7 @@ from tradespace import tradespace_fun
 generate_designs_fun()
 calculate_metrics_fun()
 calculate_performance_fun()
-tradespace_fun()
+tradespace_fun(0)
+tradespace_fun(1)
+tradespace_fun(3)
 

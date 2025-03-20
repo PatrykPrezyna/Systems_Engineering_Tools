@@ -21,7 +21,7 @@ def is_efficient_efficient(points, min_dim=0, max_dim=1):
 
     return [points[is_efficient], is_efficient]
 
-def tradespace_fun():
+def tradespace_fun(metric_to_plot):
     # Load designs
     with open('input_data/selected_designs.json', 'r') as file:
         selected_designs = json.load(file)
@@ -38,7 +38,7 @@ def tradespace_fun():
     ADD_LABEL = False
     # show_reference_designs = False
     # Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Responsiveness, 3=Performance
-    factor = 3
+    #metric_to_plot = 3
     #config
 
     # Define the utopia point (ideal but unattainable point)
@@ -58,8 +58,8 @@ def tradespace_fun():
     reference_color = ['blue','yellow','red', "grey", "violet", "grey"]
     decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Navigation","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
 
-    utopia_point = [min(costs), max(y_axis_values_pareto[factor])]
-    points = np.array(list(zip(costs, y_axis_values_pareto[factor])))
+    utopia_point = [min(costs), max(y_axis_values_pareto[metric_to_plot])]
+    points = np.array(list(zip(costs, y_axis_values_pareto[metric_to_plot])))
     if len(decisions) != len(designs[1]['Selected Options']):#test if the number of decisison is correct
         print("ERORR !!!!!!!!!!!!")
     for j in range(len(designs[1]['Selected Options'])):
@@ -72,9 +72,9 @@ def tradespace_fun():
         if show_generated_designs:
             for i, option in enumerate(unique_options):
                 costs = [design['Cost'] for design in designs if design['Selected Options'][j]==option]
-                y_values = [design[y_axis_values[factor]] for design in designs if design['Selected Options'][j]==option]
+                y_values = [design[y_axis_values[metric_to_plot]] for design in designs if design['Selected Options'][j]==option]
                 names = [design['Name'] for design in designs if design['Selected Options'][j]==option]
-                plot_label = str(option)
+                plot_label = str(option)[:30]
                 plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=15)
                 #add label for each design point
                 if ADD_LABEL:
@@ -87,7 +87,7 @@ def tradespace_fun():
         #for selected design
         if show_selected_designs:
             costs = [design['Cost'] for design in selected_designs]
-            y_values = [design[y_axis_values[factor]] for design in selected_designs]
+            y_values = [design[y_axis_values[metric_to_plot]] for design in selected_designs]
             names = [design['Name'] for design in selected_designs]
             #names = [design['Name'].partition("|")[0] for design in selected_designs]
             plt.scatter(costs, y_values, c='red',s=100, marker="X", label="selected designs")
@@ -100,7 +100,7 @@ def tradespace_fun():
         # if show_reference_designs:
         #     #for ref design
         #     costs = [design['Cost'] for design in reference_designs]
-        #     y_values = [design[y_axis_values[factor]] for design in reference_designs]
+        #     y_values = [design[y_axis_values[metric_to_plot]] for design in reference_designs]
         #     names = [design['Name'] for design in reference_designs]
         #     #names = [design['Name'].partition("|")[0] for design in reference_designs]
         #     plt.scatter(costs, y_values, c='orange',s=100, marker="X", label="reference designs")
@@ -120,7 +120,7 @@ def tradespace_fun():
 
         # Add labels and title
         plt.xlabel('Cost')
-        plt.ylabel(y_axis_values[factor])
+        plt.ylabel(y_axis_values[metric_to_plot])
         title = 'Tradespace for architectural decision: ' + str(decisions[j])
         if show_generated_designs == False:
             title = 'Tradespace for architectural decisions'
@@ -156,11 +156,12 @@ def tradespace_fun():
     with open("output_data/unique_pareto_designs.json", "w") as json_file:
         json.dump(unique_pareto_designs, json_file, indent=4)
 
-    combine_plots_vertical.get_concat_v(y_axis_values[factor])
+    combine_plots_vertical.get_concat_v(y_axis_values[metric_to_plot])
     plt.close('all')
     # Show the plot
     # plt.show()
 
 if (__name__ == '__main__'):
     print('Executing as standalone script')
-    tradespace_fun()
+    tradespace_fun(0) 
+    # Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Responsiveness, 3=Performance
