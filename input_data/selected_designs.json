@@ -1,123 +1,49 @@
 [
     {
-        "Name": "C1",
+        "Name": "OS15",
+        "label": "True",
         "Selected Options": [
-            "OP 1.1",
-            "OP 2.1",
-            "OP 3.1",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "C2",
-        "Selected Options": [
-            "OP 1.1",
-            "OP 2.2",
-            "OP 3.1",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "C3",
-        "Selected Options": [
-            "OP 1.1",
-            "OP 2.3",
-            "OP 3.1",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "C4",
-        "Selected Options": [
-            "OP 1.1",
-            "OP 2.1",
-            "OP 3.2",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "C5",
-        "Selected Options": [
-            "OP 1.1",
-            "OP 2.2",
-            "OP 3.2",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "C6",
-        "Selected Options": [
-            "OP 1.1",
+            "OP 1.2",
             "OP 2.3",
             "OP 3.2",
             "OP 4.1",
             "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
+            "OP 8.1",
+            "OP 9.1",
             "OP 10.2"
         ]
-    },
+    },    
     {
-        "Name": "C7",
-        "Selected Options": [
-            "OP 1.2",
-            "OP 2.1",
-            "OP 3.1",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "C8",
-        "Selected Options": [
-            "OP 1.2",
-            "OP 2.2",
-            "OP 3.1",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "C9",
+        "Name": "OS15 + 3D Scanning",
+        "label": "True",
         "Selected Options": [
             "OP 1.2",
             "OP 2.3",
-            "OP 3.1",
+            "OP 3.2",
+            "OP 4.3",
+            "OP 7.2",
+            "OP 8.1",
+            "OP 9.1",
+            "OP 10.1"
+        ]
+    },
+    {
+        "Name": "OS15 + Offboard power",
+        "label": "True",
+        "Selected Options": [
+            "OP 1.2",
+            "OP 2.3",
+            "OP 3.2",
             "OP 4.1",
             "OP 7.2",
-            "OP 8.2",
+            "OP 8.1",
             "OP 9.2",
             "OP 10.2"
         ]
     },
     {
-     "Name": "C10",
+     "Name": "R1 | Velys",
+     "label": "True",
      "Selected Options": [
          "OP 1.2",
          "OP 2.1",
@@ -129,104 +55,30 @@
          "OP 10.2"
      ]
  },{
-     "Name": "C11",
+     "Name": "R2 | TSolution One",
+     "label": "True",
      "Selected Options": [
-         "OP 1.2",
+         "OP 1.1",
          "OP 2.2",
-         "OP 3.2",
+         "OP 3.1",
          "OP 4.1",
          "OP 7.2",
          "OP 8.2",
-         "OP 9.2",
+         "OP 9.1",
          "OP 10.2"
      ]
  },{
-     "Name": "C12",
+     "Name": "R3 | Tmini",
+     "label": "True",
      "Selected Options": [
-         "OP 1.2",
+         "OP 1.1",
          "OP 2.3",
-         "OP 3.2",
+         "OP 3.1",
          "OP 4.1",
          "OP 7.2",
          "OP 8.2",
-         "OP 9.2",
-         "OP 10.2"
-     ]
- },
-        {
-        "Name": "C13",
-        "Selected Options": [
-            "OP 1.3",
-            "OP 2.1",
-            "OP 3.1",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "C14",
-        "Selected Options": [
-            "OP 1.3",
-            "OP 2.2",
-            "OP 3.1",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-        "Name": "C15",
-        "Selected Options": [
-            "OP 1.3",
-            "OP 2.3",
-            "OP 3.1",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.2",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
-    {
-     "Name": "C16",
-     "Selected Options": [
-         "OP 1.3",
-         "OP 2.1",
-         "OP 3.2",
-         "OP 4.1",
-         "OP 7.2",
-         "OP 8.2",
-         "OP 9.2",
-         "OP 10.2"
-     ]
- },{
-     "Name": "C17",
-     "Selected Options": [
-         "OP 1.3",
-         "OP 2.2",
-         "OP 3.2",
-         "OP 4.1",
-         "OP 7.2",
-         "OP 8.2",
-         "OP 9.2",
-         "OP 10.2"
-     ]
- },{
-     "Name": "C18",
-     "Selected Options": [
-         "OP 1.3",
-         "OP 2.3",
-         "OP 3.2",
-         "OP 4.1",
-         "OP 7.2",
-         "OP 8.2",
-         "OP 9.2",
-         "OP 10.2"
+         "OP 9.1",
+         "OP 10.1"
      ]
  }
 ]

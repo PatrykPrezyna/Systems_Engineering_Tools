@@ -41,8 +41,13 @@ def calculate_metrics_fun():
             total_metrics[tm] = min(max(total_metrics[tm], config["metrics"][tm]["min"]), config["metrics"][tm]["max"])
             print(total_metrics[tm])
 
+        try: 
+            label = design["label"]
+        except :
+            label = "false"
         new_design = {
             "Name":design["Name"],
+            "label":label,
             "Selected Options": design["Selected Options"],
             "Cost": total_cost,
             }

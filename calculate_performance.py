@@ -18,6 +18,7 @@ def calculate_performance_fun():
         performance = 0
         new_design = {
             "Name":design["Name"],
+            "label":design["label"],
             "Selected Options": design["Selected Options"],
             "Cost": design["Cost"],
             }

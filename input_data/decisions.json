@@ -203,7 +203,7 @@
     {
         "name": "D2| Device Mount Type",
         "enable": "True",
-        "Weighting Interoperative Overhead": 0.166,
+        "Weighting Interoperative Overhead": 1,
         "Weighting Ergonomics": 0.3,
         "Weighting Responsiveness": 1,
         "Options": [
@@ -356,7 +356,7 @@
     {
         "name": "D3| Pre-operation Imaging Type",
         "enable": "True",
-        "Weighting Interoperative Overhead": 0.166,
+        "Weighting Interoperative Overhead": 1,
         "Weighting Ergonomics": 0,
         "Weighting Responsiveness": 1,
         "Options": [
@@ -461,7 +461,7 @@
     {
         "name": "D4| Procedure Navigation",
         "enable": "True",
-        "Weighting Interoperative Overhead": 0.166,
+        "Weighting Interoperative Overhead": 1,
         "Weighting Ergonomics": 0,
         "Weighting Responsiveness": 1,
         "Options": [
@@ -662,7 +662,7 @@
     {
         "name": "D7| Sterilizable Components",
         "enable": "True",
-        "Weighting Interoperative Overhead": 0.166,
+        "Weighting Interoperative Overhead": 1,
         "Weighting Ergonomics": 0.1,
         "Weighting Responsiveness": 1,
         "Options": [
@@ -920,7 +920,7 @@
     {
         "name": "D9| Onboard vs Offboard Power",
         "enable": "True",
-        "Weighting Interoperative Overhead": 0.166,
+        "Weighting Interoperative Overhead": 1,
         "Weighting Ergonomics": 0.2,
         "Weighting Responsiveness": 1,
         "Options": [
@@ -1025,7 +1025,7 @@
     {
         "name": "D10| Onboard vs Offboard Computing",
         "enable": "True",
-        "Weighting Interoperative Overhead": 0.166,
+        "Weighting Interoperative Overhead": 1,
         "Weighting Ergonomics": 0.1,
         "Weighting Responsiveness": 1,
         "Options": [

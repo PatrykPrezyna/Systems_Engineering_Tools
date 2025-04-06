@@ -51,6 +51,7 @@ def generate_designs_fun():
                 if not(exists):
                     print("ERORO: OPTION DOES NOT EXISTS !!! Option: " + str(selected_design["Selected Options"][j] ) + " Design: " + selected_design["Name"])
             designs.append(selected_design)
+            print(selected_design)
 
   
 

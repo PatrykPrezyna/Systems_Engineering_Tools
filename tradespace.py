@@ -23,23 +23,8 @@ def is_efficient_efficient(points, min_dim=0, max_dim=1):
 
 def tradespace_fun(metric_to_plot):
     # Load designs
-    with open('input_data/selected_designs.json', 'r') as file:
-        selected_designs = json.load(file)
-
     with open('output_data/designs.json', 'r') as file:
         designs = json.load(file)
-
-    # with open('input_data/reference_designs.json', 'r') as file:
-    #     reference_designs = json.load(file)
-
-    #config
-    show_selected_designs = False
-    show_generated_designs = True
-    ADD_LABEL = False
-    # show_reference_designs = False
-    # Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Responsiveness, 3=Performance
-    #metric_to_plot = 3
-    #config
 
     # Define the utopia point (ideal but unattainable point)
     costs = [design['Cost'] for design in designs]
@@ -54,11 +39,10 @@ def tradespace_fun(metric_to_plot):
         "#FF8785", "#7BBFFC", "#4EC8DE", "#69C9B9", "#E7B030",
         "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
     ]# for each option
-    reference_color = ['blue','yellow','red', "grey", "yellow", "violet", "grey"]# for each option
     reference_color = ['blue','yellow','red', "grey", "violet", "grey"]
     decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Navigation","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
-
-    utopia_point = [min(costs), max(y_axis_values_pareto[metric_to_plot])]
+    #TODO: load decisions from config
+    utopia_point = [min(costs), max(y_axis_values_pareto[metric_to_plot])]#TODO: utopia depends on the invert bit 
     points = np.array(list(zip(costs, y_axis_values_pareto[metric_to_plot])))
     if len(decisions) != len(designs[1]['Selected Options']):#test if the number of decisison is correct
         print("ERORR !!!!!!!!!!!!")
@@ -69,47 +53,19 @@ def tradespace_fun(metric_to_plot):
         unique_options = sorted(list(unique_options))
         fig = plt.figure(figsize=(10, 6))
         ax = fig.add_subplot(111)
-        if show_generated_designs:
-            for i, option in enumerate(unique_options):
-                costs = [design['Cost'] for design in designs if design['Selected Options'][j]==option]
-                y_values = [design[y_axis_values[metric_to_plot]] for design in designs if design['Selected Options'][j]==option]
-                names = [design['Name'] for design in designs if design['Selected Options'][j]==option]
-                plot_label = str(option)[:30]
-                plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=15)
-                #add label for each design point
-                if ADD_LABEL:
-                    for i, cost in enumerate(costs):
-                        if names[i] != "":
-                            label_name = names[i]
-                            print(label_name)
-                            ax.text(costs[i], y_values[i], label_name)
-        plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
-        #for selected design
-        if show_selected_designs:
-            costs = [design['Cost'] for design in selected_designs]
-            y_values = [design[y_axis_values[metric_to_plot]] for design in selected_designs]
-            names = [design['Name'] for design in selected_designs]
-            #names = [design['Name'].partition("|")[0] for design in selected_designs]
-            plt.scatter(costs, y_values, c='red',s=100, marker="X", label="selected designs")
-            # add label for each design point
+        for i, option in enumerate(unique_options):
+            costs = [design['Cost'] for design in designs if design['Selected Options'][j]==option]
+            y_values = [design[y_axis_values[metric_to_plot]] for design in designs if design['Selected Options'][j]==option]
+            names = [design['Name'] for design in designs if design['Selected Options'][j]==option]
+            label = [design['label'] for design in designs if design['Selected Options'][j]==option]
+ 
+            plot_label = str(option)[:30]
+            plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=15)
+            #add label for each design point
             for i, cost in enumerate(costs):
-                if names[i] != "":
-                    label_name = "" + str(names[i])
-                    print(label_name)
-                    ax.text(costs[i], y_values[i], label_name, size=13) 
-        # if show_reference_designs:
-        #     #for ref design
-        #     costs = [design['Cost'] for design in reference_designs]
-        #     y_values = [design[y_axis_values[metric_to_plot]] for design in reference_designs]
-        #     names = [design['Name'] for design in reference_designs]
-        #     #names = [design['Name'].partition("|")[0] for design in reference_designs]
-        #     plt.scatter(costs, y_values, c='orange',s=100, marker="X", label="reference designs")
-        #     # add label for each design point
-        #     for i, cost in enumerate(costs):
-        #         if names[i] != "":
-        #             label_name = "" + str(names[i])
-        #             print(label_name)
-        #             ax.text(costs[i], y_values[i], label_name, size=13)  
+                if label[i] == "True":
+                    ax.text(costs[i], y_values[i], names[i])
+        plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
 
         pareto = is_efficient_efficient(points)
         pareto_points = pareto[0]
@@ -122,8 +78,6 @@ def tradespace_fun(metric_to_plot):
         plt.xlabel('Cost')
         plt.ylabel(y_axis_values[metric_to_plot])
         title = 'Tradespace for architectural decision: ' + str(decisions[j])
-        if show_generated_designs == False:
-            title = 'Tradespace for architectural decisions'
         plt.title(title)
         plt.legend()
         plt.grid(True)
