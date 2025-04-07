@@ -149,54 +149,6 @@
                         "scale": 0
                     }
                 ]
-            },
-            {
-                "name": "OP 1.4| Weight-Bearing Only",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "normal",
-                    "mean": 30000,
-                    "sigma": 3000,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "none",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "beta",
-                        "mean": 3,
-                        "sigma": 0,
-                        "alfa": 58.3,
-                        "beta": 25,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 1,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
             }
         ]
     },
@@ -207,102 +159,6 @@
         "Weighting Ergonomics": 0.3,
         "Weighting Responsiveness": 1,
         "Options": [
-            {
-                "name": "OP 2.1| On Bed",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "normal",
-                    "mean": 52500,
-                    "sigma": 5250,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "weibull",
-                        "mean": 20,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 5,
-                        "sigma": 1.5,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
-            },
-            {
-                "name": "OP 2.2| Cart-mounted",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "normal",
-                    "mean": 37500,
-                    "sigma": 3750,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "weibull",
-                        "mean": 15.55,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 7,
-                        "sigma": 1.5,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
-            },
             {
                 "name": "OP 2.3| Handheld",
                 "enable": "True",
@@ -379,54 +235,6 @@
                         "Probability Density Function": "normal",
                         "mean": 15,
                         "sigma": 3,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "none",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
-            },
-            {
-                "name": "OP 3.2| Imageless",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "none",
-                    "mean": 0,
-                    "sigma": 0,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 9.6,
-                        "sigma": 2,
                         "alfa": 0,
                         "beta": 0,
                         "shape": 0,
@@ -608,54 +416,6 @@
                         "scale": 0
                     }
                 ]
-            },
-            {
-                "name": "OP 4.4| Imageless",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "none",
-                    "mean": 0,
-                    "sigma": 0,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 7,
-                        "sigma": 2,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "none",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
             }
         ]
     },
@@ -666,54 +426,6 @@
         "Weighting Ergonomics": 0.1,
         "Weighting Responsiveness": 1,
         "Options": [
-            {
-                "name": "OP 7.1| Entire Device",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "weibull",
-                    "mean": 39000,
-                    "sigma": 0,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "gamma",
-                        "mean": 14,
-                        "sigma": 14,
-                        "alfa": 2,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 1.0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 10,
-                        "sigma": 1.5,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
-            },
             {
                 "name": "OP 7.2| Device is sterilizable, disposable components exists",
                 "enable": "True",
@@ -744,54 +456,6 @@
                         "Probability Density Function": "normal",
                         "mean": 4,
                         "sigma": 1.5,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
-            },
-            {
-                "name": "OP 7.3| Everything Is Disposable Or Needs Draping",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "none",
-                    "mean": 0,
-                    "sigma": 0,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "gamma",
-                        "mean": 12,
-                        "sigma": 0,
-                        "alfa": 2,
-                        "beta": 0,
-                        "shape": 12,
-                        "scale": 1.0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 4,
-                        "sigma": 1.4,
                         "alfa": 0,
                         "beta": 0,
                         "shape": 0,
@@ -866,54 +530,6 @@
                         "scale": 0
                     }
                 ]
-            },
-            {
-                "name": "OP 8.2| OR Staff Support",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "normal",
-                    "mean": 100,
-                    "sigma": 10,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "none",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "beta",
-                        "mean": 4,
-                        "sigma": 0,
-                        "alfa": 38.7,
-                        "beta": 58,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
             }
         ]
     },
@@ -971,54 +587,6 @@
                         "scale": 0
                     }
                 ]
-            },
-            {
-                "name": "OP 9.2| Offboard",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "normal",
-                    "mean": 5000,
-                    "sigma": 500,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "lognormal",
-                        "mean": 1.1,
-                        "sigma": 1,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 8,
-                        "sigma": 1.5,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
             }
         ]
     },
@@ -1029,54 +597,6 @@
         "Weighting Ergonomics": 0.1,
         "Weighting Responsiveness": 1,
         "Options": [
-            {
-                "name": "OP 10.1| Onboard",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "normal",
-                    "mean": 25000,
-                    "sigma": 2500,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "none",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 4,
-                        "sigma": 1.5,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 5,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
-            },
             {
                 "name": "OP 10.2| Offboard",
                 "enable": "True",
