@@ -36,7 +36,10 @@
         "OP 7.2",
         "OP 9.2",
         "OP 10.2"
-    ]
+    ],
+    "Cost": 180000,
+    "Interoperative Overhead": 40,
+    "Ergonomics": 6
 },{
      "Name": "R2 | TSolution One",
      "label": "True",

@@ -45,6 +45,7 @@ def calculate_metrics_fun():
             label = design["label"]
         except :
             label = "False"
+
         new_design = {
             "Name":design["Name"],
             "label":label,
@@ -52,7 +53,12 @@ def calculate_metrics_fun():
             "Cost": total_cost,
             }
         for m, total_metric in enumerate(total_metrics):
-            new_design.update({config["metrics"][m]["name"]: total_metric})
+            try: 
+                manual_total_metric = design[config["metrics"][m]["name"]]
+                new_design.update({config["metrics"][m]["name"]: manual_total_metric})
+            except :
+                label = "False"
+                new_design.update({config["metrics"][m]["name"]: total_metric})
         new_designs.append(new_design)
 
     # Save results to a JSON file
