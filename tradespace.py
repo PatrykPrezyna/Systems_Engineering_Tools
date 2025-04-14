@@ -39,8 +39,9 @@ def tradespace_fun(metric_to_plot):
         "#FF8785", "#7BBFFC", "#4EC8DE", "#69C9B9", "#E7B030",
         "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
     ]# for each option
-    reference_color = ['blue','yellow','red', "grey", "violet", "grey"]
-    decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Navigation","Sterilisability","User Input type","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
+    reference_color = ['blue','blue','blue', "blue", "blue", "blue"]
+    #reference_color = ['blue','yellow','red', "grey", "violet", "grey"]
+    decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Navigation","Sterilisability","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
     #TODO: load decisions from config
     utopia_point = [min(costs), max(y_axis_values_pareto[metric_to_plot])]#TODO: utopia depends on the invert bit 
     points = np.array(list(zip(costs, y_axis_values_pareto[metric_to_plot])))
@@ -60,7 +61,7 @@ def tradespace_fun(metric_to_plot):
             label = [design['label'] for design in designs if design['Selected Options'][j]==option]
  
             plot_label = str(option)[:30]
-            plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=15)
+            plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=50)
             #add label for each design point
             for i, cost in enumerate(costs):
                 if label[i] == "True":
@@ -79,7 +80,7 @@ def tradespace_fun(metric_to_plot):
         plt.ylabel(y_axis_values[metric_to_plot])
         title = 'Tradespace for architectural decision: ' + str(decisions[j])
         plt.title(title)
-        plt.legend()
+        # plt.legend()
         plt.grid(True)
 
 

@@ -44,7 +44,7 @@ def calculate_metrics_fun():
         try: 
             label = design["label"]
         except :
-            label = "false"
+            label = "False"
         new_design = {
             "Name":design["Name"],
             "label":label,

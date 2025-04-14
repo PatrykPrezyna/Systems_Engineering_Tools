@@ -11,8 +11,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 142500,
-                    "sigma": 14250,
+                    "mean": 35000,
+                    "sigma": 3500,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -59,8 +59,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 97500,
-                    "sigma": 9750,
+                    "mean": 25000,
+                    "sigma": 2500,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -107,8 +107,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 72500,
-                    "sigma": 7250,
+                    "mean": 15000,
+                    "sigma": 1500,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -119,7 +119,7 @@
                         "name": "Interoperative Overhead",
                         "comment": "xyz",
                         "Probability Density Function": "none",
-                        "mean": 3,
+                        "mean": 0,
                         "sigma": 0,
                         "alfa": 0,
                         "beta": 0,
@@ -155,8 +155,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 30000,
-                    "sigma": 3000,
+                    "mean": 7500,
+                    "sigma": 750,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -212,8 +212,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 52500,
-                    "sigma": 5250,
+                    "mean": 25000,
+                    "sigma": 2500,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -260,8 +260,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 37500,
-                    "sigma": 3750,
+                    "mean": 15000,
+                    "sigma": 1500,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -308,8 +308,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 30300,
-                    "sigma": 0,
+                    "mean": 2000,
+                    "sigma": 200,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -365,8 +365,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 55000,
-                    "sigma": 5500,
+                    "mean": 8000,
+                    "sigma": 800,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -470,8 +470,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 5050,
-                    "sigma": 505,
+                    "mean": 65000,
+                    "sigma": 6500,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -518,8 +518,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "weibull",
-                    "mean": 5100,
-                    "sigma": 0,
+                    "mean": 20000,
+                    "sigma": 2000,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -566,7 +566,7 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "weibull",
-                    "mean": 20025,
+                    "mean": 15000,
                     "sigma": 0,
                     "alfa": 0,
                     "beta": 0,
@@ -671,8 +671,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "weibull",
-                    "mean": 39000,
-                    "sigma": 0,
+                    "mean": 15000,
+                    "sigma": 1500,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -719,8 +719,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 5100,
-                    "sigma": 510,
+                    "mean": 5000,
+                    "sigma": 500,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -761,159 +761,6 @@
                         "scale": 0
                     }
                 ]
-            },
-            {
-                "name": "OP 7.3| Everything Is Disposable Or Needs Draping",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "none",
-                    "mean": 0,
-                    "sigma": 0,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "gamma",
-                        "mean": 12,
-                        "sigma": 0,
-                        "alfa": 2,
-                        "beta": 0,
-                        "shape": 12,
-                        "scale": 1.0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 4,
-                        "sigma": 1.4,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "D8| User Input Type",
-        "enable": "True",
-        "Weighting Interoperative Overhead": 0,
-        "Weighting Ergonomics": 0.1,
-        "Weighting Responsiveness": 1,
-        "Options": [
-            {
-                "name": "OP 8.1| Surgeon Only",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "normal",
-                    "mean": 500,
-                    "sigma": 50,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "none",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "beta",
-                        "mean": 8,
-                        "sigma": 0,
-                        "alfa": 48.9,
-                        "beta": 12.2,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
-            },
-            {
-                "name": "OP 8.2| OR Staff Support",
-                "enable": "True",
-                "cost": {
-                    "Probability Density Function": "normal",
-                    "mean": 100,
-                    "sigma": 10,
-                    "alfa": 0,
-                    "beta": 0,
-                    "shape": 0,
-                    "scale": 0
-                },
-                "metrics": [
-                    {
-                        "name": "Interoperative Overhead",
-                        "comment": "xyz",
-                        "Probability Density Function": "none",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Ergonomics",
-                        "comment": "xyz",
-                        "Probability Density Function": "beta",
-                        "mean": 4,
-                        "sigma": 0,
-                        "alfa": 38.7,
-                        "beta": 58,
-                        "shape": 0,
-                        "scale": 0
-                    },
-                    {
-                        "name": "Responsiveness",
-                        "comment": "xyz",
-                        "Probability Density Function": "normal",
-                        "mean": 0,
-                        "sigma": 0,
-                        "alfa": 0,
-                        "beta": 0,
-                        "shape": 0,
-                        "scale": 0
-                    }
-                ]
             }
         ]
     },
@@ -929,8 +776,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 10000,
-                    "sigma": 1000,
+                    "mean": 1000,
+                    "sigma": 100,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -977,8 +824,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "normal",
-                    "mean": 5000,
-                    "sigma": 500,
+                    "mean": 10000,
+                    "sigma": 1000,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,
@@ -1082,8 +929,8 @@
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "none",
-                    "mean": 0,
-                    "sigma": 0,
+                    "mean": 30000,
+                    "sigma": 300,
                     "alfa": 0,
                     "beta": 0,
                     "shape": 0,

@@ -1,6 +1,6 @@
 [
     {
-        "Name": "OS15",
+        "Name": "R1 | OS15",
         "label": "True",
         "Selected Options": [
             "OP 1.2",
@@ -8,39 +8,10 @@
             "OP 3.2",
             "OP 4.1",
             "OP 7.2",
-            "OP 8.1",
             "OP 9.1",
             "OP 10.2"
         ]
-    },    
-    {
-        "Name": "OS15 + 3D Scanning",
-        "label": "True",
-        "Selected Options": [
-            "OP 1.2",
-            "OP 2.3",
-            "OP 3.2",
-            "OP 4.3",
-            "OP 7.2",
-            "OP 8.1",
-            "OP 9.1",
-            "OP 10.1"
-        ]
-    },
-    {
-        "Name": "OS15 + Offboard power",
-        "label": "True",
-        "Selected Options": [
-            "OP 1.2",
-            "OP 2.3",
-            "OP 3.2",
-            "OP 4.1",
-            "OP 7.2",
-            "OP 8.1",
-            "OP 9.2",
-            "OP 10.2"
-        ]
-    },
+    },  
     {
      "Name": "R1 | Velys",
      "label": "True",
@@ -50,11 +21,23 @@
          "OP 3.2",
          "OP 4.1",
          "OP 7.2",
-         "OP 8.2",
          "OP 9.2",
          "OP 10.2"
      ]
- },{
+ },
+ {
+    "Name": "R2 | Velys 2.0",
+    "label": "True",
+    "Selected Options": [
+        "OP 1.2",
+        "OP 2.1",
+        "OP 3.2",
+        "OP 4.1",
+        "OP 7.2",
+        "OP 9.2",
+        "OP 10.2"
+    ]
+},{
      "Name": "R2 | TSolution One",
      "label": "True",
      "Selected Options": [
@@ -63,7 +46,6 @@
          "OP 3.1",
          "OP 4.1",
          "OP 7.2",
-         "OP 8.2",
          "OP 9.1",
          "OP 10.2"
      ]
@@ -76,7 +58,6 @@
          "OP 3.1",
          "OP 4.1",
          "OP 7.2",
-         "OP 8.2",
          "OP 9.1",
          "OP 10.1"
      ]
