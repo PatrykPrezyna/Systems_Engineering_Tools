@@ -9,5 +9,6 @@ calculate_metrics_fun()
 calculate_performance_fun()
 tradespace_fun(0)
 tradespace_fun(1)
+tradespace_fun(2)
 tradespace_fun(3)
 

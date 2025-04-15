@@ -50,7 +50,7 @@ for ide, decision in enumerate(config["decisions"]):
         "enable":"True",
         "Weighting Interoperative Overhead": weight,#TODO generate in a loop for every metric
         "Weighting Ergonomics": weight,
-        "Weighting Responsiveness": weight,
+        "Weighting Latency": weight,
         "Options": options}
     decisions.append(decision)
 

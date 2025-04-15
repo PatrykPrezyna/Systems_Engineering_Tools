@@ -37,13 +37,13 @@ def tradespace_fun(metric_to_plot):
     costs = [design['Cost'] for design in designs]
     interoperative_overhead = [design['Interoperative Overhead'] for design in designs]
     ergonomics = [design['Ergonomics'] for design in designs]
-    responsiveness = [design['Responsiveness'] for design in designs]
+    Latency = [design['Latency'] for design in designs]
     performances = [design['Performance'] for design in designs]
 
-    y_axis_values = ['Interoperative Overhead', 'Ergonomics', "Responsiveness", 'Performance']
-    y_axis_values_pareto = [interoperative_overhead, ergonomics, responsiveness, performances]
+    y_axis_values = ['Interoperative Overhead', 'Ergonomics', "Latency", 'Performance']
+    y_axis_values_pareto = [interoperative_overhead, ergonomics, Latency, performances]
     metric_limit = [50, 6.0, 0.1, 0] #TODO: load from config
-    utopia_positive = [0, 1, 1, 1]#TODO: load from config : 0 means lower metric is better
+    utopia_positive = [0, 1, 0, 1]#TODO: load from config : 0 means lower metric is better
     reference_color = [
         "#FF8785", "#7BBFFC", "#4EC8DE", "#69C9B9", "#E7B030",
         "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
@@ -135,4 +135,4 @@ def tradespace_fun(metric_to_plot):
 if (__name__ == '__main__'):
     print('Executing as standalone script')
     tradespace_fun(0) 
-    # Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Responsiveness, 3=Performance
+    # Select metrics to plot: 0= interoperative_overhead, 1=Ergonomics, 2=Latency, 3=Performance
