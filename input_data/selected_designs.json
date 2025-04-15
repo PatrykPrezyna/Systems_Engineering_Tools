@@ -1,14 +1,14 @@
 [
     {
-        "Name": "R1 | OS15",
+        "Name": "R1 | OS16",
         "label": "True",
         "Selected Options": [
             "OP 1.2",
             "OP 2.3",
             "OP 3.2",
             "OP 4.1",
-            "OP 7.2",
-            "OP 9.1",
+            "OP 7.1",
+            "OP 9.2",
             "OP 10.2"
         ]
     },  
@@ -38,8 +38,8 @@
         "OP 10.2"
     ],
     "Cost": 180000,
-    "Interoperative Overhead": 40,
-    "Ergonomics": 6
+    "Interoperative Overhead": 55,
+    "Ergonomics": 6.2
 },{
      "Name": "R2 | TSolution One",
      "label": "True",

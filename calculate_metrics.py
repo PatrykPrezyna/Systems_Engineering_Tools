@@ -45,6 +45,10 @@ def calculate_metrics_fun():
             label = design["label"]
         except :
             label = "False"
+        try: 
+            total_cost = design["Cost"]
+        except :
+            pass
 
         new_design = {
             "Name":design["Name"],
