@@ -3,7 +3,7 @@
         "name": "D1| Surgeon Level Of Control",
         "enable": "True",
         "Weighting Interoperative Overhead": 0,
-        "Weighting Ergonomics": 0.2,
+        "Weighting Ergonomics": 0.1,
         "Weighting Latency": 0,
         "Options": [
             {
@@ -462,7 +462,7 @@
         "name": "D4| Procedure Navigation",
         "enable": "True",
         "Weighting Interoperative Overhead": 1,
-        "Weighting Ergonomics": 0,
+        "Weighting Ergonomics": 0.2,
         "Weighting Latency": 1,
         "Options": [
             {
@@ -514,7 +514,7 @@
                 ]
             },
             {
-                "name": "OP 4.2| Accelerometers",
+                "name": "OP 4.2| IMU system",
                 "enable": "True",
                 "cost": {
                     "Probability Density Function": "weibull",
@@ -541,7 +541,7 @@
                         "name": "Ergonomics",
                         "comment": "xyz",
                         "Probability Density Function": "none",
-                        "mean": 5,
+                        "mean": 10,
                         "sigma": 0,
                         "alfa": 0,
                         "beta": 0,

@@ -49,7 +49,7 @@ def tradespace_fun(metric_to_plot):
         "#BAC03F", "#E6A6C7", "#D5B480", "#BFD8E5"
     ]# for each option
     reference_color = ['blue','blue','blue', "blue", "blue", "blue"]
-    #reference_color = ['blue','yellow','red', "grey", "violet", "grey"]
+    reference_color = ['blue','yellow','red', "grey", "violet", "grey"]
     decisions = ["surgeon control level", "Robot Mount Type","Pre-op Imaging Type","Procedure Navigation","Sterilisability","Onboard vs Offboard Power","Onboard vs Offboard Computing"]
     #TODO: load decisions from config
     if utopia_positive[metric_to_plot]:
@@ -83,7 +83,7 @@ def tradespace_fun(metric_to_plot):
                 if label[i] == "True":
                     ax.text(costs[i], y_values[i], names[i], fontsize=15)
         plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
-        plt.axhline(y=metric_limit[metric_to_plot], color='r', linestyle='--')#(x=80000, ymin=0, ymax=10, linewidth=40, color='r')
+        #plt.axhline(y=metric_limit[metric_to_plot], color='r', linestyle='--')#(x=80000, ymin=0, ymax=10, linewidth=40, color='r')
         pareto = is_efficient_efficient(points, utopia_positive[metric_to_plot])
         pareto_points = pareto[0]
         xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
@@ -96,7 +96,10 @@ def tradespace_fun(metric_to_plot):
         plt.ylabel(y_axis_values[metric_to_plot])
         title = 'Tradespace for architectural decision: ' + str(decisions[j])
         plt.title(title)
-        #plt.legend()
+
+        fig.legend(loc=1)
+        fig.subplots_adjust(right=0.70)   
+
         plt.grid(True)
 
 
