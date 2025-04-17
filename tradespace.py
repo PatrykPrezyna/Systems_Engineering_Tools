@@ -93,10 +93,19 @@ def tradespace_fun(metric_to_plot):
                 if config["Tradespace_options"]["decisison_shape"] == "True":
                     if op == 0:
                         temp_marker="^"
+                        m_facecolors = 'none'
                     elif op == 1:
                         temp_marker="o"
+                        m_facecolors = reference_color[i]
+                    elif op == 2:
+                        temp_marker="s"
+                        m_facecolors = 'none'
+                    elif op == 3:
+                        temp_marker="*"
+                        m_facecolors = reference_color[i]
                     else:
-                        temp_marker="s"                 
+                        temp_marker="D"  
+                        m_facecolors = 'none'               
                 else:
                     temp_marker="o"
 
@@ -104,7 +113,7 @@ def tradespace_fun(metric_to_plot):
                     marker_size = dev_time
                 else:
                     marker_size = 50
-                plt.scatter(costs, y_values, c=reference_color[i], label=plot_label, s=marker_size, alpha=0.5, marker=temp_marker)
+                plt.scatter(costs, y_values, color=reference_color[i], facecolors='none', label=plot_label, s=marker_size, alpha=0.5, marker=temp_marker)
                 #add label for each design point
                 for ii, cost in enumerate(costs):
                     if label[ii] == "True":
@@ -115,7 +124,7 @@ def tradespace_fun(metric_to_plot):
         pareto_points = pareto[0]
         xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
         plt.plot(xs, ys, 'r--', linewidth=0.5, label='Pareto Frontier')
-        plt.scatter(pareto_points[:, 0], pareto_points[:, 1], facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
+        #plt.scatter(pareto_points[:, 0], pareto_points[:, 1], facecolors='none', edgecolors='green',marker = 'X', s=100, label='Pareto Points')
         
 
         # Add labels and title
