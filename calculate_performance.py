@@ -21,6 +21,7 @@ def calculate_performance_fun():
             "label":design["label"],
             "Selected Options": design["Selected Options"],
             "Cost": design["Cost"],
+            "dev_time": design["dev_time"],
             }
         for metric in config["metrics"]:
             metric_value = design[metric["name"]]

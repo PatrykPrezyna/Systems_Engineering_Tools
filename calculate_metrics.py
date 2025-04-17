@@ -24,12 +24,14 @@ def calculate_metrics_fun():
     new_designs = []
     for i, design in enumerate(designs): # for every design point
         total_cost = 0
+        total_dev_time = 0
         total_metrics = [0, 0, 0]
         for j, option in enumerate(design["Selected Options"]): # for each option within the design point
             for decision_option in decisions[j]["Options"]: # for each option within decisison
                 if decision_option["name"] == option:
                     # TO DO implement uncertainty / probability dencity function
                     total_cost = total_cost + decision_option["cost"]["mean"] # take mean if no PDF is selected
+                    total_dev_time = total_dev_time + decision_option["dev_time"] # take mean if no PDF is selected
                     #for every metric
                     for m, metric in enumerate(config["metrics"]):
                         for option_metric in decision_option["metrics"]:  # for each metric within an option
@@ -49,12 +51,17 @@ def calculate_metrics_fun():
             total_cost = design["Cost"]
         except :
             pass
+        try: 
+            total_dev_time = design["dev_time"]
+        except :
+            pass
 
         new_design = {
             "Name":design["Name"],
             "label":label,
             "Selected Options": design["Selected Options"],
             "Cost": total_cost,
+            "dev_time": total_dev_time,
             }
         for m, total_metric in enumerate(total_metrics):
             try: 

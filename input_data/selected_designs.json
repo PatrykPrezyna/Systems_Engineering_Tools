@@ -23,7 +23,8 @@
          "OP 7.2",
          "OP 9.2",
          "OP 10.2"
-     ]
+     ],
+     "dev_time": 1
  },
  {
     "Name": "R2 | Velys 2.0",
@@ -38,6 +39,7 @@
         "OP 10.2"
     ],
     "Cost": 180000,
+    "dev_time": 3,
     "Interoperative Overhead": 55,
     "Ergonomics": 6.2
 },{
@@ -51,7 +53,8 @@
          "OP 7.2",
          "OP 9.1",
          "OP 10.2"
-     ]
+     ],
+     "dev_time": 2
  },{
      "Name": "R3 | Tmini",
      "label": "True",
@@ -63,6 +66,7 @@
          "OP 7.2",
          "OP 9.1",
          "OP 10.1"
-     ]
+     ],
+     "dev_time": 4
  }
 ]

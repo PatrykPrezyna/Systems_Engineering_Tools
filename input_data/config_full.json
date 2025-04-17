@@ -87,7 +87,11 @@
     ],
     "Tradespace_options": {
         "include generated" : "True", 
-        "include selected" : "True"
+        "include selected" : "True",
+        "decisison_shape": "False",
+        "decisison_nr_for_shape": 0,
+        "sized_dev_cost": "False",
+        "error_bars_dev_cost": "False"
     },
     "Exclusions":{
         "enable": "True",
@@ -102,7 +106,7 @@
         ["OP 9.1| Onboard", "OP 2.1| On Bed"],
         ["OP 9.1| Onboard", "OP 2.2| Cart-mounted"],
         ["OP 10.1| Onboard", "OP 2.1| On Bed"],
-        ["OP 10.1| Onboard", "OP 2.2| Cart-mounted"]
+        ["OP 10.1| Onboard", "OP 2.2| Cart-mounted"],
         ["OP 4.4| Imageless"]
         ]
     }
