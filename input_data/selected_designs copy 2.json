@@ -1,0 +1,72 @@
+[
+    {
+        "Name": "R1 | OS16",
+        "label": "True",
+        "Selected Options": [
+            "OP 1.2",
+            "OP 2.3",
+            "OP 3.2",
+            "OP 4.1",
+            "OP 7.2",
+            "OP 9.1",
+            "OP 10.2"
+        ]
+    },  
+    {
+     "Name": "R1 | Velys",
+     "label": "True",
+     "Selected Options": [
+         "OP 1.2",
+         "OP 2.1",
+         "OP 3.2",
+         "OP 4.1",
+         "OP 7.2",
+         "OP 9.2",
+         "OP 10.2"
+     ],
+     "dev_time": 1
+ },
+ {
+    "Name": "R2 | Velys 2.0",
+    "label": "True",
+    "Selected Options": [
+        "OP 1.2",
+        "OP 2.1",
+        "OP 3.2",
+        "OP 4.1",
+        "OP 7.2",
+        "OP 9.2",
+        "OP 10.2"
+    ],
+    "Cost": 180000,
+    "dev_time": 3,
+    "Interoperative Overhead": 55,
+    "Ergonomics": 6.2
+},{
+     "Name": "R2 | TSolution One",
+     "label": "True",
+     "Selected Options": [
+         "OP 1.1",
+         "OP 2.2",
+         "OP 3.1",
+         "OP 4.1",
+         "OP 7.2",
+         "OP 9.1",
+         "OP 10.2"
+     ],
+     "dev_time": 2
+ },{
+     "Name": "R3 | Tmini",
+     "label": "True",
+     "Selected Options": [
+         "OP 1.1",
+         "OP 2.3",
+         "OP 3.1",
+         "OP 4.1",
+         "OP 7.2",
+         "OP 9.1",
+         "OP 10.1"
+     ],
+     "dev_time": 4
+ }
+]

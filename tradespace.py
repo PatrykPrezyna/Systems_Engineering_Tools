@@ -118,8 +118,20 @@ def tradespace_fun(metric_to_plot):
                 for ii, cost in enumerate(costs):
                     if label[ii] == "True":
                         ax.text(costs[ii], y_values[ii], names[ii], fontsize=15)
+                # plt.errorbar(costs, y_values,
+                #         xerr=[[10], [10]],
+                #         yerr=[[10], [10]],
+                #         c=reference_color_err[i%len(reference_color_err)],
+                #         capsize = 6, capthick = 2, lw = 1)
         plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
-        #plt.axhline(y=metric_limit[metric_to_plot], color='r', linestyle='--')#(x=80000, ymin=0, ymax=10, linewidth=40, color='r')
+        #add line limits for certain reference design
+        if config["Tradespace_options"]["include reference_limits"] == "True":
+            for design in designs:
+                if design['Name'] == "R1 | Velys" or design['Name'] =="R2 | Velys 2.0":
+                    y_limit = design["Performance"]
+                    x_limit = design['Cost']
+                    plt.axhline(y=y_limit, color='grey', linestyle='--')
+                    plt.axvline(x=x_limit, color='grey', linestyle='--')
         pareto = is_efficient_efficient(points, utopia_positive[metric_to_plot])
         pareto_points = pareto[0]
         xs, ys = zip(*sorted(zip(pareto_points[:, 0], pareto_points[:, 1])))
