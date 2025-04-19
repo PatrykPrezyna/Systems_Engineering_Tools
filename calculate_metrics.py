@@ -46,7 +46,7 @@ def calculate_metrics_fun():
         try: 
             label = design["label"]
         except :
-            label = "False"
+            label = "False"#
         try: 
             total_cost = design["Cost"]
         except :

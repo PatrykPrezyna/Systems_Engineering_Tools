@@ -92,7 +92,8 @@
         "decisison_nr_for_shape": 3,
         "sized_dev_cost": "False",
         "error_bars_dev_cost": "False",
-        "include reference_limits": "True"
+        "include reference_limits": "True",
+        "show_labes": "True"
     },
     "Exclusions":{
         "enable": "True",

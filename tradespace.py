@@ -113,16 +113,22 @@ def tradespace_fun(metric_to_plot):
                     marker_size = dev_time
                 else:
                     marker_size = 50
-                plt.scatter(costs, y_values, color=reference_color[i], facecolors='none', label=plot_label, s=marker_size, alpha=0.5, marker=temp_marker)
+                plt.scatter(costs, y_values, color=reference_color[i], facecolors=reference_color[i], label=plot_label, s=marker_size, alpha=0.5, marker=temp_marker)
                 #add label for each design point
                 for ii, cost in enumerate(costs):
                     if label[ii] == "True":
                         ax.text(costs[ii], y_values[ii], names[ii], fontsize=15)
+                error_bars_y = [dev_t/100000 for dev_t in dev_time] #dev_time #0.003 #dev_time
+                error_bars_x = [dev_t*10 if dev_t > 300 else 0 for dev_t in dev_time]
+                error_bars_x_min = [0 for dev_t in dev_time]
+                
+                #error_bars_x = [error_bars_x1 for error_bars_x1 in error_bars_x if error_bars_x1 > 2000 else 0]
+               # [f(x) if condition else g(x) for x in sequence]
                 # plt.errorbar(costs, y_values,
-                #         xerr=[[10], [10]],
-                #         yerr=[[10], [10]],
-                #         c=reference_color_err[i%len(reference_color_err)],
-                #         capsize = 6, capthick = 2, lw = 1)
+                #         xerr=[error_bars_x_min, error_bars_x],
+                #         #yerr=[error_bars_y],
+                #         c=reference_color[i%len(reference_color)],
+                #     capsize = 4, capthick = 1, ls='none', elinewidth=0.6)
         plt.scatter(*utopia_point, c='gold', s=500, marker="*", label='Utopia Point')
         #add line limits for certain reference design
         if config["Tradespace_options"]["include reference_limits"] == "True":
